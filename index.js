@@ -31,6 +31,12 @@ const ridesRouter = require('./routes/rides');
 const parcelsRouter = require('./routes/parcels');
 
 const app = express();
+
+// ========== HEALTH & ROOT – MUST BE FIRST ==========
+app.get("/health", (_, res) => res.json({ ok: true }));
+app.get("/", (_, res) => res.json({ ok: true }));
+
+// ========== MIDDLEWARE ==========
 app.use(cors());
 app.use(express.json({ limit: "2mb" }));
 app.use(morgan("dev"));
@@ -223,10 +229,6 @@ db.collection('orders_shared').onSnapshot((snapshot) => {
     }
   });
 });
-
-// ========== HEALTH & ROOT ==========
-app.get("/", (_, res) => res.json({ ok: true }));
-app.get("/health", (_, res) => res.json({ ok: true }));
 
 // ========== START THE SERVER ==========
 const PORT = Number(process.env.PORT || 8080);
