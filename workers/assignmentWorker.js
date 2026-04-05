@@ -2,47 +2,48 @@ const admin = require('firebase-admin');
 const cron = require('node-cron');
 const db = admin.firestore();
 
-// ========== REDIS SETUP (Railway compatible) ==========
+// ========== REDIS SETUP (Graceful fallback) ==========
 let redisClient = null;
 let redisAvailable = false;
 
 (async () => {
   try {
-    const redisUrl = process.env.REDIS_URL || 'redis://localhost:6379';
+    const redisUrl = process.env.REDIS_URL;
+    if (!redisUrl) {
+      console.warn('[redis] REDIS_URL not set – running without Redis');
+      return;
+    }
     const redis = require('redis');
     redisClient = redis.createClient({ url: redisUrl });
-    redisClient.on('error', (err) => console.error('[redis] error:', err));
+    redisClient.on('error', (err) => console.error('[redis] error:', err.message));
     await redisClient.connect();
     redisAvailable = true;
     console.log('[redis] connected');
   } catch (err) {
-    console.warn('[redis] connection failed – auto‑assignment will use fallback', err.message);
+    console.warn('[redis] connection failed – running without Redis', err.message);
     redisAvailable = false;
   }
 })();
 
-// Helper to safely get Redis key (returns null if Redis unavailable)
 async function redisGet(key) {
   if (!redisAvailable) return null;
-  try {
-    return await redisClient.get(key);
-  } catch (err) {
-    console.warn(`[redis] get failed for ${key}:`, err.message);
-    return null;
-  }
+  try { return await redisClient.get(key); } catch { return null; }
 }
 
-// Helper to safely set Redis hash
-async function redisHSet(key, field, value) {
+async function redisSet(key, value, ttlSeconds = 0) {
   if (!redisAvailable) return;
   try {
-    await redisClient.hSet(key, field, value);
-  } catch (err) {
-    console.warn(`[redis] hset failed for ${key}:`, err.message);
-  }
+    if (ttlSeconds > 0) await redisClient.setEx(key, ttlSeconds, value);
+    else await redisClient.set(key, value);
+  } catch { }
 }
 
-// ========== ASSIGNMENT LOGIC (unchanged) ==========
+async function redisHSet(key, field, value) {
+  if (!redisAvailable) return;
+  try { await redisClient.hSet(key, field, value); } catch { }
+}
+
+// ========== ASSIGNMENT LOGIC ==========
 function getDistance(lat1, lon1, lat2, lon2) {
   const R = 6371;
   const dLat = (lat2 - lat1) * Math.PI / 180;
@@ -55,17 +56,21 @@ function getDistance(lat1, lon1, lat2, lon2) {
 }
 
 async function getConfig() {
-  const configStr = await redisGet('assignment:config');
-  if (configStr) return JSON.parse(configStr);
-  return {
-    baseCommissionRate: 0.1,
+  // Try Redis first
+  const cached = await redisGet('assignment:config');
+  if (cached) return JSON.parse(cached);
+
+  // Fallback to Firestore
+  const doc = await db.collection('settings').doc('assignment').get();
+  const config = doc.exists ? doc.data() : {
+    maxDistanceKm: 10,
     distanceWeight: 0.5,
     ratingWeight: 0.3,
     loadWeight: 0.2,
-    maxDistanceKm: 10,
-    useKraTax: false,
-    kraTaxRate: 0.0,
   };
+  // Cache for 60 seconds
+  await redisSet('assignment:config', JSON.stringify(config), 60);
+  return config;
 }
 
 async function scoreRider(rider, order, config) {
@@ -75,9 +80,9 @@ async function scoreRider(rider, order, config) {
   const distanceScore = 1 - (distance / config.maxDistanceKm);
   const ratingScore = rider.rating / 5;
   const loadScore = 1 - (rider.currentJobs / 5);
-  return (distanceScore * config.distanceWeight +
-          ratingScore * config.ratingWeight +
-          loadScore * config.loadWeight);
+  return (distanceScore * (config.distanceWeight || 0.5) +
+          ratingScore * (config.ratingWeight || 0.3) +
+          loadScore * (config.loadWeight || 0.2));
 }
 
 async function assignRider(orderId, orderData) {
@@ -111,9 +116,7 @@ async function assignRider(orderId, orderData) {
         lng: loc.lng,
       };
       const score = await scoreRider(rider, orderData, config);
-      if (score > 0) {
-        riders.push({ ...rider, score });
-      }
+      if (score > 0) riders.push({ ...rider, score });
     }
   }
 
@@ -127,11 +130,9 @@ async function assignRider(orderId, orderData) {
     riderName: best.name,
     status: 'riderAssigned',
   });
-
   await db.collection('users').doc(best.id).update({
     currentJobs: admin.firestore.FieldValue.increment(1),
   });
-
   console.log(`Order ${orderId} → ${best.name} (score ${best.score.toFixed(2)})`);
   return true;
 }
@@ -151,7 +152,7 @@ async function processReadyOrders() {
       continue;
     }
     const success = await assignRider(doc.id, orderData);
-    if (!success) {
+    if (!success && redisAvailable) {
       await redisHSet('assignment:failed', doc.id, JSON.stringify({
         orderId: doc.id,
         timestamp: new Date().toISOString(),
@@ -161,7 +162,5 @@ async function processReadyOrders() {
   }
 }
 
-// Run every 30 seconds
 cron.schedule('*/30 * * * * *', processReadyOrders);
-
 console.log('Auto‑assignment worker started (runs every 30s)');
