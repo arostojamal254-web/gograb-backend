@@ -176,4 +176,5 @@
 [dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-8ab12df8706bf
 [redis] connected
 [dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-6baab73ce324f
-^C
+^C[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-3e3ce68334f81

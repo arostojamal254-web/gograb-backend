@@ -176,3 +176,5 @@
 [dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-9f7763acd474f
 [redis] connected
 [dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-5106378862202
+[redis] connected
+[wave.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-wave-workers consumer=consumer-8f94f6005aabe

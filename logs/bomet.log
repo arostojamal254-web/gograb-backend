@@ -176,4 +176,5 @@
 [dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-b93e05075c2d7
 [redis] connected
 [wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-d13b7788c39e7
-^C
+^C[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-22cc82c92b4e6

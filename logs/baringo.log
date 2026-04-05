@@ -176,3 +176,5 @@
 [dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-64832c61fd0ff
 ^C[redis] connected
 [dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-efecb598b902d
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-af6ae73240aac

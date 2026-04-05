@@ -180,4 +180,5 @@
 [dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-c6e6cd98238ff
 ^C[redis] connected
 [dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-6d1248b529b67
-^C
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-4b69e96a5c4f

@@ -176,3 +176,5 @@
 [dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-41e69fe8844fd
 ^C[redis] connected
 [wave.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-wave-workers consumer=consumer-66e8c79e2a34c
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-ae3a9e0c4371

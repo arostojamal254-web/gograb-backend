@@ -176,4 +176,5 @@
 [dispatch.worker] zone=vihiga stream=stream:dispatch:vihiga group=dispatch-workers consumer=c-bc2098bf33c56
 ^C[redis] connected
 [dispatch.worker] zone=vihiga stream=stream:dispatch:vihiga group=dispatch-workers consumer=c-892e615f5abc1
-^C
+^C[redis] connected
+[dispatch.worker] zone=vihiga stream=stream:dispatch:vihiga group=dispatch-workers consumer=c-f1e6f6caddee6

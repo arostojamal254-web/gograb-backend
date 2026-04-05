@@ -178,3 +178,5 @@
 [dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-2a95eb90f8c5
 ^C[redis] connected
 [dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-0ad87c3cc935
+[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-4a70be77fc52f

@@ -176,3 +176,5 @@
 [dispatch.worker] zone=marsabit stream=stream:dispatch:marsabit group=dispatch-workers consumer=c-8b509b4d5083d
 [redis] connected
 [dispatch.worker] zone=marsabit stream=stream:dispatch:marsabit group=dispatch-workers consumer=c-b6b1a136006a4
+[redis] connected
+[dispatch.worker] zone=marsabit stream=stream:dispatch:marsabit group=dispatch-workers consumer=c-0c0cc92178095

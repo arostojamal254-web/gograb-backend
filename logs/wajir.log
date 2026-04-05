@@ -176,4 +176,5 @@
 [dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-bf203824915c3
 ^C[redis] connected
 [wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-63d36f8c2be3b
-^C
+^C[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-598403876b203

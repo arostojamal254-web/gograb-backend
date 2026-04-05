@@ -176,3 +176,5 @@
 [dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-81a0214cbeb2
 [redis] connected
 [dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-fc65582a0fafb
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-9e559f90cefd5

@@ -176,3 +176,5 @@
 [dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-093e9f12499d8
 ^C[redis] connected
 [wave.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-wave-workers consumer=consumer-37938274fab75
+[redis] connected
+[wave.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-wave-workers consumer=consumer-735af8abea105

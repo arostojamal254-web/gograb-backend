@@ -176,3 +176,5 @@
 [dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-5012cf2d18b59
 [redis] connected
 [dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-b8032bb6bd2bb
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-e7373ffed403d

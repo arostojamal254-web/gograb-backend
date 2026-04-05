@@ -180,4 +180,5 @@
 [dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-c0c7818c456e
 ^C[redis] connected
 [wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-7fc22cc4f5852
-^C
+^C[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-00249305fb97f

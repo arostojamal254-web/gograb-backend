@@ -176,3 +176,5 @@
 [dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-40da2fbd3ed7f
 [redis] connected
 [dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-213051c639bd
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-47d62b8db6891

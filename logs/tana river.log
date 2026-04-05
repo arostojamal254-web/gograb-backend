@@ -178,4 +178,5 @@
 [dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-df120599f427
 ^C[redis] connected
 [dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-3e38db94c1ee5
-^C
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-1f2e99b8e1b07

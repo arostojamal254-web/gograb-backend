@@ -176,3 +176,5 @@
 [dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-4e5b41078cc67
 [redis] connected
 [dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-aa4f08909991e
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-c8bc2d276ec8

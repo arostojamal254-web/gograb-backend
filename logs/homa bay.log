@@ -180,3 +180,5 @@
 [dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-c6e107cdcc07e
 ^C[redis] connected
 [dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-9a5fa004e9824
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-6dfab293a90e7

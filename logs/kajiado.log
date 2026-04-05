@@ -176,3 +176,5 @@
 [dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-c9eab741e7fd2
 [redis] connected
 [dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-400753b6a9d7
+[redis] connected
+[wave.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-wave-workers consumer=consumer-9f05a654310ea

@@ -176,3 +176,5 @@
 [dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-5bbd93a9bc56b
 [redis] connected
 [dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-d88f3467d16a8
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-5c3b22f388bee

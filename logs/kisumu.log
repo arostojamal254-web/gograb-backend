@@ -176,3 +176,5 @@
 [dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-f8314993c1735
 [redis] connected
 [dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-89559e23cb041
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-a5e424293323d

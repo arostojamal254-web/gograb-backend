@@ -180,3 +180,5 @@
 [dispatch.worker] zone=west stream=stream:dispatch:west group=dispatch-workers consumer=c-f613624ecefc1
 ^C[redis] connected
 [dispatch.worker] zone=west stream=stream:dispatch:west group=dispatch-workers consumer=c-7e0b3b22ac805
+[redis] connected
+[dispatch.worker] zone=west stream=stream:dispatch:west group=dispatch-workers consumer=c-d6dd7eb0c670e

@@ -176,3 +176,5 @@
 [dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-e1b2b5d2f8361
 ^C[redis] connected
 [dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-dd893dce79dbb
+[redis] connected
+[wave.worker] zone=embu stream=stream:dispatch:embu group=dispatch-wave-workers consumer=consumer-f1faa47ed37a7

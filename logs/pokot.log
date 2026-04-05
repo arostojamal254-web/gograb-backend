@@ -178,4 +178,5 @@
 [dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-2c8af7826f008
 ^C[redis] connected
 [wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-6b4336c487b28
-^C
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-fb7fdf9949f9

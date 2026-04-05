@@ -176,4 +176,5 @@
 [dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-561d3bc8b388f
 [redis] connected
 [dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-ca683cc2cb298
-^C
+^C[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-1a0d35e44c5b9

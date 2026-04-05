@@ -176,3 +176,5 @@
 [wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-0d5db36b40e1e
 ^C[redis] connected
 [wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-fe79bc404c397
+[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-5fefc9f993134

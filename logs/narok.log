@@ -176,3 +176,5 @@
 [dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-8174dfdfd8be1
 [redis] connected
 [dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-e38beb9c2aa86
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-3c5931e3d83f8

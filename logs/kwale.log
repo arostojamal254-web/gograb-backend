@@ -176,4 +176,5 @@
 [dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-deb14c0b1392a
 [redis] connected
 [wave.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-wave-workers consumer=consumer-9de3acb9672c1
-^C
+^C[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-11814319f02c1

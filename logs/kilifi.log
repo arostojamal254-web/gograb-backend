@@ -176,3 +176,5 @@
 [wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-59dceff77c067
 [redis] connected
 [dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-d032963a613f
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-292a693fa234f

@@ -176,4 +176,5 @@
 [dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-6b724d8d588e1
 ^C[redis] connected
 [wave.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-wave-workers consumer=consumer-a2346004d5fee
-^C
+^C[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-5305eda30f53c

@@ -180,4 +180,5 @@
 [dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-2e18eb91a4c2f
 ^C[redis] connected
 [dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-2eef208861e69
-^C
+^C[redis] connected
+[wave.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-wave-workers consumer=consumer-0823524cfc07

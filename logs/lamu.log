@@ -176,3 +176,5 @@
 [dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-4deafd1a6a6be
 [redis] connected
 [wave.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-wave-workers consumer=consumer-17b0d51a7aa56
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-71b9307e16f6d

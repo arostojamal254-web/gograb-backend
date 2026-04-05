@@ -176,3 +176,5 @@
 [dispatch.worker] zone=makueni stream=stream:dispatch:makueni group=dispatch-workers consumer=c-d436c3cca5b34
 [redis] connected
 [dispatch.worker] zone=makueni stream=stream:dispatch:makueni group=dispatch-workers consumer=c-857ac366a9f8f
+[redis] connected
+[dispatch.worker] zone=makueni stream=stream:dispatch:makueni group=dispatch-workers consumer=c-a3b42c9687e4c

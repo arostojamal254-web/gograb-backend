@@ -176,3 +176,5 @@
 [dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-fd6722dfd4ad5
 [redis] connected
 [dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-8b97b40736a4d
+[redis] connected
+[wave.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-wave-workers consumer=consumer-b3afcddae4ef6

@@ -178,3 +178,5 @@
 [dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-fb92c91327dd6
 ^C[redis] connected
 [dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-66af407a9f564
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-529a2c12a168c

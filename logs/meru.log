@@ -176,3 +176,5 @@
 [dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-d193876c54c33
 [redis] connected
 [dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-882c3f928ecc9
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-bb0c6db7b6f79

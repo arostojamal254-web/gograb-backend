@@ -176,3 +176,5 @@
 [wave.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-wave-workers consumer=consumer-6e7cf69539dc2
 [redis] connected
 [dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-b2e4b8b7fb2a
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-d4bdae141f6f

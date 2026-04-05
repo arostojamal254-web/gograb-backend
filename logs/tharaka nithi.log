@@ -180,4 +180,5 @@
 [dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-5cd2e7485f86d
 ^C[redis] connected
 [wave.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-wave-workers consumer=consumer-66f95ddddf63f
-^C
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-1506f5297ea0a

@@ -176,3 +176,5 @@
 [dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-27e76a9df75c2
 [redis] connected
 [wave.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-wave-workers consumer=consumer-d044b9e06d227
+[redis] connected
+[wave.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-wave-workers consumer=consumer-257268993cbbd

@@ -176,4 +176,5 @@
 [dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-72e7424368589
 [redis] connected
 [dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-d26950357136b
-^C
+^C[redis] connected
+[wave.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-wave-workers consumer=consumer-e9e0f8256f47d

@@ -176,4 +176,5 @@
 [dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-664b4d6fa1a19
 ^C[redis] connected
 [wave.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-wave-workers consumer=consumer-5305cf8ce1a4
-^C
+^C[redis] connected
+[wave.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-wave-workers consumer=consumer-ad7fcd7b485f3

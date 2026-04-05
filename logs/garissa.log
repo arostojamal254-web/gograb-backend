@@ -176,3 +176,5 @@
 [dispatch.worker] zone=garissa stream=stream:dispatch:garissa group=dispatch-workers consumer=c-92f41ee6a464c
 ^C[redis] connected
 [wave.worker] zone=garissa stream=stream:dispatch:garissa group=dispatch-wave-workers consumer=consumer-78f5b8a36d389
+[redis] connected
+[dispatch.worker] zone=garissa stream=stream:dispatch:garissa group=dispatch-workers consumer=c-2e5b407187ac9

@@ -176,3 +176,5 @@
 [dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-dd94a4f755d6e
 [redis] connected
 [dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-d84bbd4096cca
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-a989226b69427

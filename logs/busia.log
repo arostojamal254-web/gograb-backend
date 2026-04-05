@@ -176,3 +176,5 @@
 [dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-60bbd25a99324
 [redis] connected
 [dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-5b3ad72cb6d13
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-cfcefba0d36cf

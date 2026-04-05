@@ -208,3 +208,5 @@ FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap o
 [dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-730926c457997
 [redis] connected
 [dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-e592f6b2132d9
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-4f08a705c3e69

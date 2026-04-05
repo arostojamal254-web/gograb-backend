@@ -176,4 +176,5 @@
 [dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-b8fde87d66d06
 ^C[redis] connected
 [dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-093eac451ef37
-^C
+^C[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-01461de2f0b6c

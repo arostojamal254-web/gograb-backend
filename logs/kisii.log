@@ -176,3 +176,5 @@
 [dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-92b9ba1c503c2
 [redis] connected
 [dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-ea2bfd87265df
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-667156186e86c
