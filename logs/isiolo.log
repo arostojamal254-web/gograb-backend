@@ -1,0 +1,178 @@
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-605fd5f62da5f
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-c37afa67875ba
+[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-6acc979918af8
+[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-211870db399d
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-71c33ed51995a
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-5939d3576715
+[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-0b83d33a6116a
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-a64e8581796a7
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-2fcd6fc3933c5
+[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-bf25d69a87c6e
+[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-7fde55080a945
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-6ef6324b9219f
+[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-eefc0546b17c9
+[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-83a8e8df87a5d
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-1f4da59945028
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-0f434145e9881
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-fc406572ff71d
+[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-38d1aa41b77b8
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-cf61b7c5e98dc
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-1046522e703b4
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-6d431914f7f81
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-5719aef10b412
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-1d3643b1aeec7
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-ce84007b678c4
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-96e9d3edd7a09
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-961b629a4150f
+[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-d4558a061b3cc
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-351c149d6ec71
+^C[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-dc72f7f5eb061
+[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-1ce0d2e9744e1
+[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-424dc875f1126
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-214fca0fa22d7
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-4e6080ba4a355
+^C[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-8071f5e89a4cf
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-dd8b21ee3bebd
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-82a00cfac67c6
+^C[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-990faa4e57c47
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-48865b2dcca16
+^C[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-903172a5b8358
+^C[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-0e6bfca941608
+^C[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-7244fd7a6ece3
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-49a1216e1e473
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-d9145b5d223b6
+^C[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-66b8917849bea
+[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-9981ead2dbc8c
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-812a52dc17a16
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-11b745c25ba6e
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-dcac8f83036cd
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-0c89bf8a6b2da
+[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-b32cd352a2eab
+[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-77bc7164912fc
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-d8ef12d408b2f
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-427e61f6b181a
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-64ba2b25ddb7f
+[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-21343f39e7815
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-f43b2226476e7
+[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-5123bd92a0506
+[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-33d1d7516c422
+[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-117dd379c53c
+^C[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-81b6688819788
+^C[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-09b1296ccdcb5
+^C[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-4d8ddba4d2331
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-1345066ac3474
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-d9154af838f83
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-c59885a7c59b1
+^C[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-72b90b3ef2937
+^C[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-8f59841100ab5
+^C[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-3cabfbd37ab99
+^C[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-1bb477dedf45f
+^C[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-7569acd695843
+^C[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-b66aad88e67b
+^C[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-979a6ff70e5db
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-23f0446564ee4
+^C[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-a0f8f33326707
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-1d958c58f46eb
+^C[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-80d5e768eca8e
+^C[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-f0a673f7f73f
+^C[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-18833b3997b98
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-48561cfe6865b
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-fee5744c5a929
+^C[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-6600c4484ce79
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-a69e6b04dffa8
+^C[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-5da56db5a4de5
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-78828bc637311
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-f20b4d3378cff
+[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-bd935c22ee8ae
+^C[redis] connected
+[dispatch.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-workers consumer=c-afb46830a2dba
+[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-0d5db36b40e1e
+^C[redis] connected
+[wave.worker] zone=isiolo stream=stream:dispatch:isiolo group=dispatch-wave-workers consumer=consumer-fe79bc404c397

@@ -1,0 +1,178 @@
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-9d65d645d1dd7
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-a7520d190e1f7
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-b6f069cd50e08
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-6332822b69f57
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-d722ef6e4ebc7
+[redis] connected
+[wave.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-wave-workers consumer=consumer-63cdb7c14fae2
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-6a8e83adfd66d
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-f121b4e198a7e
+[redis] connected
+[wave.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-wave-workers consumer=consumer-0797ed3048b9e
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-bd41f90acdd5b
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-09625ddbe5a62
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-662887f9ab285
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-922a6fff04c46
+[redis] connected
+[wave.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-wave-workers consumer=consumer-2ce903084dbcb
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-410e18c6ec567
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-365f7aa9b7d37
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-f2e7f70c7c826
+[redis] connected
+[wave.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-wave-workers consumer=consumer-bfb22132c27b4
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-1e7c700ddb6b2
+[redis] connected
+[wave.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-wave-workers consumer=consumer-cc57d904433fd
+[redis] connected
+[wave.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-wave-workers consumer=consumer-f1a74e57267ce
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-20d5b8075dda
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-33bf2d87a06eb
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-2cd74bc590bfa
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-a9f0281ccebbd
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-fbf4e4f9486f1
+[redis] connected
+[wave.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-wave-workers consumer=consumer-07126089a23ec
+[redis] connected
+[wave.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-wave-workers consumer=consumer-77bb2ecbe8b6d
+^C[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-ade3cfb46f5f9
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-ec12450da5a8
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-c4a4fc07d40bc
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-ab80c76a5012c
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-75003008d1292
+^C[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-7dd742e15dffb
+[redis] connected
+[wave.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-wave-workers consumer=consumer-c5084cf651888
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-4d2d202bb1b19
+^C[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-a7879b33e829a
+[redis] connected
+[wave.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-wave-workers consumer=consumer-ff904ac8a9aa6
+^C[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-6ece3719597dd
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-3fa94ea92761e
+^C[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-a56309cb82a8a
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-914c0ff8b2ed6
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-33727ab6cce31
+^C[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-6ce339610b06d
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-8d943324c493f
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-615fa09556451
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-cd276918d6141
+[redis] connected
+[wave.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-wave-workers consumer=consumer-cf42925fa1d
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-ef41ff751beef
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-23266b2dbaa6d
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-a21d5a0b12221
+[redis] connected
+[wave.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-wave-workers consumer=consumer-2422452698f1c
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-813b36f0d746e
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-8a0adefa15711
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-902220faf8da3
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-f981860f9f44b
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-46a904debf5b2
+[redis] connected
+[wave.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-wave-workers consumer=consumer-6d76b9daa5ecc
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-23a1ae9aae301
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-a191162f609b8
+[redis] connected
+[wave.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-wave-workers consumer=consumer-3bf9d6c907ee6
+^C[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-7b21a35d5589d
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-ec71f983e06a8
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-59473b32ef4e4
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-eb6b83028b2c8
+^C[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-c81317132ca05
+^C[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-7a276b41b0943
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-12f16f0e3b5f3
+^C[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-f14da304204f6
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-325f024e34b1c
+[redis] connected
+[wave.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-wave-workers consumer=consumer-3d8d6d16b6a2
+^C[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-0617a9a0c78dc
+^C[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-9feeaa1808d66
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-8dc5dbf513e1d
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-119d7a48ef4a2
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-6c15a212d232b
+^C[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-1666312eeb5d7
+^C[redis] connected
+[wave.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-wave-workers consumer=consumer-6ee3b86988bd
+^C[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-315fb2e8df616
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-55769550d063d
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-536e861505f55
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-846b5f4d15ead
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-5f9765753369
+^C[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-8b1b82d1ee7ab
+^C[redis] connected
+[wave.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-wave-workers consumer=consumer-0ef9c61da8ba7
+[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-7b56c540a1889
+^C[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-30f2557cdd083
+^C[redis] connected
+[dispatch.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-workers consumer=c-093e9f12499d8
+^C[redis] connected
+[wave.worker] zone=samburu stream=stream:dispatch:samburu group=dispatch-wave-workers consumer=consumer-37938274fab75

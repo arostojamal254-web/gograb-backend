@@ -1,0 +1,178 @@
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-52bf81e9a015e
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-5d3da02a69a5d
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-8ce9713a10fb3
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-88f1873cc2a29
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-a72346f073df7
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-18734af9004ac
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-0a0ae9d15f184
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-20f6c9e58a254
+[redis] connected
+[wave.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-wave-workers consumer=consumer-d3703f4595a16
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-4b4f0f9a2928c
+[redis] connected
+[wave.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-wave-workers consumer=consumer-c3d95f6fac89d
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-42dc0804d5892
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-c36ed000cb6f8
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-d66b854274769
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-756b1922e6bef
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-62ec3cd48af94
+[redis] connected
+[wave.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-wave-workers consumer=consumer-4a433667c36d6
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-88cbe38e945a
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-872503290f721
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-0d5ee162dd3dc
+[redis] connected
+[wave.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-wave-workers consumer=consumer-b216376db0cd3
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-97de2eb5fd53e
+[redis] connected
+[wave.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-wave-workers consumer=consumer-79ea01e4030b7
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-ef07e62a4a678
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-69ad8e56cb4ec
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-e2a3525afef07
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-362227c845e23
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-400fb28312cb5
+^C[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-b420b3edb7c7f
+[redis] connected
+[wave.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-wave-workers consumer=consumer-f19b9cc1c9648
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-541bcceccdc33
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-6a657bc02538e
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-2b719c7748be
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-61b00f64ea06e
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-00071919fe631
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-528ad6d0fcef9
+^C[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-39843fea4a5f2
+[redis] connected
+[wave.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-wave-workers consumer=consumer-46f8b5b52acb
+^C[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-4b27abc66485c
+[redis] connected
+[wave.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-wave-workers consumer=consumer-a3ef6be637cb7
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-834df92f2157f
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-c65fa759f5797
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-6d2ad9b0b82f9
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-6eb4ec6a84b78
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-c3b590b652421
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-cc0522403d60a
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-1a0c2eea199f4
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-01854aeba8062
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-c33c8a81e1b43
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-8700781799197
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-031cec3b5e863
+[redis] connected
+[wave.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-wave-workers consumer=consumer-803107b26679a
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-1045c13ea82e1
+[redis] connected
+[wave.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-wave-workers consumer=consumer-df0e188b729dd
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-bc27db9110463
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-67a4f7335189e
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-21a90927499eb
+[redis] connected
+[wave.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-wave-workers consumer=consumer-79d12cc5a0b79
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-5b6f9a712be4
+^C[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-6bc95e8230a7f
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-50741ac2adc1d
+^C[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-6d753e7362ba3
+[redis] connected
+[wave.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-wave-workers consumer=consumer-46c36122db4b9
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-f446f935451ea
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-af893dc72521d
+^C[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-06eddd574ecd4
+^C[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-a876a6a1bd529
+^C[redis] connected
+[wave.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-wave-workers consumer=consumer-5e849817891fe
+^C[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-d75822796aec2
+^C[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-c4c1855a28a05
+[redis] connected
+[wave.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-wave-workers consumer=consumer-156ff5ef194b
+^C[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-52a869b5254b1
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-89c372340c35
+^C[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-b1d87a7ac855b
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-19c8e94757586
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-aa3f06fd96332
+^C[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-e8274401b42be
+^C[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-e967838a338b1
+^C[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-aac4006801806
+[redis] connected
+[wave.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-wave-workers consumer=consumer-a05af680e511d
+[redis] connected
+[wave.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-wave-workers consumer=consumer-c947c26f07558
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-3ef9c45c492c6
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-eddd43168bb56
+^C[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-3ce6446cd0a85
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-5f66ccd5d0804
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-914850ea3e1de
+^C[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-2b3012566ef1f
+^C[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-5012cf2d18b59
+[redis] connected
+[dispatch.worker] zone=laikipia stream=stream:dispatch:laikipia group=dispatch-workers consumer=c-b8032bb6bd2bb

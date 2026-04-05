@@ -1,0 +1,178 @@
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-b085f309dac53
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-05e9880e48973
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-65e846caf5c2d
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-a0245bc784941
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-0b413e7b313db
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-87e9e22564fe8
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-ed2712e401406
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-24d4901519e72
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-7df9c7744427
+[redis] connected
+[wave.worker] zone=meru stream=stream:dispatch:meru group=dispatch-wave-workers consumer=consumer-5b2acd66a54cf
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-77aa0662c7d02
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-96d5a6577520a
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-c499f03793268
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-8e0eb41c64c6
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-7c779995dea0a
+[redis] connected
+[wave.worker] zone=meru stream=stream:dispatch:meru group=dispatch-wave-workers consumer=consumer-3a8eb132f5972
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-8cef705b4d03a
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-0980f9f026514
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-b6ee95e6b152b
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-59cf9902d5bb4
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-132e47ee6f3e3
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-55a6ebfae6cf8
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-93ecbdaabe37c
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-ff883fa934bb7
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-92bfcb2cf4691
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-565011dff8f8f
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-a3e696353e6ca
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-af5f1f788fa9e
+^C[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-d20aa4823a73
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-472b9256b9e1e
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-6cc1c4084d36b
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-d19c45ce83341
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-286cac34d56bb
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-66be8bc7954ea
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-1340d41a556f4
+^C[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-9a9e7846a9729
+^C[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-7ff0fede19a82
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-0b0a6c540d1bb
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-214e2ce08cdaf
+^C[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-f195c319dd1d5
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-bb45144780ae8
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-b102babdc4ac1
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-fb93084d84583
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-b9351ce0ea194
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-a75044710256c
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-e98d9f608d8b6
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-e40d42f9e8886
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-cc2191bb7bb06
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-971d1d5cbf862
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-651098432c6d2
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-a7409ec7850b
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-fa5cc39111ddb
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-9cad2875411e4
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-7c48e6f5117a2
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-5a0ea1e5d4625
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-0ce260a57da31
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-50e55538c06a9
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-a6c2300ccfa5a
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-b6a03947a7b71
+^C[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-fb234c802c896
+^C[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-9f962c06c3f25
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-860f24f4bd1d5
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-30ba574ade45f
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-fe9250863a62
+[redis] connected
+[wave.worker] zone=meru stream=stream:dispatch:meru group=dispatch-wave-workers consumer=consumer-0de1cbbbe5382
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-4b4340776f46a
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-6350d135576b4
+^C[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-fb83caa03119b
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-edff7177c5c4
+^C[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-7535bceb3357c
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-35cab8f17c762
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-48ff396373a7c
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-2434a5e3a4e78
+^C[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-5deecbd24f75c
+^C[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-f90b407484a72
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-eebc5fb9dd938
+^C[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-c7a0e00f28dda
+^C[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-cc092ebbe8bba
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-7f537cdb43ba6
+[redis] connected
+[wave.worker] zone=meru stream=stream:dispatch:meru group=dispatch-wave-workers consumer=consumer-fcb73ef70a1cd
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-994df40cd80ab
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-6000509231449
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-0a74b6121b715
+[redis] connected
+[wave.worker] zone=meru stream=stream:dispatch:meru group=dispatch-wave-workers consumer=consumer-09bec7d8784ae
+^C[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-250f9e43c92c9
+[redis] connected
+[wave.worker] zone=meru stream=stream:dispatch:meru group=dispatch-wave-workers consumer=consumer-90501da540ce3
+^C[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-ae81882a72cd3
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-d193876c54c33
+[redis] connected
+[dispatch.worker] zone=meru stream=stream:dispatch:meru group=dispatch-workers consumer=c-882c3f928ecc9

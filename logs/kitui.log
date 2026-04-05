@@ -1,0 +1,179 @@
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-e7a3123650b55
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-4518ddcaa588c
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-7147597e875b5
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-79ae8121a2fe1
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-4eb9b1551f5d4
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-b575b061d9b09
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-977e242de8a05
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-b1c5203af5a7c
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-9bfdbe89bbdf1
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-2bb991b543d61
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-109200500954f
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-f5fb6429029cd
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-c7569c42386c6
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-96ae35e2bc69f
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-f13caf0f61e27
+[redis] connected
+[wave.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-wave-workers consumer=consumer-4c7e120512e74
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-1020427710228
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-b992ceb552a6a
+[redis] connected
+[wave.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-wave-workers consumer=consumer-140154ed0466a
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-ea62d3642dc35
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-f91482932c2c4
+[redis] connected
+[wave.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-wave-workers consumer=consumer-17191d41750d3
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-76a59afc029ed
+[redis] connected
+[wave.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-wave-workers consumer=consumer-76864fe2fa697
+[redis] connected
+[wave.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-wave-workers consumer=consumer-11320b6dad912
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-91801630955fe
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-87f3b277b5dab
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-508df6dbc7053
+^C[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-ecd7a4651c07
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-e73f9feb2e48
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-1862313dfa46d
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-d68ee825c7a97
+[redis] connected
+[wave.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-wave-workers consumer=consumer-effb115f692e6
+^C[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-fa755dfb046be
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-0fadd62e414df
+^C[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-3c56258424825
+^C[redis] connected
+[wave.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-wave-workers consumer=consumer-51f1256593bc7
+^C[redis] connected
+[wave.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-wave-workers consumer=consumer-16d33ef5d5674
+^C[redis] connected
+[wave.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-wave-workers consumer=consumer-8dc2b108f0f7f
+^C[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-b5b3bc7d9baff
+^C[redis] connected
+[wave.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-wave-workers consumer=consumer-cd9f788d5d103
+[redis] connected
+[wave.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-wave-workers consumer=consumer-335c1c63fa228
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-c65421a9d4baf
+^C[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-7af340a0b554c
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-224176b968ddf
+^C[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-8f42687e67577
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-38cd60e755c49
+[redis] connected
+[wave.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-wave-workers consumer=consumer-1230140fa54d3
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-3556b570f3aba
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-50cf4c5d4de07
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-3ee3569c1776a
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-47ac330f0e079
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-bc740a3c0f3e3
+[redis] connected
+[wave.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-wave-workers consumer=consumer-2fcf9d4aeab3
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-eacfdb304a055
+[redis] connected
+[wave.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-wave-workers consumer=consumer-78e1822c1192b
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-1575066244bb3
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-126d015309a4a
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-7c7e112c8d0f
+^C[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-879f591ade9d9
+^C[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-72e0fcf5dcafa
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-565ea0536a107
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-37230e2e1880f
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-f7ef38c3c27dd
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-81c2c01be0102
+^C[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-2c6dc14c47c9a
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-7a8973446479a
+^C[redis] connected
+[wave.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-wave-workers consumer=consumer-4a6bd41fdefef
+^C[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-99958f1eb782c
+^C[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-142cddd3804f6
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-98ccd3cda7d7a
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-1a1d634ce14ef
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-238083f8d9bad
+^C[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-f1874a7045e37
+^C[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-3783e7f202682
+^C[redis] connected
+[wave.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-wave-workers consumer=consumer-b62e3e6ddd912
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-c554c05a143bf
+^C[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-924e57346e1ed
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-0843772e88d65
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-38df808fd32b5
+[redis] connected
+[wave.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-wave-workers consumer=consumer-8c7eae309b0b7
+[redis] connected
+[wave.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-wave-workers consumer=consumer-1b306a10466dd
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-f68392928e534
+^C[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-d46a81bd13bcb
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-41a0a62b715e5
+[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-43066aaccaab6
+^C[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-de3733d561471
+^C[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-b8fde87d66d06
+^C[redis] connected
+[dispatch.worker] zone=kitui stream=stream:dispatch:kitui group=dispatch-workers consumer=c-093eac451ef37
+^C

@@ -1,0 +1,178 @@
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-0c5b4e74f2dc6
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-28ef679f7715e
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-66a912a7e62c5
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-51a06db75fdfa
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-6837629f72f44
+[redis] connected
+[wave.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-wave-workers consumer=consumer-9a10a1f6e0da3
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-0dae9b7bfe79f
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-f929a91874166
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-cf1dfceb418af
+[redis] connected
+[wave.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-wave-workers consumer=consumer-064eb338bcb53
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-b861993543bae
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-f7bd9b7b0db8d
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-410700ce7c891
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-b693d3f63a198
+[redis] connected
+[wave.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-wave-workers consumer=consumer-b0c69a76a8607
+[redis] connected
+[wave.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-wave-workers consumer=consumer-701554059ad9a
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-8e4f35dc019e3
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-b58e55b13cb6d
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-ea031f2cb59cc
+[redis] connected
+[wave.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-wave-workers consumer=consumer-0b2a68af0d394
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-3020e532be4a3
+[redis] connected
+[wave.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-wave-workers consumer=consumer-855505595088b
+[redis] connected
+[wave.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-wave-workers consumer=consumer-109bfb750eae4
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-9150c14020afb
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-348d2f7df6243
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-a9ed3a0be7bc4
+[redis] connected
+[wave.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-wave-workers consumer=consumer-18a5308a6d34f
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-9a98a8cde921d
+^C[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-2c954deb5b0ca
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-be5bfd875d21
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-d2ad577f9158b
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-959a182be6361
+[redis] connected
+[wave.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-wave-workers consumer=consumer-e1f583ffed988
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-9d098844a0004
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-1fa61eb414c48
+^C[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-b882fb81806d5
+^C[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-b181274ae1279
+^C[redis] connected
+[wave.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-wave-workers consumer=consumer-34669482eeeec
+^C[redis] connected
+[wave.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-wave-workers consumer=consumer-92476955260c
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-c4592e545b31e
+^C[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-2bc953f096bdc
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-c1a576b72031b
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-4761901314755
+^C[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-e90699741c8ce
+[redis] connected
+[wave.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-wave-workers consumer=consumer-450a45c224cd3
+^C[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-4dfb567339bb4
+[redis] connected
+[wave.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-wave-workers consumer=consumer-b230727673bf5
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-0c50e3c0dc24
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-f56728825567a
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-39c37a0404fc6
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-fbddd7169a5c4
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-f2f5896de6bec
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-59b86ce5553d3
+[redis] connected
+[wave.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-wave-workers consumer=consumer-76b8b08f03339
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-85d8cdc815dea
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-8a3768d89e96d
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-abcf50dae6b44
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-677ee7ee7422f
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-cdba382255ac8
+^C[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-e6583e4b139f5
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-0bc6ad7a5e9e
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-6c2c5115ac293
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-92353554b7c16
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-d8991f4550852
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-363358b26e4d5
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-1a635ff0105dd
+[redis] connected
+[wave.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-wave-workers consumer=consumer-7c284403da29a
+^C[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-abc926ab1929c
+^C[redis] connected
+[wave.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-wave-workers consumer=consumer-b1c04d30f1e72
+^C[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-534d572eda56d
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-25a18291141ae
+^C[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-5d6c8dde5b55a
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-7b9fba84dd802
+^C[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-cb439d4da9ff6
+^C[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-4c1a1c30f47c7
+^C[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-4d487cf9c2067
+^C[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-d02a54af25d74
+^C[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-64526a226febb
+^C[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-1d878ec982654
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-0d3cdc77ef8d
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-2956d450d3b8a
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-1a73fd6aa650f
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-2270df173e4af
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-6faf0115c24bd
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-3faa23613cbcb
+[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-54bbb28de92f1
+^C[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-ab0f07b2431f4
+^C[redis] connected
+[dispatch.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-workers consumer=c-4deafd1a6a6be
+[redis] connected
+[wave.worker] zone=lamu stream=stream:dispatch:lamu group=dispatch-wave-workers consumer=consumer-17b0d51a7aa56

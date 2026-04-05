@@ -1,0 +1,210 @@
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-fd2d3448986d3
+^C[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-c27690716fd66
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-525b97bff7a2e
+[redis] connected
+[wave.worker] zone=migori stream=stream:dispatch:migori group=dispatch-wave-workers consumer=consumer-d38028969fedd
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-4a890bd36d2e9
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-6efb6ed473e72
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-293fa2d2c9422
+[redis] connected
+[wave.worker] zone=migori stream=stream:dispatch:migori group=dispatch-wave-workers consumer=consumer-3449c389b1a1d
+[redis] connected
+[wave.worker] zone=migori stream=stream:dispatch:migori group=dispatch-wave-workers consumer=consumer-85cf9e4105968
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-6714efb4a011b
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-11a56cbad8d26
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-da7eb286b82fa
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-50d62078a2579
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-83f07ac48eb1b
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-be3fc61fdcd2a
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-ce3466c0a016f
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-85b7e84f875dd
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-943e1eec1f0ea
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-fd7d326ff518b
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-fc658d5127d81
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-3b637133df9a8
+[redis] connected
+[wave.worker] zone=migori stream=stream:dispatch:migori group=dispatch-wave-workers consumer=consumer-d61aee1111be6
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-943f77eebd96d
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-963c96934029
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-fa050c6392ccc
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-410e02e03bc6
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-9e9079cc3c111
+[redis] connected
+[wave.worker] zone=migori stream=stream:dispatch:migori group=dispatch-wave-workers consumer=consumer-173a22414b1a
+^C[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-624844a1a59a3
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-e45e85a61a00d
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-c202da6b19955
+[redis] connected
+[wave.worker] zone=migori stream=stream:dispatch:migori group=dispatch-wave-workers consumer=consumer-ea7743f471db7
+[redis] connected
+[wave.worker] zone=migori stream=stream:dispatch:migori group=dispatch-wave-workers consumer=consumer-14729124740b6
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-7011eaa1111fa
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-e4c08fdc5c213
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-432f6b99557db
+[redis] connected
+[wave.worker] zone=migori stream=stream:dispatch:migori group=dispatch-wave-workers consumer=consumer-4b8ef5bf9c88e
+[redis] connected
+[wave.worker] zone=migori stream=stream:dispatch:migori group=dispatch-wave-workers consumer=consumer-afdc1d4ee5af1
+^C[redis] connected
+[wave.worker] zone=migori stream=stream:dispatch:migori group=dispatch-wave-workers consumer=consumer-b8640433dcc23
+^C[redis] connected
+[wave.worker] zone=migori stream=stream:dispatch:migori group=dispatch-wave-workers consumer=consumer-ac9882018f2e
+^C[redis] connected
+[wave.worker] zone=migori stream=stream:dispatch:migori group=dispatch-wave-workers consumer=consumer-5da2318df9d0b
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-f9e73cc09c8df
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-f4fcad8e6303f
+
+<--- Last few GCs --->
+cr[560:000001BCA734EBD0]    33905 ms: Mark-Compact (reduce) 8.7 (28.7) -> 8.1 (10.0) MB, 8.69 / 0.02 ms  (+ 5.5 ms in 21 steps since start of marking, biggest step 0.8 ms, walltime since start of marking 15 ms) (average mu = 1.000, current mu = 1.000) final[560:000001BCA734EBD0]    34544 ms: Mark-Compact (reduce) 8.1 (10.0) -> 8.1 (9.5) MB, 16.00 / 0.00 ms  (+ 7.7 ms in 3 steps since start of marking, biggest step 7.1 ms, walltime since start of marking 26 ms) (average mu = 0.999, current mu = 0.963) finali
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+ 1: 00007FF630B6BFDB 
+ 2: 00007FF630ADAF98 
+ 3: 00007FF631554851 
+ 4: 00007FF63153DEE8 
+ 5: 00007FF63139F8D0 
+ 6: 00007FF6313576D3 
+ 7: 00007FF6313A8F80 
+ 8: 00007FF63139C5F0 
+ 9: 00007FF63139CA7C 
+10: 00007FF63138DFC1 
+11: 00007FF63138EDA7 
+12: 00007FF6313CD733 
+13: 00007FF63150E9FB 
+14: 00007FF63150E239 
+15: 00007FF6314AA4B2 
+16: 00007FF631518B69 
+17: 00007FF6313F4F04 
+18: 00007FF631080D67 
+19: 00007FF6310818D9 
+20: 00007FF6315FF78E 
+21: 00007FF6316C2FF8 
+22: 00007FF631570D30 
+23: 00007FF5B178A00C 
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-6603beb88e2b2
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-e71b8424e2de4
+^C[redis] connected
+[wave.worker] zone=migori stream=stream:dispatch:migori group=dispatch-wave-workers consumer=consumer-b891d6ac6d255
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-71338b6a7e5e3
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-6a702619fb159
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-8865fe311b188
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-702f10191c0e2
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-3199dc5df50e6
+[redis] connected
+[wave.worker] zone=migori stream=stream:dispatch:migori group=dispatch-wave-workers consumer=consumer-32a51cd729c89
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-6cb2952c276a2
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-a1d0461dadb95
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-a56ffafff448d
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-49f60970728e7
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-e0a53f8c25562
+[redis] connected
+[wave.worker] zone=migori stream=stream:dispatch:migori group=dispatch-wave-workers consumer=consumer-26d05be912784
+[redis] connected
+[wave.worker] zone=migori stream=stream:dispatch:migori group=dispatch-wave-workers consumer=consumer-7af97e3d04a34
+^C[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-b2773353c2baf
+^C[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-327cf69dcd848
+^C[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-70f7514979341
+^C[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-0786589decdc8
+[redis] connected
+[wave.worker] zone=migori stream=stream:dispatch:migori group=dispatch-wave-workers consumer=consumer-8841fe89b40a4
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-aa1285216f9c2
+^C[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-5d1c3804bfad5
+^C[redis] connected
+[wave.worker] zone=migori stream=stream:dispatch:migori group=dispatch-wave-workers consumer=consumer-8807850964148
+^C[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-3deec9770a548
+^C[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-fd53c869a5b73
+^C[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-686a7234531ad
+^C[redis] connected
+[wave.worker] zone=migori stream=stream:dispatch:migori group=dispatch-wave-workers consumer=consumer-8f955c95383fd
+^C[redis] connected
+[wave.worker] zone=migori stream=stream:dispatch:migori group=dispatch-wave-workers consumer=consumer-555b5f8a6fcbd
+^C[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-da32a4b4c9425
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-efde3c164d08f
+^C[redis] connected
+[wave.worker] zone=migori stream=stream:dispatch:migori group=dispatch-wave-workers consumer=consumer-129e098ace22c
+^C[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-003ae4b8367a3
+^C[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-a201a90804393
+^C[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-a5b7e08d35e9e
+^C[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-bc1e69b2d07ba
+^C[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-b628cfa23fe41
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-4b73c621db2d
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-42373429076e6
+[redis] connected
+[wave.worker] zone=migori stream=stream:dispatch:migori group=dispatch-wave-workers consumer=consumer-3e3ab2f06f8d3
+^C[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-e3323894d2086
+^C[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-6af7583ba6dce
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-e12156c76dd95
+^C[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-0298e04f43fd1
+^C[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-730926c457997
+[redis] connected
+[dispatch.worker] zone=migori stream=stream:dispatch:migori group=dispatch-workers consumer=c-e592f6b2132d9

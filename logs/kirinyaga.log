@@ -1,0 +1,178 @@
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-83dde2ba2ff8d
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-4b861da47d778
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-7584f94706f1c
+[redis] connected
+[wave.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-wave-workers consumer=consumer-102b283c9f38
+[redis] connected
+[wave.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-wave-workers consumer=consumer-3d8adc6af9609
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-2e0f94b9a5b52
+[redis] connected
+[wave.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-wave-workers consumer=consumer-5aade5eb08504
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-e142eb564dba8
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-dd87a67726ef
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-ab1b64ef3f0cf
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-fc7438367049c
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-931db1c08827c
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-168af8e5a3a57
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-814818a46df2c
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-08cdc611599d5
+[redis] connected
+[wave.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-wave-workers consumer=consumer-0047322b5ac24
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-6416d7c02e67b
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-e8a24d7a7268e
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-87f8a72eb4f85
+[redis] connected
+[wave.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-wave-workers consumer=consumer-a3f6a787229e6
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-5afaf123383b9
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-564279a2ec791
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-b96079457c453
+[redis] connected
+[wave.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-wave-workers consumer=consumer-e28b5cf9c0623
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-4280345adacb8
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-cd95f61047b0c
+[redis] connected
+[wave.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-wave-workers consumer=consumer-90080bbb3d12a
+[redis] connected
+[wave.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-wave-workers consumer=consumer-a976ad909be21
+^C[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-b2ca85dfae38f
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-64eb4743f49f3
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-277dc8b1ac08a
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-6c0597c0356a
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-1ef59f5fc0a3e
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-6f51027af7914
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-1034441647d3b
+^C[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-861ed2ecceb58
+^C[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-4f9aaac0ec053
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-534986e4ff118
+^C[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-82e1f0a5f2a7
+^C[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-dd286805afd1c
+^C[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-a37183eedec1c
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-fa13d5845a602
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-005b34f65dd09
+^C[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-80231efb17355
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-a9259e58367ff
+^C[redis] connected
+[wave.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-wave-workers consumer=consumer-11382c323301b
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-d2fc5a7b7397a
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-ce05d8fd66f74
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-14ed2b82b8e5a
+[redis] connected
+[wave.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-wave-workers consumer=consumer-b6c9e6160cfb7
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-ea62434c2fa5
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-612bae9a5bec
+[redis] connected
+[wave.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-wave-workers consumer=consumer-e8cc82065dcc6
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-4ce75e2bb3f25
+[redis] connected
+[wave.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-wave-workers consumer=consumer-cf0fa30d91687
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-c1750fae01667
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-e3cc9d5bf53f7
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-82686eace8d57
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-5f6bb6d3288c
+^C[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-05fdc404a112c
+^C[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-573c27c7220ce
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-900c5ca8b991
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-ecd37615322f7
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-3d9d12d3fbd7c
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-0d96b4eb2a918
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-72808c8fe086b
+[redis] connected
+[wave.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-wave-workers consumer=consumer-a7c0e8026da53
+^C[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-d76f1e99a0f4a
+^C[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-133d6a36df9c5
+^C[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-943e8cbe3d205
+^C[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-047fee0f24b84
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-b4bd25a7b4925
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-eb89de1998fff
+^C[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-846a41d8cc22f
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-6a743f2ec268a
+^C[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-256d143226fdb
+^C[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-1b3106d45cd68
+^C[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-b413117a8fc99
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-a8ac16253b4fb
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-bcb44e9424fd6
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-5f2ecd96ea4b9
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-aa7793f373342
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-569467f7aadfa
+^C[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-e83bbccc95bf4
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-327da5feccf38
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-7c51fdb846487
+^C[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-ab24ef77c887d
+^C[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-4e5b41078cc67
+[redis] connected
+[dispatch.worker] zone=kirinyaga stream=stream:dispatch:kirinyaga group=dispatch-workers consumer=c-aa4f08909991e

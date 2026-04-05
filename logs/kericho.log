@@ -1,0 +1,178 @@
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-883b703716b19
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-65846ad4f1267
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-71ba5ed632f6c
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-b4c06e80c19ae
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-66b0b2a95472a
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-8f9fa70f8a656
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-a8c7cb6f23b63
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-1447277d62fa
+[redis] connected
+[wave.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-wave-workers consumer=consumer-197eaf5a71efe
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-98a5c9991b452
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-9746a866c25c7
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-08530fe2d2367
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-871fc0850fb3e
+[redis] connected
+[wave.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-wave-workers consumer=consumer-2111db0ed748a
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-00fc60934582
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-b8ac161e3e9ed
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-03b8a06e48426
+[redis] connected
+[wave.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-wave-workers consumer=consumer-23ec34b2d7596
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-b412072fe0f7f
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-eababd7e27d0c
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-4c350b0c5a3f
+[redis] connected
+[wave.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-wave-workers consumer=consumer-82a6847f58cd7
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-46cd2c830ee3d
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-c64441d92050c
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-bd16dfe770aba
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-2f5f501edf183
+[redis] connected
+[wave.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-wave-workers consumer=consumer-3d34cd7fe0893
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-6af41e7d5fa9
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-75e951a17d678
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-7491a9171749c
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-c6ddcaafbc1c
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-8e6cdb51c5ffb
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-9f3271b822c35
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-2282b2c58a9b4
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-3c6f60990d5a5
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-9dd31340d4bb9
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-3ea20493646aa
+[redis] connected
+[wave.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-wave-workers consumer=consumer-86b30a46059a8
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-8708f17d0e905
+^C[redis] connected
+[wave.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-wave-workers consumer=consumer-e5f256a7328e1
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-c06800fb94551
+[redis] connected
+[wave.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-wave-workers consumer=consumer-537f6da74f5d7
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-6d15b08abe299
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-54d42e5e60439
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-14b3e2dceb88f
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-a53c39ec71499
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-0b2fa8a527717
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-9488bf19461da
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-eea10740ca44
+[redis] connected
+[wave.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-wave-workers consumer=consumer-249c07e70a889
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-ba9f88ce8d143
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-b60829e53c95
+[redis] connected
+[wave.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-wave-workers consumer=consumer-7b8ff9e7b1014
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-3c4b075c83c1c
+[redis] connected
+[wave.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-wave-workers consumer=consumer-77f6798f68c3b
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-8df1db90c371b
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-b26dae1873fca
+[redis] connected
+[wave.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-wave-workers consumer=consumer-368db4463e7f
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-f5b0d9de8714d
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-f5bdac7c8e223
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-081ba9806401a
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-79af1296d4171
+[redis] connected
+[wave.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-wave-workers consumer=consumer-eef8c2ca2375c
+[redis] connected
+[wave.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-wave-workers consumer=consumer-e6115c2df2132
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-8a69ae685fbee
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-5e2af2dcf5a7e
+^C[redis] connected
+[wave.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-wave-workers consumer=consumer-86719278d1475
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-cf7b54683d35a
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-21f4505e0fa4d
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-5196dbd2ab838
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-595eb1ab3b3eb
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-3bc5b123d7f94
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-b57a9d1b60a61
+^C[redis] connected
+[wave.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-wave-workers consumer=consumer-8b612509d8514
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-5aa885a11b927
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-9da19fd096a37
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-a8165cb45a42a
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-c69c1df4fa834
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-106bb48b49a68
+[redis] connected
+[wave.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-wave-workers consumer=consumer-4fa49e1590e37
+[redis] connected
+[wave.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-wave-workers consumer=consumer-42dc616d33d75
+[redis] connected
+[wave.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-wave-workers consumer=consumer-ec495a2be8f59
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-40a6847a64bc1
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-b095f016f28a6
+^C[redis] connected
+[wave.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-wave-workers consumer=consumer-0a4f0d4e50c33
+[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-e3b8c8853b193
+^C[redis] connected
+[wave.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-wave-workers consumer=consumer-5eef70469c92c
+^C[redis] connected
+[dispatch.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-workers consumer=c-41e69fe8844fd
+^C[redis] connected
+[wave.worker] zone=kericho stream=stream:dispatch:kericho group=dispatch-wave-workers consumer=consumer-66e8c79e2a34c

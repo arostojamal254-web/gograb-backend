@@ -1,0 +1,179 @@
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-fa2fb93b92dcd
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-462ee5ca92b7d
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-f0f354179322
+[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-35e40a5aa35e6
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-7407b62b9f241
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-8bccc4cd2cbbe
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-4a7c77f20e221
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-2f2185f82d674
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-d5c17425d714
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-1f002c9426885
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-c460cf5c47f6
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-7ddbd527bb512
+[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-c028e74bb971b
+[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-4f2e389652989
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-2614a029e0afb
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-11e843ba442dd
+[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-a73350ea868d9
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-e2670ef0dc615
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-6c457b977d4d4
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-24443f783ce2e
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-085c2a03beceb
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-f7d06c4825807
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-34e147c5f291d
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-3348614144413
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-bed6bc86c969e
+[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-773272a90e72d
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-eaf2f8dd0dd93
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-8825424264c82
+[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-ec6ac29f1604d
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-aa00d553c852e
+[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-e4ef39671eba7
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-5a5944db933e2
+[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-b6e8671a996d3
+^C[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-c038bffe8041c
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-d0066e60e0e7
+^C[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-6bfc31b8e827e
+^C[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-710a575dae8ba
+[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-af8f2c3dafa8a
+^C[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-3ea40e1262ae9
+[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-0bfb628feedd9
+^C[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-45edf748d938
+[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-e244043363e73
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-cba0530e2d1d3
+^C[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-4c04fc1a74cdb
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-664f98a36dfb5
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-6a8a71a658367
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-adf6e8c4b1c2b
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-36ae987f2b61e
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-39200aecc04e4
+[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-eb23f95f3160b
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-9f62fa3c80385
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-17d0b45c5bef6
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-97d59d4000b8c
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-2aadc9557d324
+[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-7d6a2aa3f3d87
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-05c36b3ca1c45
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-ffcaba0e54362
+[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-3db81c3fb4cd5
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-491f990eedb52
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-b52cfadfaf2b
+^C[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-1643f72cfb785
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-08dc70955edd9
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-b5a2041910c6d
+[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-228eb541cc8f
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-f869de08a4703
+^C[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-c1803e4257c9e
+^C[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-e65e0ec4ca797
+^C[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-5ae78661f3ede
+^C[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-79a5f5eee8319
+^C[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-faffc6c19f9b4
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-323d637c27fb6
+^C[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-c8ff62fb98b9b
+[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-2fc92bb098fe4
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-14e63d98e1b1c
+^C[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-d1164a3186e8a
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-ff2ca954cfcc4
+^C[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-8bc423c2a92b7
+^C[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-b07d1a9038458
+[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-619b33707fad9
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-cbc0977d578e8
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-82e80ce37a772
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-a48469c4c9e14
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-f01627b5b48e5
+^C[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-c6a17e9b0ab57
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-aeaff4e000f7
+[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-dd1da3acdef62
+^C[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-d080e0a9117f8
+^C[redis] connected
+[dispatch.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-workers consumer=c-bf203824915c3
+^C[redis] connected
+[wave.worker] zone=wajir stream=stream:dispatch:wajir group=dispatch-wave-workers consumer=consumer-63d36f8c2be3b
+^C

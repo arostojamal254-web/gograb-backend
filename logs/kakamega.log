@@ -1,0 +1,179 @@
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-d531302dee93b
+^C[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-22c6aff98d21a
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-b2b98cfcccd19
+[redis] connected
+[wave.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-wave-workers consumer=consumer-2e71c24029647
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-f50a7b645f2f6
+[redis] connected
+[wave.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-wave-workers consumer=consumer-5baa11719a706
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-830189fbaeb05
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-516a37d4e4a29
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-bdfbd355c2df6
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-4f2f088e0dd8
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-8dd5025c79778
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-95fb29a89e9d
+[redis] connected
+[wave.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-wave-workers consumer=consumer-4d1cff096a138
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-31984732ce14d
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-e1b401df61bfe
+[redis] connected
+[wave.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-wave-workers consumer=consumer-738ad9d46d2e1
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-74c2b84cd7236
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-03e174b278ecc
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-3cdd9ac97710b
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-a53cd084311f9
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-55f842c586cc8
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-666454811da2c
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-8cc0a0a8ae7ab
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-fab42c54491e9
+[redis] connected
+[wave.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-wave-workers consumer=consumer-69772bf2fff52
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-e435f5b626d27
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-c46a3725d7e7c
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-5397c133df351
+^C[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-f771c8432e898
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-2e7a876f7c12c
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-127f88eca3d31
+[redis] connected
+[wave.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-wave-workers consumer=consumer-81c51c20ea7ea
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-ef98f3aa33fb8
+^C[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-ef4a835bb88a2
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-4ca74b9c744de
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-82553234b1f79
+^C[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-1faed97d42a08
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-9284e9702a33e
+^C[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-aad6fc649ad31
+^C[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-69c33a7a41567
+^C[redis] connected
+[wave.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-wave-workers consumer=consumer-4872d8029718a
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-6f8d856f85e65
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-25ad8656e8075
+^C[redis] connected
+[wave.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-wave-workers consumer=consumer-49b477e7c68ba
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-6b291879912f8
+^C[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-92c48cb9f7c4f
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-4a8bb6f274d54
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-dbaa32882ebfd
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-385d734fe12bd
+[redis] connected
+[wave.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-wave-workers consumer=consumer-90bdf5c7a3562
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-32c6c60bebdd3
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-cb579941ab063
+[redis] connected
+[wave.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-wave-workers consumer=consumer-f8a109deb9b27
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-b5effe32c06d7
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-06c0259d5efdd
+[redis] connected
+[wave.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-wave-workers consumer=consumer-2d0a7831fa326
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-99b9dad52e6c9
+[redis] connected
+[wave.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-wave-workers consumer=consumer-71dc8275eacaa
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-c7545043cb3dc
+^C[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-fe97c843e4b3e
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-c0837d4fd9489
+^C[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-01199eead8c6b
+^C[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-9473a9f0421a2
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-f9be64799e5d2
+[redis] connected
+[wave.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-wave-workers consumer=consumer-aff80616f55fe
+^C[redis] connected
+[wave.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-wave-workers consumer=consumer-bea27e4531425
+^C[redis] connected
+[wave.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-wave-workers consumer=consumer-a468b9e635557
+^C[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-85f77760d67c
+^C[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-8bf803ea1d466
+^C[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-8f5398da15267
+^C[redis] connected
+[wave.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-wave-workers consumer=consumer-82e038301771d
+^C[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-979a64628a03e
+^C[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-80da014640372
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-68b6c3133f7d4
+^C[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-b4f0732c4cb87
+^C[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-ec36d39afb0dd
+^C[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-181efee8f72e3
+^C[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-2ead93861fe9a
+^C[redis] connected
+[wave.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-wave-workers consumer=consumer-b6bcfd018662c
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-fcff0d263ed62
+[redis] connected
+[wave.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-wave-workers consumer=consumer-d2a2be1f184b
+[redis] connected
+[wave.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-wave-workers consumer=consumer-e6876f3fe5a82
+^C[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-b62f32696fca7
+^C[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-11e6001db8917
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-fec842177ea8f
+[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-f048b6d57cf01
+^C[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-8118f65f640b8
+^C[redis] connected
+[dispatch.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-workers consumer=c-664b4d6fa1a19
+^C[redis] connected
+[wave.worker] zone=kakamega stream=stream:dispatch:kakamega group=dispatch-wave-workers consumer=consumer-5305cf8ce1a4
+^C

@@ -1,0 +1,178 @@
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-bb04b6e0a278
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-73d75b2a4efcf
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-7c4dfb907783c
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-8a54eb59bc8cf
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-e3ffe84032f9
+[redis] connected
+[wave.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-wave-workers consumer=consumer-aeedcb644857a
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-7079894f5b84d
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-a0daada616106
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-d2ae222101b5
+[redis] connected
+[wave.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-wave-workers consumer=consumer-4be9ba9548fc4
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-5958a42669637
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-b2be65648fbf9
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-c50877c8ebeb6
+[redis] connected
+[wave.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-wave-workers consumer=consumer-a011f9abe9289
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-aefb9ce4caf08
+[redis] connected
+[wave.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-wave-workers consumer=consumer-5b78d4ee95d5f
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-c2f0bcae098d2
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-1b838ee4ae706
+[redis] connected
+[wave.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-wave-workers consumer=consumer-0ab35bd253287
+[redis] connected
+[wave.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-wave-workers consumer=consumer-0e9df37ef6e0c
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-cbf6535761ef2
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-e6e2d16429417
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-2735202cd6734
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-810e5b1482a5a
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-11a9cb7781592
+[redis] connected
+[wave.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-wave-workers consumer=consumer-54eab78e03328
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-12a60067115d4
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-b6b9cc528d0a9
+^C[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-82a24141e82a8
+[redis] connected
+[wave.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-wave-workers consumer=consumer-87d27cf50fce2
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-0cbf7c4721b52
+[redis] connected
+[wave.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-wave-workers consumer=consumer-52a549fe251d2
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-6b3ac7163858d
+^C[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-de8606ba105ce
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-a9024ee21b72d
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-4170ad3c9e638
+^C[redis] connected
+[wave.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-wave-workers consumer=consumer-5827a28f68bb5
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-65d19479d701d
+^C[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-7a987bfc613b9
+^C[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-62f60cb93219d
+^C[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-16fc9fdbec70f
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-62aba283877f6
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-6d2549a2ea518
+^C[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-829486bb040bc
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-7b23ca4413358
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-ed54a6838506f
+[redis] connected
+[wave.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-wave-workers consumer=consumer-937a171d38968
+[redis] connected
+[wave.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-wave-workers consumer=consumer-c6e8ef52db5af
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-30425dbf657db
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-bfc01ff4ecdee
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-1d0a4624fd542
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-74958d424b9b3
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-363b742fe2892
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-6c3ac367a7f74
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-dbef41eb717ad
+[redis] connected
+[wave.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-wave-workers consumer=consumer-96c6dc18b16a4
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-afb78963e0963
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-eeb7aa5f13b97
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-6891d1c5db215
+^C[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-d8c021263e4b7
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-6c4a0a57406af
+^C[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-12994c5b72e35
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-10e4ce4cdb44a
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-77a1ca809e87c
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-5ae2dcfc439b1
+^C[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-3dac8b656b374
+^C[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-6c384b86c32af
+^C[redis] connected
+[wave.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-wave-workers consumer=consumer-aa58983e468a3
+^C[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-be0dd12ed2718
+^C[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-34d5a4d040ed5
+^C[redis] connected
+[wave.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-wave-workers consumer=consumer-27e68e2e3d64f
+^C[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-e22efa5938732
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-9287f041c55d6
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-451cbb7218ef1
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-806a26fcb4b4d
+^C[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-879fc9c7f914
+^C[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-0820e56bb2b3c
+^C[redis] connected
+[wave.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-wave-workers consumer=consumer-52445d0b8e19d
+^C[redis] connected
+[wave.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-wave-workers consumer=consumer-07250e9f30238
+[redis] connected
+[wave.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-wave-workers consumer=consumer-389f6aeff6668
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-84864391ac85b
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-5b89fc23d9a42
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-7d3f90d32aa47
+^C[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-04e52f599a579
+^C[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-16325f429ef91
+[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-a4ce19a76a267
+^C[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-17f645bd8eddc
+^C[redis] connected
+[dispatch.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-workers consumer=c-27e76a9df75c2
+[redis] connected
+[wave.worker] zone=turkana stream=stream:dispatch:turkana group=dispatch-wave-workers consumer=consumer-d044b9e06d227

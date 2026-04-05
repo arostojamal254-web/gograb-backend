@@ -1,0 +1,178 @@
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-de496d8223e77
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-5fc27c30eddce
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-e7d6ad909a62
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-af67c35adce5f
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-4d2361d469079
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-40e1eb254a016
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-8f78239c06cbd
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-3c6f13cf0de1f
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-439c12b7d9216
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-19dcf273cd94
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-c235d2f6c24
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-06070c190dcc
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-9d793a5aeeafa
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-713cdcb006d25
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-6cbc8d9acb9b5
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-d15e82b519796
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-660538e0369da
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-db2fbc78cd638
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-1d5bab97fe254
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-e1c41dbc7d1f5
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-b45b0d0d6352d
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-3814b7635a7e7
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-6e66d8b3265d9
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-b932fa9b48096
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-f724d2d8a6ea1
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-a55267281fc11
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-a74b804f3d956
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-bcf658f4651f4
+^C[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-586bd29a0a22
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-0bba6936d2de3
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-e59d5fe240a2f
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-977805edc40c7
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-3662914e90cfb
+^C[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-6d60fc36965ac
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-02e34171a7e63
+^C[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-82e5b0e78be1d
+^C[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-4b82946f3e849
+^C[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-52dccf65d983f
+^C[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-17294044c4a89
+^C[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-7871e1d8a9e7a
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-6f593e5760178
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-67a0dd852c811
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-e60e90eef0141
+^C[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-a61dc0e3250c2
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-4778272bf18e
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-35145bea5a8eb
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-b0841a56944b8
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-a66890d9af0fb
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-7ecc4a87e35c
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-4792efa28b006
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-66cc44d28382
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-8eea2db03f0c
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-111ea68240619
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-d2f0dd9f18f46
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-7637fe47a27b1
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-bd6d8d5b610d6
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-f162f59123703
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-4daa82bec8e
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-49eb8c7d987b4
+^C[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-fef429049dd36
+^C[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-f05435ec28c0b
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-06338d32cb0af
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-0adf0256b4c31
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-206509465ed4e
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-21f4d774124c4
+^C[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-2f10adb3804ce
+^C[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-b20115b057bca
+^C[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-17eddeb5a652a
+^C[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-30b257769167d
+^C[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-155ffce590f96
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-b70063a7a6f0d
+^C[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-4b2ff4bccb2e1
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-c939a77286e99
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-435cadc3aca9f
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-657fb16ffe404
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-02f33b2852934
+^C[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-a7e623299fbd4
+^C[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-9598331323e69
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-a52aed5be336f
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-af3d329ff41fc
+^C[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-421306aa9633e
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-5991cde09032a
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-8011d4af27eb
+^C[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-65c1304379d9
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-bb184e821982
+[redis] connected
+[wave.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-wave-workers consumer=consumer-b93650f37675d
+^C[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-32103ae75fbaa
+^C[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-81a0214cbeb2
+[redis] connected
+[dispatch.worker] zone=mandera stream=stream:dispatch:mandera group=dispatch-workers consumer=c-fc65582a0fafb

@@ -1,0 +1,179 @@
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-d2a7d630bb92a
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-f949d542b6c75
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-9d7b9054cc3e2
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-eaea48fb1d5f5
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-22f318bbefdcb
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-d615219a0bde
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-540062476132d
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-0210901ffca4c
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-6b6eb151963f5
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-4f5d85e4eac76
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-813e94f625904
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-3c130e2329723
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-a240bccdeb729
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-2ec348d4281d5
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-dfc42d13fc3ce
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-5edd0fb847272
+[redis] connected
+[wave.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-wave-workers consumer=consumer-658859de6537e
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-0dd9bf4c915fa
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-0e79f39a83b6f
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-f36b647d3dedb
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-be21901887de2
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-e4401cb71870c
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-c425adc007edc
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-fc69cf862c1ab
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-83fdc0cb13961
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-587161391b2e9
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-904c95903ec1e
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-8af28e82d10d5
+^C[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-ee3b21b9916db
+[redis] connected
+[wave.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-wave-workers consumer=consumer-411e7594b35a
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-2fb685108d04a
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-0c2dcf6b3ecec
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-9dfa2d74529ab
+^C[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-4333ecb3b65c
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-78997770e752b
+^C[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-60ea4773b372
+^C[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-ff12ccdc4edc3
+^C[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-eebfc812b39d7
+^C[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-9ad8895e878e3
+^C[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-6f93169169562
+^C[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-4f2bb798b54a3
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-e2b7892a5a017
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-7ad539f5dd621
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-f2ce5e1c939f4
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-0814c21be4add
+^C[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-6618c3d82281d
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-a955d7371bb86
+[redis] connected
+[wave.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-wave-workers consumer=consumer-6aad0ddd87357
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-2c155ebd88d26
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-0d3be5299b2a3
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-3a8ef72c3804a
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-9b52e4f03e05
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-617fa309133a2
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-c97584abaf0b
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-4932c110efe3
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-fe096aed50d2f
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-b962767014dfd
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-33104d6b9f867
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-0cadf5e4bc58a
+^C[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-89933ed14b418
+^C[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-003a4b71424cc
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-c5b0231f47e6a
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-93bbb4c7bf546
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-8d8643cd3ad36
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-9765712a01a12
+^C[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-bbecc7dbd7b4f
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-e6d8dffe7308e
+^C[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-d5a0775c5a9d6
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-a6021cffe8578
+^C[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-0d0fdd1b2082d
+^C[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-6b4ddfbd0ccf4
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-2f5506c7a0418
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-05a7c4d949d5b
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-3682f1daabb77
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-bcf24dbf0b566
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-2ccf7f17c342d
+^C[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-e64ce54c5a2ae
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-244cc3b72e0fe
+^C[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-bb0bfdc4bff25
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-c19ef9c3c71d7
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-185d8b413dc21
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-f53fc539bbc78
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-53244d979cd4
+^C[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-835aca8eade95
+^C[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-c41cdae7d2517
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-3c00ebd01b32e
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-aae542a5a5801
+[redis] connected
+[dispatch.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-workers consumer=c-6b724d8d588e1
+^C[redis] connected
+[wave.worker] zone=muranga stream=stream:dispatch:muranga group=dispatch-wave-workers consumer=consumer-a2346004d5fee
+^C

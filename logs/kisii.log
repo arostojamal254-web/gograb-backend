@@ -1,0 +1,178 @@
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-9908ee4e925c6
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-d4ef83246475d
+[redis] connected
+[wave.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-wave-workers consumer=consumer-b66355853ce5a
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-f4f87f2d62da
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-3d4bf5249a5b5
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-f29bea73d9dfc
+[redis] connected
+[wave.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-wave-workers consumer=consumer-cefd2e6cb42ac
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-87ea6b4fe5f68
+[redis] connected
+[wave.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-wave-workers consumer=consumer-8eeea14b07473
+[redis] connected
+[wave.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-wave-workers consumer=consumer-0b098f30c6e25
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-93663df35513b
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-746050e26e355
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-a20e361776c94
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-f3ecda58ab392
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-08afbd569d53d
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-71590b74e3027
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-ea3bac5f9c1c4
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-d8d576d7cfd5e
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-654e40359964d
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-6c11d54877be4
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-f27f25572a7f
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-550ce6dac20b9
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-fabd36c64553c
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-e59a61ca6b92c
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-539c685959cd6
+[redis] connected
+[wave.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-wave-workers consumer=consumer-ca883ff986664
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-08dff6114cfc9
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-e8ae5a7c7b401
+^C[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-8d915d217c57b
+[redis] connected
+[wave.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-wave-workers consumer=consumer-10fab47e50a7
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-274609450d73c
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-09848b2dd5a31
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-943be3ec47b69
+^C[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-1d06085726c5b
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-d6f263eb20eb9
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-5ec6a1249b88a
+^C[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-26d7ff8ef50b6
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-9da83425f1b3d
+^C[redis] connected
+[wave.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-wave-workers consumer=consumer-71649b3f31901
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-2b3b7e598dfd2
+^C[redis] connected
+[wave.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-wave-workers consumer=consumer-6ee614fb6b095
+[redis] connected
+[wave.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-wave-workers consumer=consumer-0fb2f02d0deea
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-ec4752d46437
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-9bd67882d5ca3
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-0c28f5850753f
+^C[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-dd66924406114
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-d5703a2fb11b5
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-ded2d065ce404
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-71ade78d5530a
+[redis] connected
+[wave.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-wave-workers consumer=consumer-e2a2b9a25a79b
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-1cf505c951e37
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-f27ee73be12b2
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-abd3b01be3984
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-83917676434ce
+[redis] connected
+[wave.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-wave-workers consumer=consumer-f3fae4974fc05
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-3068917fc9b23
+[redis] connected
+[wave.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-wave-workers consumer=consumer-69f3b706c2388
+[redis] connected
+[wave.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-wave-workers consumer=consumer-a5c6620f7bb17
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-2850f49191bfd
+^C[redis] connected
+[wave.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-wave-workers consumer=consumer-a63699eb7218b
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-e8e31e0233775
+^C[redis] connected
+[wave.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-wave-workers consumer=consumer-92e7978b0536f
+^C[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-c31279190c497
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-50c45e39f77d3
+^C[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-704e52b659ea
+^C[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-39615944823ba
+^C[redis] connected
+[wave.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-wave-workers consumer=consumer-f00617c75b1cb
+^C[redis] connected
+[wave.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-wave-workers consumer=consumer-911dc7f2c1be8
+^C[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-82a34a92c6e69
+^C[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-a30cca3f264
+^C[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-54b765fcaa083
+^C[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-472284c4257b7
+^C[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-b3f4298d7480a
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-533bd2795a95b
+[redis] connected
+[wave.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-wave-workers consumer=consumer-50e6b9f79f8e1
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-b3e3869022b44
+^C[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-3df9aab347895
+^C[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-3d3633a8ebc21
+^C[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-a82a54efdb426
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-1102cd89900b9
+^C[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-40023158f306
+[redis] connected
+[wave.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-wave-workers consumer=consumer-f1041effa9c2
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-e5559ac020c83
+^C[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-5fa672c2bad92
+^C[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-dfbfcbdf9b619
+[redis] connected
+[wave.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-wave-workers consumer=consumer-a868cfeed92e3
+^C[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-75bed6a35fd56
+^C[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-92b9ba1c503c2
+[redis] connected
+[dispatch.worker] zone=kisii stream=stream:dispatch:kisii group=dispatch-workers consumer=c-ea2bfd87265df

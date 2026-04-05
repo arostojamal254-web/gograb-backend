@@ -1,0 +1,178 @@
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-0460a05f85e61
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-b4adcad978716
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-99fcde46a9043
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-93ac18eca4e51
+[redis] connected
+[wave.worker] zone=embu stream=stream:dispatch:embu group=dispatch-wave-workers consumer=consumer-6a32674e2cc2f
+[redis] connected
+[wave.worker] zone=embu stream=stream:dispatch:embu group=dispatch-wave-workers consumer=consumer-88cb53deca646
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-1b108f2cbda4
+[redis] connected
+[wave.worker] zone=embu stream=stream:dispatch:embu group=dispatch-wave-workers consumer=consumer-52927d489efd1
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-6c2cbba2a0e6a
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-3d4f71cbe842c
+[redis] connected
+[wave.worker] zone=embu stream=stream:dispatch:embu group=dispatch-wave-workers consumer=consumer-dd534e7f8ca9e
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-bd6e1946c4d81
+[redis] connected
+[wave.worker] zone=embu stream=stream:dispatch:embu group=dispatch-wave-workers consumer=consumer-62d33ee6d69ec
+[redis] connected
+[wave.worker] zone=embu stream=stream:dispatch:embu group=dispatch-wave-workers consumer=consumer-aa4c54f9d765c
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-6a49c0076d246
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-4df6d44a1b0a2
+[redis] connected
+[wave.worker] zone=embu stream=stream:dispatch:embu group=dispatch-wave-workers consumer=consumer-77920b210f838
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-568bc0b22a874
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-88b40546e08da
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-0a66f35ee5987
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-8ced389dcee8e
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-d58f2aa76f47d
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-b4818633c4f3e
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-d0d89001c3f4e
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-716081215da2b
+[redis] connected
+[wave.worker] zone=embu stream=stream:dispatch:embu group=dispatch-wave-workers consumer=consumer-3bc7d9026a7bf
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-52ffd10133c57
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-3b4becc2b83e
+^C[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-265c8ff83649a
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-3d14ca12aec69
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-8f2e66bd45f6f
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-3d6a63a1b2015
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-e1e7237b4025a
+^C[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-74cf13b6006f1
+[redis] connected
+[wave.worker] zone=embu stream=stream:dispatch:embu group=dispatch-wave-workers consumer=consumer-c43098d59719e
+^C[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-c6c8a1cf52e5a
+^C[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-39001b6e6151e
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-89103e468d78f
+^C[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-586a02b5b70cd
+^C[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-04634e7a31fd2
+^C[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-13af14891c804
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-c7ff9d9793964
+[redis] connected
+[wave.worker] zone=embu stream=stream:dispatch:embu group=dispatch-wave-workers consumer=consumer-5e5ccb506b253
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-97062c994d8ff
+[redis] connected
+[wave.worker] zone=embu stream=stream:dispatch:embu group=dispatch-wave-workers consumer=consumer-bdc03e273284b
+^C[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-1a588ed182a87
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-4dea66e6d1f24
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-f2e68fc10cd3a
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-160dbe612ff8a
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-e66f6e904893b
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-916791c84be3d
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-b82a4f9d9f906
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-671843f03723c
+[redis] connected
+[wave.worker] zone=embu stream=stream:dispatch:embu group=dispatch-wave-workers consumer=consumer-0173f5ecacd6f
+[redis] connected
+[wave.worker] zone=embu stream=stream:dispatch:embu group=dispatch-wave-workers consumer=consumer-c09d62dedbbf7
+[redis] connected
+[wave.worker] zone=embu stream=stream:dispatch:embu group=dispatch-wave-workers consumer=consumer-f12c66b157131
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-9eb99ec7dad53
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-86e38b3ea8449
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-ee72e482c6686
+^C[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-ff9f3b87a7a7c
+^C[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-bacbdc5cef571
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-dbf492762e3b4
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-c5964745e5983
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-545f40a32c491
+[redis] connected
+[wave.worker] zone=embu stream=stream:dispatch:embu group=dispatch-wave-workers consumer=consumer-42d003ca1140f
+^C[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-b5dcdad6f732c
+[redis] connected
+[wave.worker] zone=embu stream=stream:dispatch:embu group=dispatch-wave-workers consumer=consumer-a32fbf0a2b84c
+^C[redis] connected
+[wave.worker] zone=embu stream=stream:dispatch:embu group=dispatch-wave-workers consumer=consumer-e3bea5785df29
+^C[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-76f2d1a46568b
+[redis] connected
+[wave.worker] zone=embu stream=stream:dispatch:embu group=dispatch-wave-workers consumer=consumer-046dde79b9e81
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-5f09d849fc77d
+^C[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-c3788bff4dc03
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-ceaa4c261511a
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-ebd078005b2cc
+^C[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-9a37bdfea4131
+^C[redis] connected
+[wave.worker] zone=embu stream=stream:dispatch:embu group=dispatch-wave-workers consumer=consumer-5dbdaebb37cab
+^C[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-1ef58bb26bb53
+^C[redis] connected
+[wave.worker] zone=embu stream=stream:dispatch:embu group=dispatch-wave-workers consumer=consumer-a5ccf37a9239
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-436c09cce8e65
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-634e7a3734924
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-0775ebfe0520e
+[redis] connected
+[wave.worker] zone=embu stream=stream:dispatch:embu group=dispatch-wave-workers consumer=consumer-0935d805a8757
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-cf2b6c486ed87
+^C[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-683e5fcf1b245
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-97d408305ea46
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-80ec602e7bf57
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-cbad7df60e53c
+[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-e1b2b5d2f8361
+^C[redis] connected
+[dispatch.worker] zone=embu stream=stream:dispatch:embu group=dispatch-workers consumer=c-dd893dce79dbb

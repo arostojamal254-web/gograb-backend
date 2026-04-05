@@ -1,0 +1,180 @@
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-107507dc5d3f2
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-8fd89d3dbc1ea
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-a7a2bc6933e41
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-52d3163d4f65c
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-885edb1e8a446
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-421c465f3e10f
+[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-320360dcce3c2
+[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-36c066bec1221
+[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-8aa394c0bff4c
+[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-566f029d7ce63
+[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-1bb6f2a32bb42
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-e263e2657bd1a
+[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-74c8132922fdc
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-c991eed0e644c
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-0168b42847ee4
+[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-ab770f37aa601
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-e7516ed20b269
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-68f3aa74bd602
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-2a46c12371934
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-7ca443ad195b7
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-3451a4e1101cb
+[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-f2ba813ca6de8
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-5f33bb2197d7f
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-a28e3947f23dd
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-3659658bc56be
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-42543ec6923f3
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-d536a4818927a
+[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-be5d83dd32da6
+^C[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-888742ba6f2e8
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-961705f842c49
+[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-32e0133187b04
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-8131ea7f934d4
+[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-ced7f7c29922d
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-549a1a57239d7
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-45119d51ee737
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-613c0d9273657
+^C[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-582982897a925
+[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-67b7bdacd150c
+^C[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-786a9b493a447
+^C[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-0b9f73bdebb82
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-6d40c396be187
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-1b43ea4a84e2d
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-7bc573cac307f
+^C[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-2defa0b1b95a3
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-7f3a5df0a8682
+^C[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-5fc786d3e5a2c
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-af31bf114d0ff
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-3e9fac5ff17a2
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-55627963bc0e5
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-59e0121dbaeac
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-f9c2269f72f5d
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-ca4517708f366
+[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-bbc2d22adc4c4
+[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-f2d1cc22b24cb
+[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-05ee4b28dbef5
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-36501b7cd7e15
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-a3d3319c41941
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-e0aec5fc91f2c
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-4a095476e6d6e
+^C[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-84806ff81ead7
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-bc2b7d3785946
+^C[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-d425fd4cdca7f
+^C[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-87a87d969dd85
+^C[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-8ac253ed7428f
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-a5ba97be0698c
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-1eb33b50dbd07
+^C[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-7cc2ec530dd83
+^C[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-f28a8ec5d75e1
+[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-c63438fc1bb2d
+^C[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-eaf19ab0f3482
+^C[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-00b4bb4fe95fb
+^C[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-37cd860369303
+^C[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-9b4ae5b659354
+^C[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-1113ac6de0d5c
+[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-120367aac912d
+^C[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-b94f68e43f68
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-cd86bc85497c4
+^C[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-6d66e7433a627
+^C[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-7a0198882af43
+^C[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-bf8d496496ef9
+^C[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-dc27e86b121b1
+[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-3a2ee569e83ce
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-729192ce4b4c3
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-f5025a08154a2
+^C[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-9edefda21eafa
+^C[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-a72b30b9a19a6
+[redis] connected
+[wave.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-wave-workers consumer=consumer-5f12cc68498e5
+^C[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-2c043d15c4de9
+[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-fb92c91327dd6
+^C[redis] connected
+[dispatch.worker] zone=nandi stream=stream:dispatch:nandi group=dispatch-workers consumer=c-66af407a9f564

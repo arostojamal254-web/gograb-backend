@@ -1,0 +1,178 @@
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-40a8483825c3b
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-c581c8b6ddd1c
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-ae42fdb7ae6c3
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-28e057c97cf2e
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-222e238602972
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-41a320dd87b
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-4766e27020a25
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-fe6abda2ea908
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-1f7fabf844958
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-39e2a610d2f59
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-f5f937ab5ca36
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-0e7dab38a9f47
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-d16bee90868f
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-e9534e81128ad
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-2646731500161
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-a6e4f6e1ab8ab
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-20200785a0e46
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-ff599a0aefa77
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-809ec8d97e433
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-195142fb8a472
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-bf5eb30380b68
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-78dbe46ccea17
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-342e591252828
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-58e6ea0599447
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-69cfc899aab04
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-965d5d7e8a008
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-e2ca74290ff5d
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-a0707acef70ca
+^C[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-2649f89ed740a
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-4f21582be44ea
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-19878777d3ac8
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-a7b8de891bc66
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-cfb3197af29d5
+^C[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-dde59027033ce
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-998674e3e0c54
+^C[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-e57a1dd44d9ad
+^C[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-f2275c38b267e
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-f9e2cecc3417f
+^C[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-e448b3e634301
+^C[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-9dd6984e6a2c
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-973d9e2855c3d
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-7ce0b02b942f6
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-c34c2eb729652
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-ebe44486dcaa6
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-348d1944645e1
+^C[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-30722086fcfb1
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-819255b953934
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-90799b1a651ff
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-68a086c535957
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-4f2b5f627b65f
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-82ffb868b27c6
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-c66f8ca4dc573
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-90b44b442c6f
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-612f333638405
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-6d92c4f37a20c
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-8f4e3ff55d49e
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-53890106f605f
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-aab4e15980f32
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-70784441d03dc
+^C[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-391c90e2a95c1
+^C[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-ba7cd65eacf16
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-aab9729089948
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-b4e10b3fb424d
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-5698464f26e0c
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-6a544b602bc42
+^C[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-0050cbc482f48
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-da481b348357a
+^C[redis] connected
+[wave.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-wave-workers consumer=consumer-567793a498fc4
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-395178cab6a6f
+^C[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-93eef5c6f4476
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-12506832813cb
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-3dac24dad5ffc
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-fa926899fa9ea
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-5a7c8ef0d38f
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-b42a62dc4ca65
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-ddcce671cc1c1
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-9cbe642147949
+^C[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-c6d6bd069a204
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-a0e92dd86e779
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-006d93831a8cc
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-6715d2bd95b21
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-7a6424ede2bb7
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-e678b98f1f9d3
+^C[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-ccc42048ec7eb
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-56c1091eb7815
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-a4c2c3b7e357a
+^C[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-e28dac4d73692
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-f8314993c1735
+[redis] connected
+[dispatch.worker] zone=kisumu stream=stream:dispatch:kisumu group=dispatch-workers consumer=c-89559e23cb041

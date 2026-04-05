@@ -1,0 +1,178 @@
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-ee60f9887507a
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-db9b7ec8a61fc
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-69f7ad3ba1f93
+[redis] connected
+[wave.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-wave-workers consumer=consumer-f8cc085f03d06
+[redis] connected
+[wave.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-wave-workers consumer=consumer-3b353367500dd
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-2eacd15ba5f07
+[redis] connected
+[wave.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-wave-workers consumer=consumer-cc4a80669ea14
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-5fb32672c9d3c
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-7f6b1788fafe9
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-6f06f5b49f5d4
+[redis] connected
+[wave.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-wave-workers consumer=consumer-53285a721efae
+[redis] connected
+[wave.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-wave-workers consumer=consumer-509c3da210df5
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-f5555f1b08138
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-d97de68d0804a
+[redis] connected
+[wave.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-wave-workers consumer=consumer-2b176b648b02c
+[redis] connected
+[wave.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-wave-workers consumer=consumer-015d5f2146991
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-ef26548920468
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-8f77ee9becfd5
+[redis] connected
+[wave.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-wave-workers consumer=consumer-49a57d5103051
+[redis] connected
+[wave.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-wave-workers consumer=consumer-ba2a17044869
+[redis] connected
+[wave.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-wave-workers consumer=consumer-fadbe9f3ded3
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-bcff9de9816f6
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-59b2486ce08b5
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-3a2bdbce1d8f5
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-6cfadd3b5120b
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-4af6507a9f746
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-f64032367c439
+[redis] connected
+[wave.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-wave-workers consumer=consumer-1ac2de93ca4fb
+^C[redis] connected
+[wave.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-wave-workers consumer=consumer-616735c14f1e9
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-ca28051094441
+[redis] connected
+[wave.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-wave-workers consumer=consumer-2a19568adabcc
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-c0da79d9aa1ea
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-0800610447ab3
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-b90fb4950c6a3
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-1e6aa32993d98
+^C[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-d8cb47c98c805
+^C[redis] connected
+[wave.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-wave-workers consumer=consumer-eba159e03b315
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-9ecbcc4ce8fd3
+^C[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-7133333392ff3
+^C[redis] connected
+[wave.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-wave-workers consumer=consumer-fb8224f6653cb
+^C[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-1c41a7afee9eb
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-874e6ea2cff93
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-49ecb61edc41e
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-8de32fab0c2eb
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-d6f72afa29ca3
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-df64341661ddd
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-8ff93ac388598
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-feb155d8375c
+[redis] connected
+[wave.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-wave-workers consumer=consumer-1b9f112721697
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-fda66ae232db4
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-4029ad0afd4fd
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-72b4f34d73404
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-3685ae9495ad1
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-1007dc2bae201
+[redis] connected
+[wave.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-wave-workers consumer=consumer-2f936d6f829dd
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-5289cfa743b8d
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-428d57744e88c
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-bdb07e97ce4df
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-425905ebda4e7
+^C[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-ed75264e9dcca
+^C[redis] connected
+[wave.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-wave-workers consumer=consumer-f0f08da78608a
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-2ada437bbefb8
+[redis] connected
+[wave.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-wave-workers consumer=consumer-669c0f5af0c42
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-7e508677b2e77
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-827858399e621
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-eef4391f6af27
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-2c99b7fba9d44
+^C[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-bf2437a57f09e
+^C[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-fc818bdd9f185
+^C[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-c394cfcdaf02d
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-b16e733ef0513
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-fe96d3f35347a
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-f2d01b69adea4
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-d919c72dd7ed1
+^C[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-9d4f1748b8401
+^C[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-4b0b8c42216dd
+^C[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-cd695b7a11f4a
+^C[redis] connected
+[wave.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-wave-workers consumer=consumer-a9ae886a30fb5
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-c12a757dc8a8f
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-f1e8c10e174c2
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-478b551a17c62
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-369bb234d775b
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-20aa6190992b7
+^C[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-a20e1b2ee192d
+^C[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-99982ec36ec9c
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-36e574def2456
+^C[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-38ba59aaea219
+^C[redis] connected
+[wave.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-wave-workers consumer=consumer-6e7cf69539dc2
+[redis] connected
+[dispatch.worker] zone=machakos stream=stream:dispatch:machakos group=dispatch-workers consumer=c-b2e4b8b7fb2a

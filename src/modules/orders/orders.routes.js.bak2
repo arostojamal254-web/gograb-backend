@@ -1,0 +1,150 @@
+﻿const express = require("express");
+const { admin, db } = require("../../shared/firestore");
+const router = express.Router();
+
+// GET /api/orders/:orderId
+router.get("/:orderId", async (req, res) => {
+  try {
+    const { orderId } = req.params;
+    if (!orderId) return res.status(400).json({ ok: false, error: "orderId required" });
+    const ref = db.collection("orders").doc(String(orderId));
+    const snap = await ref.get();
+    if (!snap.exists) return res.status(404).json({ ok: false, error: "order not found" });
+    return res.json({ ok: true, order: snap.data() });
+  } catch (e) {
+    return res.status(500).json({ ok: false, error: String(e?.message || e) });
+  }
+});
+
+// POST /api/orders/create
+router.post("/create", async (req, res) => {
+  try {
+    const b = req.body || {};
+    const orderId = b.orderId != null ? String(b.orderId) : "";
+    const userId  = b.userId  != null ? String(b.userId)  : "";
+    if (!orderId) return res.status(400).json({ ok: false, error: "orderId required" });
+    if (!userId)  return res.status(400).json({ ok: false, error: "userId required" });
+    const pickupLat = Number(b.pickupLat);
+    const pickupLng = Number(b.pickupLng);
+    const dropLat   = b.dropLat != null ? Number(b.dropLat) : null;
+    const dropLng   = b.dropLng != null ? Number(b.dropLng) : null;
+    if (Number.isNaN(pickupLat) || Number.isNaN(pickupLng)) {
+      return res.status(400).json({ ok: false, error: "pickupLat and pickupLng must be numbers" });
+    }
+    const doc = { orderId, userId, pickupLat, pickupLng, dropLat, dropLng, status: "created", createdAt: Date.now() };
+    await db.collection("orders").doc(orderId).set(doc, { merge: true });
+    return res.json({ ok: true, orderId, zoneId: "default", pickupLng, pickupLat });
+  } catch (e) {
+    return res.status(500).json({ ok: false, error: String(e?.message || e) });
+  }
+});
+
+// PATCH /api/orders/:orderId
+router.patch("/:orderId", async (req, res) => {
+  try {
+    const { orderId } = req.params;
+    if (!orderId) return res.status(400).json({ ok: false, error: "orderId required" });
+    const patch = req.body || {};
+    patch.updatedAt = Date.now();
+    const ref = db.collection("orders").doc(String(orderId));
+    const snap = await ref.get();
+    if (!snap.exists) return res.status(404).json({ ok: false, error: "order not found" });
+    await ref.set(patch, { merge: true });
+    return res.json({ ok: true });
+  } catch (e) {
+    return res.status(500).json({ ok: false, error: String(e?.message || e) });
+  }
+});
+
+// GET /api/orders/user/:userId
+router.get('/user/:userId', async (req, res) => {
+  try {
+    const { userId } = req.params;
+    if (!userId) return res.status(400).json({ ok: false, error: 'userId required' });
+    const snapshot = await db.collection('orders_shared').where('userId', '==', userId).get();
+    const orders = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+    res.json({ ok: true, orders });
+  } catch (e) {
+    res.status(500).json({ ok: false, error: e.message });
+  }
+});
+
+// ========== RIDER JOBS ENDPOINTS ==========
+router.get('/ready', async (req, res) => {
+  try {
+    const snapshot = await db
+      .collection('orders_shared')
+      .where('status', '==', 'readyForPickup')
+      .where('assignedRiderId', '==', null)
+      .orderBy('updatedAt', 'desc')
+      .get();
+    const orders = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+    res.json({ ok: true, orders });
+  } catch (e) {
+    res.status(500).json({ ok: false, error: e.message });
+  }
+});
+
+router.get('/my', async (req, res) => {
+  try {
+    const { riderId } = req.query;
+    if (!riderId) return res.status(400).json({ ok: false, error: 'riderId required' });
+    const snapshot = await db
+      .collection('orders_shared')
+      .where('assignedRiderId', '==', riderId)
+      .where('status', '!=', 'delivered')
+      .orderBy('updatedAt', 'desc')
+      .get();
+    const orders = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+    res.json({ ok: true, orders });
+  } catch (e) {
+    res.status(500).json({ ok: false, error: e.message });
+  }
+});
+
+router.get('/completed', async (req, res) => {
+  try {
+    const { riderId } = req.query;
+    if (!riderId) return res.status(400).json({ ok: false, error: 'riderId required' });
+    const snapshot = await db
+      .collection('orders_shared')
+      .where('assignedRiderId', '==', riderId)
+      .where('status', '==', 'delivered')
+      .orderBy('updatedAt', 'desc')
+      .get();
+    const orders = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+    res.json({ ok: true, orders });
+  } catch (e) {
+    res.status(500).json({ ok: false, error: e.message });
+  }
+});
+
+router.post('/claim', async (req, res) => {
+  const { orderId, riderId } = req.body;
+  if (!orderId || !riderId) return res.status(400).json({ ok: false, error: 'orderId and riderId required' });
+  const orderRef = db.collection('orders').doc(orderId);
+  const sharedRef = db.collection('orders_shared').doc(orderId);
+  try {
+    await db.runTransaction(async (tx) => {
+      const orderSnap = await tx.get(orderRef);
+      const sharedSnap = await tx.get(sharedRef);
+      if (!orderSnap.exists || !sharedSnap.exists) throw new Error('Order not found');
+      const shared = sharedSnap.data();
+      if (shared.status !== 'readyForPickup' || shared.assignedRiderId != null) {
+        throw new Error('Order is no longer available');
+      }
+      const updateData = {
+        assignedRiderId: riderId,
+        status: 'assigned',
+        updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+      };
+      tx.update(orderRef, updateData);
+      tx.update(sharedRef, updateData);
+    });
+    res.json({ ok: true });
+  } catch (e) {
+    res.status(409).json({ ok: false, error: e.message });
+  }
+});
+
+module.exports = router;

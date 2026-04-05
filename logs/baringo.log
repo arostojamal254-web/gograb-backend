@@ -1,0 +1,178 @@
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-3641e5612b826
+[redis] connected
+[wave.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-wave-workers consumer=consumer-51786b5feb8f5
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-ad9efd73955a3
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-17c5458013e57
+[redis] connected
+[wave.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-wave-workers consumer=consumer-83f0c4a287a4
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-9f1fbc18317e6
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-25ea07805216
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-9bc72b0a1af26
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-2811ea1363fab
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-f741e4507659f
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-399ab1b5eae38
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-59431d747b3ca
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-441d273326369
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-6c95525358b49
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-066d7c5169eba
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-ecf045b5007c3
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-6147324cd5055
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-212d5ca4abaa4
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-f04b5334eed73
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-439d0e0c2e378
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-644cbf728990c
+[redis] connected
+[wave.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-wave-workers consumer=consumer-dda99efc67d8b
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-241e431d87cf7
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-ca76c0fac5c94
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-d8a287c1a8672
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-478d02e5f8
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-b3f5c7fb83172
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-57ad686a3743b
+^C[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-7b1f1fa2f7675
+[redis] connected
+[wave.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-wave-workers consumer=consumer-8ce52f5ecbc12
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-7f1c35f94daa8
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-e870078a0d0a2
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-a93c3819013f8
+^C[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-f1b8a06871b47
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-dfd66316473c1
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-e1451be845401
+^C[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-597fe1adc702e
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-314299d3a74e7
+^C[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-ba6018b9ccde9
+^C[redis] connected
+[wave.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-wave-workers consumer=consumer-9e5d3f702a719
+^C[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-6bc6d0652e71a
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-bd2ca521eef68
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-3fa716f696bd5
+^C[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-773c6ac68f4eb
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-aedcbd60838cf
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-1109eb4e93de5
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-1de596ba20d8b
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-db8ec00bf42d
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-0dc990706f5c1
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-f2cdd8b64d9f
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-333bb4d958cd3
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-93f4c7a24670d
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-0285656fb09f9
+[redis] connected
+[wave.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-wave-workers consumer=consumer-ea007f0e0a641
+[redis] connected
+[wave.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-wave-workers consumer=consumer-aa18c621099fa
+[redis] connected
+[wave.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-wave-workers consumer=consumer-acd053acf4b33
+[redis] connected
+[wave.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-wave-workers consumer=consumer-d393b1fc85198
+[redis] connected
+[wave.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-wave-workers consumer=consumer-0854cb0086f73
+[redis] connected
+[wave.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-wave-workers consumer=consumer-8659c116fe98c
+^C[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-5a61a4e248c63
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-2547ef3393826
+^C[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-de20b22645844
+[redis] connected
+[wave.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-wave-workers consumer=consumer-a9e42a343dc5f
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-68c42b283e64d
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-b9b6ae7666d79
+^C[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-3d8e0167f7681
+^C[redis] connected
+[wave.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-wave-workers consumer=consumer-17dd938122b12
+^C[redis] connected
+[wave.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-wave-workers consumer=consumer-ffa717f48129b
+[redis] connected
+[wave.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-wave-workers consumer=consumer-e34933c909d32
+^C[redis] connected
+[wave.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-wave-workers consumer=consumer-5822618961627
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-5fad445de1c1e
+^C[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-4c0b04f2fed7e
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-4f0247f3a41cc
+^C[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-31329a4448acd
+^C[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-f6de0c43a4209
+[redis] connected
+[wave.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-wave-workers consumer=consumer-290f799bdc69e
+^C[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-0eb3308109351
+^C[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-be931a06a6364
+^C[redis] connected
+[wave.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-wave-workers consumer=consumer-6d52bcc88abd
+[redis] connected
+[wave.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-wave-workers consumer=consumer-5ff02386bdd54
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-ac74056ffc22a
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-107b48bafaa6a
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-1189665c460d5
+^C[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-5b4e8ac3feb62
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-7ad4e36e30156
+[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-817e199b76baf
+^C[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-aa7ca0f915821
+^C[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-64832c61fd0ff
+^C[redis] connected
+[dispatch.worker] zone=baringo stream=stream:dispatch:baringo group=dispatch-workers consumer=c-efecb598b902d

@@ -1,0 +1,178 @@
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-39d8ebd4f1b2c
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-b8a73e0877ea6
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-b9656826cf338
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-8894972803b48
+[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-ecfbc5a523ef7
+[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-10a3b1c4de1bf
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-4b3b48035b828
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-006f0b32c202b
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-b2c5284239992
+[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-5de296f188c46
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-014e7068658a4
+[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-3d261e07fbb
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-f1ba6c4f1c8ff
+[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-8ae5f9a546f2
+[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-ba28e6638e8bd
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-cd72aff3ad588
+[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-ef15405fd3ba3
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-026d2ad6f61a3
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-cd9f9122f479f
+[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-f5401f388324f
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-191c951998bcc
+[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-ba4c0aa10387d
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-3017c6763c3c6
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-dbb66e42cd0b5
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-7ff44715964fb
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-2c61a6bcac2bc
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-89675d39087b1
+[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-51bf281f540ec
+^C[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-3371d9f32de5f
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-9a303bc222b01
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-68d0a128ff13c
+[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-cc7fc181d106b
+[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-a37ef634f17b4
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-f467eff64b62a
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-53ab03e12904b
+^C[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-2ff4a3816ae14
+^C[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-01f8c1c569f44
+^C[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-9fc201608db52
+^C[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-033b051c3878f
+^C[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-c9975d9819f1
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-f7d521d60a50d
+[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-662b75cb741bb
+[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-85bb52e60373f
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-79d694762e095
+[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-2b61fe22e047
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-5737a4f0e94fd
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-14d04e49c0a35
+[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-7c05b53da84ab
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-f87860a74c8aa
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-081e99b37edee
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-30df832ba8cbd
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-0fa2688aa503d
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-abd0d6204d86
+[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-3b143632de7bd
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-51b414295b1ff
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-69f493e63e796
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-d94c75b3e2517
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-df5f02224349b
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-135ce3f8b545
+^C[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-1a93780330fc7
+^C[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-01ff929292f98
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-83a66987f639a
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-0fba662439849
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-1fbb4cdd43bb3
+[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-7f2599b9c25b3
+^C[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-577463d04f656
+[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-bba3ea7809c5a
+^C[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-3ac7bd468e463
+^C[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-5343981310a3c
+^C[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-2593ddd5507e1
+[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-df751484de7bc
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-b9143fa1ddce2
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-cefb732ad8f64
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-298f92b6ccfff
+^C[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-31313749f4299
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-1ef097c754e0b
+^C[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-7faa9d951d442
+^C[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-0a12c56f9201d
+^C[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-d6e727caf6c8
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-9a97ea92ddbd8
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-ec71cc40d0bc9
+[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-a0cb384d3089e
+[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-ccc4447970a23
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-08643f5b0b778
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-fb3d11d07858c
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-bbfb6316a806
+^C[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-4c73038dc848
+^C[redis] connected
+[wave.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-wave-workers consumer=consumer-59dceff77c067
+[redis] connected
+[dispatch.worker] zone=kilifi stream=stream:dispatch:kilifi group=dispatch-workers consumer=c-d032963a613f

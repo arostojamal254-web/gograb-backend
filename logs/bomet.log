@@ -1,0 +1,179 @@
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-9759672bd8915
+^C[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-ec9d2172b67b3
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-58eb0696fafb5
+[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-82134ad9e8ac
+[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-832532b7b9f6e
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-12a30dcdd9b45
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-28fa42f5101f6
+[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-5b46e5c50b76a
+[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-091dbe5ef74fd
+[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-a58db75a7a74a
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-dc00b05b429f7
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-53f4c1306716e
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-702f7f5d109aa
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-bf324574ceaa4
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-1849da97f6765
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-227a07794794b
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-0ea934651b9ef
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-0a6ff4a5cabe8
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-c0ec02c7fcd61
+[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-1fce75884fdc4
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-452141ab998e3
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-9c44d6f1b9412
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-e9eec42db422b
+[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-6ff8f0136ca1b
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-44146e94626d8
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-9d1064e663686
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-88c24df534a4e
+[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-8cdb229fbe3a1
+^C[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-00f36df40bfab
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-2102f6fb8dc25
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-83bc6079cd1ba
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-b5f053fbbfc41
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-8b19b3dd2620d
+^C[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-27aed870620e6
+[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-d6bd965ff0d8d
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-9bcda1e36c677
+^C[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-831c44d57aa66
+[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-7f5cdf653a8bb
+^C[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-363244c4aba7c
+^C[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-f85815c1929da
+^C[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-0b20f3405e06d
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-23721df475f0a
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-a21b0245bb352
+^C[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-062d2f55e2555
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-de4335cca3cd1
+^C[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-a2bd054f3b522
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-ea31e44bf3a87
+[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-876cce0e769a7
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-11b787f643924
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-2ea4e351bbd4d
+[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-23d56642da8b6
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-6004c53327a09
+[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-0c04b1a92ea5
+[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-3e2cc109f0518
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-6fd477bee3ff4
+[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-30eb8c42125c6
+[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-ed088bc638829
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-7248f6138764e
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-7af077c795432
+^C[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-6b77a9a39f468
+^C[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-45b240bf60b31
+^C[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-83b73e4756fc4
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-462b38e7df203
+[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-31de7ef60d1f9
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-567306a885bdc
+^C[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-170e39d874b9e
+^C[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-e8b76a70d68be
+^C[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-086ef86f666e1
+[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-2a7a921ada397
+^C[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-7b9b608af5def
+^C[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-8434d5a7b4455
+^C[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-bad7c5bfef70f
+^C[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-f86391f2abc7f
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-ef35cbf12c866
+^C[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-0020e6871fe2b
+[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-df5deb87214c7
+^C[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-78e3d4038ba59
+^C[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-55f7f8d8fb769
+^C[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-69ccd508e1113
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-50a38c3d49144
+[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-40e575920b2d7
+[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-09a096477f0c7
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-f46469224599f
+^C[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-bcf4814e89831
+^C[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-9b27b44cc4094
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-8c6f14f68f233
+^C[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-b09403d24bebb
+[redis] connected
+[dispatch.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-workers consumer=c-b93e05075c2d7
+[redis] connected
+[wave.worker] zone=bomet stream=stream:dispatch:bomet group=dispatch-wave-workers consumer=consumer-d13b7788c39e7
+^C

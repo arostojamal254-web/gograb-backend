@@ -1,0 +1,178 @@
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-11d589c02c214
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-f311c76b58daa
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-c32ed1723052e
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-ac5c4bebe4c4b
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-d9c3add219561
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-27f0564bf3dd3
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-36cbd2b474b45
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-3bde5bb6753b6
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-73c5642b6eb3d
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-5bef2accbb01e
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-c05bd77d30128
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-08f5e5578a524
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-f7544083351be
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-3f431fd283a85
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-d0e4e82e03c5b
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-afbfcf6513b2c
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-0227b9df6f10d
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-72ee442fbf5cd
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-2fb4cf358ee1a
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-b5120a4227459
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-4aa745c6e319
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-b7d4a5d991e21
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-eca6e62ebf788
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-b4d35c5a518f4
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-c43e5d7de27e9
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-4a855b6f24894
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-8258aa99beb1e
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-b52bd0d7335ff
+^C[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-072cd471c0cc6
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-669f5c904ff52
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-2f68355eb5837
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-fb32d686d38b1
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-5e92c892e41be
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-c7f7b0a407fd1
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-b30c0429e29d4
+^C[redis] connected
+[wave.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-wave-workers consumer=consumer-007e33a66126
+^C[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-ddb84d1018d72
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-b45452f569ccd
+^C[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-2452ac112d8d6
+^C[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-719655ae91a0a
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-34a7bfc22f6b7
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-bc79088480c18
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-c24e311257daf
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-26fb024ea3267
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-08e8086616a1
+^C[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-f9678105e8adc
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-835e37c58bbb4
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-860e91d71816f
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-6a3f385d1cb4b
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-40ffd2399404a
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-d06861ed4befe
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-f0c9bf45d0db8
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-1ea43feab25c1
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-0ff141203f58d
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-e34a9e2d2ea6f
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-8a4cfbfaa821d
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-e3275e3b22ffd
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-cb6691419919d
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-14ee8bed6a4bd
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-c7b86467f57d2
+^C[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-11b8577232237
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-c4d32c5169c55
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-c61d45ac2edaa
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-32d9a228a7806
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-3d5b1842bebd4
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-ee0483bf3a949
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-c7f6361a68927
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-e1d34e84c33d9
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-9db61d803f854
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-c43acc32546c
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-1001219195a1e
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-84b42510d075b
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-52fcd02619a17
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-f93527975b978
+^C[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-49ae0a441387b
+^C[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-5e0c094646a99
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-0c5dcf46cf7eb
+^C[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-831deec7ed172
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-6306590daab35
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-7678e0426266a
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-87e9cd4286eb2
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-fceec74e4e2cd
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-046a33dab1b69
+^C[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-f6803aaafbdcb
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-a6a63a718cc71
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-e89d73b8589ba
+^C[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-4fc8d341858ec
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-5bbd93a9bc56b
+[redis] connected
+[dispatch.worker] zone=nairobi stream=stream:dispatch:nairobi group=dispatch-workers consumer=c-d88f3467d16a8

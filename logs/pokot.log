@@ -1,0 +1,181 @@
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-243905cc0b7b3
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-21c7a313d864
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-5188361795054
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-15d59f594b1f9
+[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-00c4ed37d86cd
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-1687e1bed1819
+[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-a31e1d8675c86
+[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-cbf5169f31aaa
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-a0cbacabb2a64
+[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-864890c1ebdd3
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-3db555920c6c
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-38a431b745fe8
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-2412b1c794a6c
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-d7d453a723949
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-5fd234769382b
+[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-87497e1a41227
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-f5caa60dea91a
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-acee5ba81622e
+[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-891e071f16e2a
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-dda7564d15afe
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-6d1496b0ba59f
+[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-b6d910a168683
+[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-53d70f64717e5
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-f4c2c0abfb32f
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-84a0a8b55d2a3
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-b2ee5119c94a8
+[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-822738e6ee56
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-fe8dd0fe4febc
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-d32651f78db55
+[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-f262d1bb67712
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-2e3daede48297
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-831f12762e68
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-e81bb175da5a7
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-5775a281b0a7a
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-aecef9c5ed5e2
+[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-8009afa51290e
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-cb40b40be9331
+[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-f2ca7dec17663
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-ab1d7f2f082a8
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-91a3ac09c638b
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-27da362935af5
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-22cf6d61a6d9e
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-f420fc7d5b687
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-c29b18d1af475
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-1c237babe6fcb
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-d1283e8b0af25
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-ef445ab576674
+[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-90a316719ee44
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-823154bf0b2ae
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-d8801c4c725bb
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-69927cc2fd9cf
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-1cc38ac5d249b
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-616975a93b63c
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-0e6c9dd87a889
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-b50c3bb978b5f
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-575c7c7b84997
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-71e0a5e8f13e
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-ee3f2de00b021
+[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-92250c9abb331
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-58510ea107f1f
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-2f1f2217aff5e
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-bdd3c2a82ce4b
+^C[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-34b2407f53a6f
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-ceb525f8fa1d3
+[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-2a9acf977e73b
+[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-ae5afa20b925c
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-88dbadc590a63
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-ad0d60ae36874
+^C[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-0c46a55059896
+^C[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-0508d7f70b6a2
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-3a60e19ee3c38
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-86d708c11c559
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-f80b179989708
+^C[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-b6f3c9e96a285
+[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-2d56fff3bef1a
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-3a15c4e643561
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-aa051c0a024af
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-bfc396432b5f3
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-af4e62becd90e
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-ad714523a52a
+^C[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-08c5841ef09c4
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-0646373d65c31
+[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-cb790f70e06d7
+[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-5ca57ec54ae93
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-a1665c48732b1
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-8f722c52ea7d7
+[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-57682c6cf2ea8
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-1c6a552a54d51
+^C[redis] connected
+[dispatch.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-workers consumer=c-2c8af7826f008
+^C[redis] connected
+[wave.worker] zone=pokot stream=stream:dispatch:pokot group=dispatch-wave-workers consumer=consumer-6b4336c487b28
+^C

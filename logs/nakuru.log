@@ -1,0 +1,179 @@
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-838e15110643f
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-66eec558ecaf7
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-975ea4453b40c
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-134e2c65c6899
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-64479f66fe1be
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-4ab5d96182977
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-f0753e0852583
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-0c355d0164778
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-d63e98f9f2317
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-30636eaaaaeab
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-2996fe3c8f3b9
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-02a1f008e6ec3
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-c33695c75a379
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-cc002b11113a8
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-6fcf303cb319f
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-30f7e95fd74cc
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-3c7e2d9fb6f79
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-7b01e38c6012f
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-7494848ec6f6
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-0371eadddee6f
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-06f5f75c1f979
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-9ae4c771c9cdf
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-dca8d13af913c
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-681d3b1a16d84
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-c1ef760139b3d
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-ef7365b5016a5
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-7d45cb2b96e42
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-539e72c87815a
+^C[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-da405a6d34b0e
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-d5d759ba617ec
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-1628faf9a8e3
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-4889e250a834f
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-4f47cc63f5636
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-017d2c05f3a31
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-8432e26da9c3f
+^C[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-39444241ba70e
+^C[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-8b2d0a76ef25d
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-d104562f747d7
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-fb35b62faade6
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-5f0bd4e25911b
+^C[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-e8743d231e5db
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-f30471af84167
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-cf391777a8bfa
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-602f63be41207
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-311c6259d7bdc
+^C[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-30b50332bb61f
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-32f98eafeba48
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-83dc2ec4e8fd4
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-ebfcfdf6092b7
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-14b89cf8424fd
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-5765eb7b60d59
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-53129805f5e41
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-31c9fa995a0c1
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-144306a9b36e
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-b9f607fe815eb
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-d9ef2009e8bac
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-a6b1d48232404
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-ea8a5cb7f5294
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-315ac729ba163
+^C[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-e00dbfc66a2af
+^C[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-921a578d4c421
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-30bfbf9cdf9a1
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-a8bdde6c389ad
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-db84969fc0ef2
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-809a7c7f414c6
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-95befdb89a66f
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-85a2768a24bec
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-0d4ab45322a1e
+^C[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-ce62dcafc3526
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-5aa86d7c9fdd8
+^C[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-7105bb85db981
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-1551462bfe92c
+^C[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-25b8e675b5f1
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-17f435c397ad4
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-295d898fba71d
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-25b79c3eb1c01
+^C[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-df50c5f8bb573
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-09ccac2ad3502
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-cea7a4c77db8f
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-13abe7a32d601
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-e0c89660b914
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-aa9a439b9f434
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-e00c5a90d9ee4
+^C[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-46199c939ca8c
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-5b767b3981684
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-b74dec44baec4
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-32cf1c6e8be2a
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-8ab12df8706bf
+[redis] connected
+[dispatch.worker] zone=nakuru stream=stream:dispatch:nakuru group=dispatch-workers consumer=c-6baab73ce324f
+^C

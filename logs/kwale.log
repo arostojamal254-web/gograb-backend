@@ -1,0 +1,179 @@
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-2024b8363802
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-6862dcafafb7c
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-5c7657f3c29ba
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-f0b9a458957b7
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-6c500e75a2dc5
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-bbc493d660c55
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-36683f7e1735
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-89e42cc0bbf3b
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-075c299f90415
+[redis] connected
+[wave.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-wave-workers consumer=consumer-e5e029307f936
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-9d105cc7b1dd
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-c38253c973ff
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-142454a0fe438
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-a3dd1809a1ba5
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-3f69dd551c58b
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-3fc13654e2fe5
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-5eb5b318e7264
+[redis] connected
+[wave.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-wave-workers consumer=consumer-7d4b421c1f845
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-7c95ddee1523d
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-97ad113a6e9b
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-870b280c80cf4
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-4f5a4c039ac1a
+[redis] connected
+[wave.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-wave-workers consumer=consumer-2ad77eb7d7315
+[redis] connected
+[wave.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-wave-workers consumer=consumer-b71007c7509a8
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-492523cfe70c5
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-6e8957336bf96
+[redis] connected
+[wave.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-wave-workers consumer=consumer-c20d9370ba5b2
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-ff17f35f2846a
+^C[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-e1df4559db177
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-bd72fcd4949d9
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-bb6f46b0e238e
+[redis] connected
+[wave.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-wave-workers consumer=consumer-650411fa7a4c2
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-62d55de9731b9
+^C[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-f00db741cb624
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-bbacd883d83f7
+^C[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-6b1a0a8cb2539
+^C[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-162d9ae53f84a
+[redis] connected
+[wave.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-wave-workers consumer=consumer-31156e809c762
+^C[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-5f203338d1225
+^C[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-d1a4abd88a2e1
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-43a8067da5883
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-45c526339529
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-abbfe4593a044
+^C[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-2e72813b46158
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-cad84621c9be2
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-eb97f7b704426
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-68f506f8cb0ae
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-d0b7fe2fe08bc
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-818479b89dffe
+[redis] connected
+[wave.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-wave-workers consumer=consumer-3744da9b6582b
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-8e69d38a928e7
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-26c931b00ed2d
+[redis] connected
+[wave.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-wave-workers consumer=consumer-303f8e704ce41
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-57f30f4c0c498
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-52611c0b366f3
+[redis] connected
+[wave.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-wave-workers consumer=consumer-db216739f0761
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-ab4237c05d851
+[redis] connected
+[wave.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-wave-workers consumer=consumer-3f4dca3676d4b
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-6b760f025c26
+^C[redis] connected
+[wave.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-wave-workers consumer=consumer-68682f6b86b11
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-1e8c39c3dbb55
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-dfe277c02abb8
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-9075221216f9
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-2b842f7d0fc28
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-d0e369cb04459
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-79fd175f83347
+^C[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-34b665ad5d2c1
+^C[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-a6b329842c92e
+[redis] connected
+[wave.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-wave-workers consumer=consumer-a0f544eabea7d
+^C[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-11e04a01871cf
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-4d4056d49b648
+^C[redis] connected
+[wave.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-wave-workers consumer=consumer-271501badc2ff
+^C[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-565c1466be53f
+^C[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-5f7015ce9589e
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-2b75a87e9b31d
+[redis] connected
+[wave.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-wave-workers consumer=consumer-b13b24df21eae
+^C[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-56d99154ba294
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-5955597b21ebf
+^C[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-f51ac2e8cf70c
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-66607eb6ea428
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-930cb2084bd5
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-dfddb6e0131df
+^C[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-3f8b2ceecd0f8
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-2111881d23a69
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-65ea90b83f32d
+[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-39bf38da2dd34
+^C[redis] connected
+[wave.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-wave-workers consumer=consumer-7597e4a878b3e
+^C[redis] connected
+[dispatch.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-workers consumer=c-deb14c0b1392a
+[redis] connected
+[wave.worker] zone=kwale stream=stream:dispatch:kwale group=dispatch-wave-workers consumer=consumer-9de3acb9672c1
+^C

@@ -1,0 +1,179 @@
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-b4d36d7452905
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-307630961419a
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-6f92859be61fc
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-a48e0aca496a2
+[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-d2191c8f1434c
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-9c443d217c5d8
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-3cdfadaa43361
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-0de2941b547db
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-ec1c4705cc8e3
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-fa0414d0f54b9
+[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-bd55ca663323d
+[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-38cbe4e052058
+[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-bc8b47cdb8938
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-f73ee45c12f6e
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-7ffaed4847e1d
+[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-e4aaec541f207
+[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-f3ca470478f8
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-325b22ce171d6
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-be030c8f293a4
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-f4e24e51232fe
+[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-cc08975ef8ef4
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-c0ab91db94313
+[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-6f1fd9374790b
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-0529696f1e193
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-95a6bf0a3db46
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-abf234a18ab81
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-637eb4f57d39a
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-2b446e82b794f
+^C[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-485887161df53
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-2b5e333fc6c03
+[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-1177f6056332d
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-c35321d645978
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-5316cb28aeaf6
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-3a55aca64252
+[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-f4f76e8058fda
+[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-7e1e89c0baee3
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-95693e7a01bb3
+[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-e98ca13b20cac
+^C[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-aa399b867149c
+^C[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-504fff4c0d40f
+^C[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-2cbc5ea04cb01
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-f42c205cc805d
+[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-da8b9d68432e
+^C[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-0f462faa78fbf
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-9cad256107c7
+^C[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-af9d627645ed7
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-e8544838b0ac8
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-3500920776154
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-5fe5f68d310f4
+[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-684992e92bc2c
+[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-6502c1da994e9
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-c2c4e41a55f85
+[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-c99db923c444
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-59fff15ea0c5e
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-353ec43d78fac
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-6c4d5a84f55b5
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-7526bd1e67d5b
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-b9f5e4588e2f
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-df23b8c04f98d
+^C[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-3b7ca1391f9c1
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-622a250b08513
+^C[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-4c0d9639d559
+^C[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-3d1f0f50c5087
+[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-8ed197c9634c
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-c14f6558f255c
+^C[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-6f2f74a01cdbe
+^C[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-3f15448ea6859
+^C[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-f088b0116fa5b
+^C[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-ecc1ce8d0b26c
+^C[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-9c211d999293e
+^C[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-fcac8428e13bc
+^C[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-5ac30b2d3b718
+^C[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-f51a8fdd5d5ce
+[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-7b98e13917955
+^C[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-bf3409f50b6a3
+^C[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-ef7ba9ed8a755
+^C[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-8a5ca3b348574
+^C[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-f58e6a290d1cb
+^C[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-d61158ccdd839
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-87fb9f8c1872f
+[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-10371ee5a1d49
+[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-4141638550ecf
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-a4ae52ca68006
+^C[redis] connected
+[wave.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-wave-workers consumer=consumer-177b540946cd2
+^C[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-85fc63b9ab8af
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-7491be0bf929b
+^C[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-4bcf0a728c06f
+^C[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-561d3bc8b388f
+[redis] connected
+[dispatch.worker] zone=nyamira stream=stream:dispatch:nyamira group=dispatch-workers consumer=c-ca683cc2cb298
+^C

@@ -1,0 +1,178 @@
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-3fe59095acbf6
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-7f5e1b9e9587d
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-159eacb4ed61e
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-35af7b7766a7d
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-55fdd4b1589fe
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-6b339a61982b3
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-9cdd656da9a8f
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-34efba9b7dd8d
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-e8d6a8f2a07c1
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-1a5f9effd3597
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-d2ccae80d8625
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-e01f2d377d5db
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-3d2e4acc4d686
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-8c8811d446164
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-61bf57b8b1147
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-9c1667cc11b
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-de9c580d9980f
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-882a15f7cbdb9
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-e3d94a18ad14e
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-236e5e5a0b5ec
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-7b0a0f872489a
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-5966095e5ab96
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-47fab94817e8c
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-ac665e2277a35
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-822c75346a47
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-f7fdcf4ab9d54
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-a41d1be29cba3
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-8f6f03d5301d1
+^C[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-1bec0f54543bf
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-2e8a891597fe3
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-bb5f3635749
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-2abca85bd9cd3
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-be6f13e431575
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-fd626f25f1b45
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-6314e4b65e61b
+^C[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-0a8d07b0f11da
+^C[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-fa766ceee2e17
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-b8946de1ea05
+^C[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-813d1711ebedf
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-5aabdec346b31
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-abd725c1aad19
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-614677c79c8fd
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-f4c6372265c77
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-e8af5caf2fae1
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-809c878762fb
+^C[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-fe5b977b80342
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-24d3a1baefb87
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-7c9fb8d3c17a9
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-186399e305b68
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-cdbffc981df44
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-167616855670d
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-c659e04f98f77
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-9b4bdbcb52286
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-c525b55a0fc87
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-57a34761cb7f8
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-43f980f18f6ac
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-20bf05f7c3751
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-76e257a3d01d5
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-a43e13ee845cb
+^C[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-3ea7b122c3c6e
+^C[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-3aaf7ed5f7e58
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-b14599484e9c9
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-cc529d189d483
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-51b9eef3f1da4
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-308e9b9e93ae3
+^C[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-8c0e723a52715
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-5d4b6c4a15c7a
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-f07225e39ddb7
+^C[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-7ae68e38b076f
+^C[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-58f5cbc3410a7
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-cf439ebda02d1
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-3d921a40f37de
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-77201297b064
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-888c46b358803
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-8825623fb0356
+^C[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-c5e723cd2c4da
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-69c4ed7151596
+^C[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-febb2de800768
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-2947e04ba1bcb
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-aaef1a78a721f
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-06481564f7e1e
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-877f0cfdd50c4
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-d3e9d2cfffa21
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-3d6cf371eba97
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-7d85f72d87a3d
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-f87ddae6e62b3
+^C[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-77c2d139ce864
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-dd94a4f755d6e
+[redis] connected
+[dispatch.worker] zone=mombasa stream=stream:dispatch:mombasa group=dispatch-workers consumer=c-d84bbd4096cca

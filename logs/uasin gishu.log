@@ -1,0 +1,183 @@
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-319db06aff5d
+^C[redis] connected
+[wave.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-wave-workers consumer=consumer-805b28f7234ef
+[redis] connected
+[wave.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-wave-workers consumer=consumer-0e6df14633b16
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-e9e85e0144a6f
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-5fba2073b4eb8
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-f27dc653b5b16
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-22f727536392b
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-7d8dfacd9278d
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-52348742dce4e
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-8b7d410a1d2df
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-aaa2cfb9fe658
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-3131beaf6d18b
+[redis] connected
+[wave.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-wave-workers consumer=consumer-624307dc31fa9
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-c40a2625ce839
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-3eee39d89aee6
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-ad3f50efeea14
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-35f3ca388ddb2
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-0779991d9c99c
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-b63e185162736
+[redis] connected
+[wave.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-wave-workers consumer=consumer-ee7e518866e38
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-b63d6aa347045
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-386ee37afe1d3
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-b57b0fef8a60a
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-47db6db9c3f7c
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-1edea8db2f42c
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-fdb671c94bf3
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-4d659539a77fe
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-8b73714bbbe8
+[redis] connected
+[wave.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-wave-workers consumer=consumer-bbcd69c93ae7e
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-35250cdc7d95b
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-22669d9870687
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-2dd862a1b6374
+[redis] connected
+[wave.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-wave-workers consumer=consumer-0fc4ca2c452d6
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-d4ae53d7f041c
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-72b9d908fafa4
+[redis] connected
+[wave.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-wave-workers consumer=consumer-280b86ca7912c
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-ff4402c5f0e0c
+^C[redis] connected
+[wave.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-wave-workers consumer=consumer-3e9f0950209a1
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-aeb16f947430e
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-f54b705155e55
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-c12b66628fa66
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-16f56e5fcdf81
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-acfeb00f64fbc
+[redis] connected
+[wave.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-wave-workers consumer=consumer-3ea2205935209
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-bde595881d653
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-1dd94466df09e
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-5889722eef93c
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-4864b98ea5b0c
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-1005f55da8eb1
+[redis] connected
+[wave.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-wave-workers consumer=consumer-fcfdbaeabc057
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-dc054b04446d7
+[redis] connected
+[wave.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-wave-workers consumer=consumer-0f97dfd15bd11
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-d64030294468a
+[redis] connected
+[wave.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-wave-workers consumer=consumer-c0ac6c7657e6d
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-f6ec764b2b31d
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-2240fe53e768e
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-24f8c79ff766
+[redis] connected
+[wave.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-wave-workers consumer=consumer-2c24079fd9846
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-604c9fb0615f2
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-c4db6ba3bb0b9
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-ffdd999905ee5
+^C[redis] connected
+[wave.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-wave-workers consumer=consumer-4315220e316de
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-5eeab4bd4467f
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-92266aa425bf7
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-e01afcb13847c
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-e0e101eb0c82a
+^C[redis] connected
+[wave.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-wave-workers consumer=consumer-d5c24d55f9f1c
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-eabc99d320662
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-2385d13362f48
+^C[redis] connected
+[wave.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-wave-workers consumer=consumer-f4da659fb26ca
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-89e949b92693c
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-c5510606d5fd1
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-8b5118193e02a
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-f655a1988c1cb
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-1f8ed909ed9c9
+[redis] connected
+[wave.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-wave-workers consumer=consumer-23ead9affc257
+^C[redis] connected
+[wave.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-wave-workers consumer=consumer-e08b500bef5c2
+^C[redis] connected
+[wave.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-wave-workers consumer=consumer-e173983c0034a
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-c40b114e717cb
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-ea54926b63ed6
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-e860253748cd7
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-d5dd01cc3adc6
+[redis] connected
+[wave.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-wave-workers consumer=consumer-a8034ce14a0b8
+[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-d9f61345fa84d
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-fc5217c6c407d
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-615665b12ed6e
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-7a8c1dd6c48c6
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-1a2d103f05008
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-1db294547422b
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-c6e6cd98238ff
+^C[redis] connected
+[dispatch.worker] zone=uasin stream=stream:dispatch:uasin group=dispatch-workers consumer=c-6d1248b529b67
+^C

@@ -1,0 +1,178 @@
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-2aeb0e002cc9a
+^C[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-1c29c275e677
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-5f3fcea5be097
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-538021db16e4b
+[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-357cc0fadf0dd
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-4183965099b2b
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-ec414787f8926
+[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-2073d95a0eeec
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-2322b84f5be9d
+[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-3baeec299d36c
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-76f58c6ffcae4
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-f67db382d6c8
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-796dac6b9f69e
+[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-e38ca32359e09
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-fb9d8639c122e
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-a947853281d8a
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-761f05abcb439
+[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-7883fdc44d2ee
+[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-15e7689121625
+[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-a2476290aca4a
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-4382fff4d787e
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-bb35516c1bd99
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-75c0bdc286654
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-ace0947d5de7c
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-dc36f7ba8eeef
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-f94c7838669dd
+[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-284e610214b4d
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-5ded46e9396b6
+^C[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-5e0c126e1c617
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-0564627c8298a
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-bd20562bb6695
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-52d7432f04a95
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-f4d618b95aa0f
+^C[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-8ce0e0af94f01
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-505ebdfc78932
+[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-8a618e6fe5ba6
+^C[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-ea24f489df7c7
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-fcb7511600a22
+^C[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-f406feff34621
+^C[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-a86465081652e
+^C[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-adf091b6e5327
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-466d47c226228
+[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-8af1cc3986fe8
+^C[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-181e4bb60c9b3
+[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-a0df882c0de28
+^C[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-41998b1fdd6b4
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-4bb212f1992b4
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-2501106973129
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-493a79d1cad3d
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-9e7b8604c2725
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-d564f06cd638b
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-9ed8d507c236c
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-391f5748355f3
+[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-c1636a8e99224
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-92df4d84c9f1a
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-97b7ef11671e
+[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-ae0df2ea841fa
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-990fbc8455a74
+[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-2db8b9e57e198
+^C[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-b02192922fdd7
+^C[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-356d23ee12b69
+^C[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-b371798170012
+^C[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-dc4cb098e447a
+[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-f070a9ec90f2d
+[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-9d93d803167c6
+^C[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-2963bed5987bc
+^C[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-6d57757cbbb34
+^C[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-eb582a9f8c0d7
+^C[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-c18b2c4d0a35f
+^C[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-759917d9c041a
+^C[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-acc81d161932f
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-abf637d682d53
+^C[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-10c352380bb2b
+^C[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-cc0987c491a43
+^C[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-90fab13bc78d7
+^C[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-b626372d8af6d
+^C[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-3998eefc10f58
+^C[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-d0915a8483b7e
+^C[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-e500c560aeb6c
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-ecd3786a31b06
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-1ddc4088fae4e
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-43919b33bfda1
+[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-2da3e09d9c3da
+^C[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-1e6228e3c7553
+^C[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-05ce1c1c30fa7
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-d27c09f2f220c
+^C[redis] connected
+[wave.worker] zone=busia stream=stream:dispatch:busia group=dispatch-wave-workers consumer=consumer-dcf0e99fc508
+^C[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-60bbd25a99324
+[redis] connected
+[dispatch.worker] zone=busia stream=stream:dispatch:busia group=dispatch-workers consumer=c-5b3ad72cb6d13

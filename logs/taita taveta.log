@@ -1,0 +1,180 @@
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-3594a5a5905e6
+^C[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-9f362a252dc45
+[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-93c0a1a21951b
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-4e05959e7308e
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-3ceb026db0892
+[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-9e8637af0e52e
+[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-97f5f4cd9a9f1
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-196a16bd6f22e
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-fefaa89e7be66
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-34230355af045
+[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-03b6865f62a11
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-54604f1039228
+[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-07792e2fe20d
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-e2e0a7174135f
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-8f3dd1de0fa83
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-07ec30102edec
+[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-fdf31a62df53b
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-ee5f579c4a14d
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-389a5b0601813
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-f25c53606bb16
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-25eac71a7b7f9
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-ad64ace7f8e3f
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-0dba65667321b
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-16e043341d7d3
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-11fe1300fbd7d
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-f581a74ebd808
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-827666ae981a5
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-bb132b996e39e
+^C[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-195b7116f4e6a
+[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-18fe2e7db1049
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-c744347286c54
+[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-eb93da4d56fa2
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-8e78df3611acd
+^C[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-454ac556e7e64
+[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-b75435a1cdb23
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-2e0b2a7121f48
+^C[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-0429102ed33de
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-5e2d2138f44ea
+^C[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-edb062ed8714c
+^C[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-d4f06bb3d2049
+^C[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-0e04aa63525ce
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-15a4a652baa1f
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-8b4cdbd130872
+^C[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-b0a937610e7c7
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-d7ca47594c107
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-d2dbef56ca6a5
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-1018cba7f80d5
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-03fee45b9d253
+[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-24a3dafad63ad
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-24796a447fde4
+[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-28a858def95dc
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-eff5683b1650d
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-802289b6d0d2f
+[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-5f84745f20775
+[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-d916bab46b98d
+[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-14319d4a4dacd
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-6fdf59ab96cb1
+[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-5c83e380772ef
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-b6a984f396303
+^C[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-db4f98b23ee7f
+^C[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-047a00194f00f
+^C[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-255887ec38a96
+^C[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-151534e28c159
+^C[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-7fee338504601
+^C[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-1b2d960889ac7
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-40274e57dd3b4
+^C[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-e32169f24822d
+^C[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-3b7a0d89abe31
+^C[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-b58be48af4f22
+^C[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-94dc92dd25d69
+^C[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-6bef18750fc8e
+^C[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-77fa7cd59a09b
+^C[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-afad2513401e2
+^C[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-eb66cca9bcafa
+^C[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-14b82a8a56746
+^C[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-1187a4baed804
+^C[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-b5da50c7b8c6a
+^C[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-693316cef3779
+^C[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-8c96535e801c
+^C[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-3d64b60ecae3e
+^C[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-95a9bd45ac99b
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-4cbd5811b02d5
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-27e00d5b5e923
+[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-976664c8491f1
+^C[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-728f7f7baa67b
+^C[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-3b064c1726e1d
+[redis] connected
+[wave.worker] zone=taita stream=stream:dispatch:taita group=dispatch-wave-workers consumer=consumer-84f0aca5a0bc3
+^C[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-6a50510eebb5e
+^C[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-2a95eb90f8c5
+^C[redis] connected
+[dispatch.worker] zone=taita stream=stream:dispatch:taita group=dispatch-workers consumer=c-0ad87c3cc935

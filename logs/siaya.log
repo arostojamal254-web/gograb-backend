@@ -1,0 +1,179 @@
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-9626bda013d3e
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-b709a48a74221
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-5ffe98d79bfe
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-0938c474a4317
+[redis] connected
+[wave.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-wave-workers consumer=consumer-ef083f62b4597
+[redis] connected
+[wave.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-wave-workers consumer=consumer-c862d6e7e5bd1
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-e5eabefaf1604
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-d27a0db2dda5b
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-2821ba0d9fcd
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-e027f1219aa6c
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-15b576b72448
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-25e32f4043813
+[redis] connected
+[wave.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-wave-workers consumer=consumer-627d956269698
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-6c82b3f6d9f9c
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-0f0a7d451a874
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-04ee5f75ffbb9
+[redis] connected
+[wave.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-wave-workers consumer=consumer-afa34db69f53b
+[redis] connected
+[wave.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-wave-workers consumer=consumer-5d0f383aa8334
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-8585aa7c0533e
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-2dcb49f4768a9
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-e0187ba1f3d4a
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-08d5f2af1c4b1
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-7be7cb3c8783c
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-1d1732630e183
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-882d9e62a4b4e
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-c8b82ee073135
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-845e4ef4e6d6a
+[redis] connected
+[wave.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-wave-workers consumer=consumer-c203f81b65549
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-b6c7478733ad9
+[redis] connected
+[wave.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-wave-workers consumer=consumer-5aaf633bf6815
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-5d77813329778
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-e41fc7f9953c3
+[redis] connected
+[wave.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-wave-workers consumer=consumer-bf6fe7653f4ae
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-07a79fd0635fc
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-67747ed292c84
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-20ad28ecb3379
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-209151916316
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-c615619c3b30b
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-c291a910c2475
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-120814121041d
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-dc29b2a1951c8
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-3e8059d8e533c
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-f054495345b2e
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-284836c9418bc
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-f7d30bfc71b7
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-6e22c11b10016
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-9b2859a193632
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-8f543cd05918c
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-c3dc18a43d9d
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-44eb3ec8d7fca
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-b50e1b088dd2d
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-e1cfe4ce32ffd
+[redis] connected
+[wave.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-wave-workers consumer=consumer-738d8aaa31c42
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-968d56972c5c9
+[redis] connected
+[wave.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-wave-workers consumer=consumer-eccca3aecfc6e
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-0ee0fe520caab
+[redis] connected
+[wave.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-wave-workers consumer=consumer-6ad52633592cd
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-e0910177f4de9
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-1105bd57e64e4
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-6ef4da2f93086
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-e7eabe9c2294a
+^C[redis] connected
+[wave.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-wave-workers consumer=consumer-2c3ec0d9a590a
+[redis] connected
+[wave.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-wave-workers consumer=consumer-fb5ae189a3742
+[redis] connected
+[wave.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-wave-workers consumer=consumer-1d3c1e323e4ea
+[redis] connected
+[wave.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-wave-workers consumer=consumer-3787fde669f43
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-ed8dba492775
+^C[redis] connected
+[wave.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-wave-workers consumer=consumer-f51fc1cd8c1a
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-4ebd9955d9834
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-ff788f0cd78b1
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-a5c4aa589d113
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-2fd8c8f163fa2
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-249f05f372e2f
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-0f714ec94df7a
+[redis] connected
+[wave.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-wave-workers consumer=consumer-fadc5060c7251
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-79876980de1be
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-7c794a67e3b27
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-060c2777e3b8d
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-0ce89bf85d492
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-7d6669067a59c
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-e7a0f19bb45ef
+[redis] connected
+[wave.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-wave-workers consumer=consumer-2f08ca1fccd26
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-66c0772e81bc5
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-04029dd30e89
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-d1552bdfd71a2
+^C[redis] connected
+[wave.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-wave-workers consumer=consumer-ee0c80d1a8884
+[redis] connected
+[wave.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-wave-workers consumer=consumer-20931282c7005
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-a59cf77e25e74
+^C[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-72e7424368589
+[redis] connected
+[dispatch.worker] zone=siaya stream=stream:dispatch:siaya group=dispatch-workers consumer=c-d26950357136b
+^C

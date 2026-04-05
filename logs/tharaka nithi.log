@@ -1,0 +1,183 @@
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-61d60dece8274
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-13da64c379327
+[redis] connected
+[wave.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-wave-workers consumer=consumer-066bb4ef519ed
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-383f8e2b30db9
+[redis] connected
+[wave.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-wave-workers consumer=consumer-413558d4ad31b
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-bc274284c5a35
+[redis] connected
+[wave.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-wave-workers consumer=consumer-f52f277cda8b3
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-eea68e0e5e9cd
+[redis] connected
+[wave.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-wave-workers consumer=consumer-8b812dde736d6
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-f708c601ba1aa
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-54afeba254bef
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-4c451f7c47861
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-379e3aeb2e6d5
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-3b94b741cf6f8
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-15fe35acc6519
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-28569b76b4656
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-98a75d359447a
+[redis] connected
+[wave.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-wave-workers consumer=consumer-2b16956ef262c
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-3b315568d18ff
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-0e6102d201151
+[redis] connected
+[wave.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-wave-workers consumer=consumer-e27f7caee2844
+[redis] connected
+[wave.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-wave-workers consumer=consumer-8356c9f41fd39
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-904947f75d8f
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-f4e58167dcaa4
+[redis] connected
+[wave.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-wave-workers consumer=consumer-7bbc2a0bddcb3
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-96b3174b26942
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-bb558982fe8a1
+[redis] connected
+[wave.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-wave-workers consumer=consumer-506c09fc79bdc
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-57be0ca2858c9
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-e64da9894467f
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-5d4965a67fb66
+[redis] connected
+[wave.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-wave-workers consumer=consumer-88eb58ea3322d
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-28feb92dc4cf6
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-25ff305f01e54
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-07aea79b64561
+[redis] connected
+[wave.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-wave-workers consumer=consumer-50992da4b5131
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-2955950a1b7d1
+[redis] connected
+[wave.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-wave-workers consumer=consumer-0046d840ea4d8
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-a6fa8f9d2cc62
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-425797c0a77d4
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-0306e08348e91
+[redis] connected
+[wave.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-wave-workers consumer=consumer-bc566795a865b
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-272be63cd6359
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-265e64dec5c57
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-5b437a7b8b8c4
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-2ba3898fe0ac5
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-a84ff57fa2aff
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-f940b3e891d4a
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-a9c7913160371
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-eb1437086952d
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-ae5574104ad8a
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-fba5fd10322b5
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-3a6be35d9b6cf
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-28b89a9066ba1
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-0d20fb1912d5d
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-84835fabac901
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-d68fb84f8c607
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-344d1ad0e2942
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-40be91c7d2f78
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-e65c1c5cc5f1b
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-16989fd8db4a7
+[redis] connected
+[wave.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-wave-workers consumer=consumer-9a4982063e68a
+^C[redis] connected
+[wave.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-wave-workers consumer=consumer-6314c7dd20a29
+^C[redis] connected
+[wave.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-wave-workers consumer=consumer-23cf093b30ef3
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-7ee8b465e573f
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-4067b0378014a
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-0288b7188cf2d
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-0e56a61637fc6
+^C[redis] connected
+[wave.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-wave-workers consumer=consumer-3b1f38ca8bf72
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-da0b90cfc4c1a
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-7b1e17372d99e
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-b2b665f729876
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-e83087892037c
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-f2e444df37c95
+^C[redis] connected
+[wave.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-wave-workers consumer=consumer-4b8bf5ef56f33
+[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-39e7a29e6ea
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-7168dafd421cb
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-280156e5e6637
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-84bcf1a6b578
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-cf9b204316e34
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-237fc5645455d
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-89fdc9ac5630d
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-bc79d923cacdf
+[redis] connected
+[wave.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-wave-workers consumer=consumer-3926d069f2298
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-d2e4e1379c05e
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-85a27065437cb
+^C[redis] connected
+[wave.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-wave-workers consumer=consumer-317aa119a4f1e
+[redis] connected
+[wave.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-wave-workers consumer=consumer-2ef2d0eab8bd5
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-82864e4f6e193
+^C[redis] connected
+[dispatch.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-workers consumer=c-5cd2e7485f86d
+^C[redis] connected
+[wave.worker] zone=tharaka stream=stream:dispatch:tharaka group=dispatch-wave-workers consumer=consumer-66f95ddddf63f
+^C

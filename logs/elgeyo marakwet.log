@@ -1,0 +1,183 @@
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-1b5af1d5b74a6
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-ee14077816fa5
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-52b48c1b35f0b
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-22a196004e1b2
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-f3e48d443929c
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-a7f6ddae702eb
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-86d23f42afebc
+[redis] connected
+[wave.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-wave-workers consumer=consumer-1c169f9af6085
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-e47049cb90c39
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-efbdc5b4370a8
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-f531594e8dba
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-bff6b2bad33ed
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-59dd9ce935abc
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-901f5da4b7e86
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-ba227aba6a1fc
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-75404c44d5855
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-67109914030ea
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-3d707f4b3faa3
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-1d974984c9138
+[redis] connected
+[wave.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-wave-workers consumer=consumer-82228f9f84cd3
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-8893bd6a3dc11
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-772f41ea7d921
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-faf1b5b19f793
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-d2c4a16becca3
+[redis] connected
+[wave.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-wave-workers consumer=consumer-560bd735d047c
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-9faa0e558c466
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-f726a083af195
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-09357e6d28dc8
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-ef293a2fd18b2
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-ddc3e3fa2ee83
+[redis] connected
+[wave.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-wave-workers consumer=consumer-87eaf9b41790a
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-aaa259819f2b8
+[redis] connected
+[wave.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-wave-workers consumer=consumer-ae9b8a12e3fc4
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-b4c8a81b8632f
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-193b78faf3bdc
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-21f9707c65f95
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-2ed4aa531c07b
+^C[redis] connected
+[wave.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-wave-workers consumer=consumer-5b02b46ee5fcc
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-49dc3e71f26c1
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-266e72ecaf5be
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-21cde40c5bb5e
+[redis] connected
+[wave.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-wave-workers consumer=consumer-2b61a9e0b1fe8
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-dacdd2dc35677
+[redis] connected
+[wave.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-wave-workers consumer=consumer-704a2969dd50d
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-d175623c3cbbe
+[redis] connected
+[wave.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-wave-workers consumer=consumer-a3a80504e525f
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-d7b638564591f
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-419a19b2ad398
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-e6dd4da0b2475
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-dc16724774776
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-3e6c73e0065c2
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-51cb8086a5ca2
+[redis] connected
+[wave.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-wave-workers consumer=consumer-fdcf487af4578
+[redis] connected
+[wave.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-wave-workers consumer=consumer-572290b3583b
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-2b0d9b6a31507
+[redis] connected
+[wave.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-wave-workers consumer=consumer-d5eb8c6e7fa03
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-925ddd10b0fb1
+[redis] connected
+[wave.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-wave-workers consumer=consumer-07dccd9488304
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-f9e780d1b893f
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-f8e35acbec29a
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-5b81f0c27bfee
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-0f58403db2057
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-d42a7194dc58f
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-c5b196305e7e8
+^C[redis] connected
+[wave.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-wave-workers consumer=consumer-dbe9148056254
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-7e6e7568fd663
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-f77314b2c965a
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-3cfa3a888870e
+^C[redis] connected
+[wave.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-wave-workers consumer=consumer-5f6b1bab56a41
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-495d0661edf24
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-0d31c83ad8b34
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-4f6ac1c8630fc
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-b7337bdc2184c
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-1b9ea43e4a66a
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-de9ec2b51c366
+^C[redis] connected
+[wave.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-wave-workers consumer=consumer-5e45ce9547b7d
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-be9ac923733cc
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-8484df9cee602
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-6466d96269b9
+^C[redis] connected
+[wave.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-wave-workers consumer=consumer-119fa1bf0ecc4
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-9c72510026b2e
+[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-28bb3ddfe3b7f
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-eb819a0f4de3
+[redis] connected
+[wave.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-wave-workers consumer=consumer-ceb84936c9a06
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-273455ae588ce
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-95ca49fb7bd66
+^C[redis] connected
+[wave.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-wave-workers consumer=consumer-29fc9e2065215
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-4ec70700686d9
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-24f2b08d01b71
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-2e18eb91a4c2f
+^C[redis] connected
+[dispatch.worker] zone=elgeyo stream=stream:dispatch:elgeyo group=dispatch-workers consumer=c-2eef208861e69
+^C

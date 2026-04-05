@@ -1,0 +1,178 @@
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-137474fd54d22
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-07f9df36c2b7c
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-2c1c66b036b29
+[redis] connected
+[wave.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-wave-workers consumer=consumer-bc533688bd15e
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-f450a86a0e29f
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-59a413dfcb0fe
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-26d7a89fc05e4
+[redis] connected
+[wave.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-wave-workers consumer=consumer-fee6916faf434
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-e7f31f72cbe0d
+[redis] connected
+[wave.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-wave-workers consumer=consumer-cbc5189ec1c14
+[redis] connected
+[wave.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-wave-workers consumer=consumer-54e2e920f7a83
+[redis] connected
+[wave.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-wave-workers consumer=consumer-f5ede6b54d9c
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-9bf69b2da4d24
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-397ec2c5fbc4
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-584b7bf3b9baa
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-c72cd2da0b414
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-e67a4e4e38869
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-41c43a1eeb144
+[redis] connected
+[wave.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-wave-workers consumer=consumer-af2658e683154
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-6a6f0dc72261c
+[redis] connected
+[wave.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-wave-workers consumer=consumer-1471aa42023be
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-b6a6b66810755
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-11adf3c9d3099
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-30aeec209f4ab
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-fb63b1d50af6b
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-88908b6b3618c
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-ab139fc12b179
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-1d45567961c38
+^C[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-9fe0c1cdbda06
+[redis] connected
+[wave.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-wave-workers consumer=consumer-af9a316c5bc9
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-d727b36b8fd17
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-36a713a26dcf5
+[redis] connected
+[wave.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-wave-workers consumer=consumer-443d26b8739da
+^C[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-06d5612c4f29
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-50da10bcac083
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-e577096cf0312
+^C[redis] connected
+[wave.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-wave-workers consumer=consumer-5d7cfe6f49265
+[redis] connected
+[wave.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-wave-workers consumer=consumer-e08968f39e599
+^C[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-dd52511cc7f8e
+^C[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-3fe3ec16dad86
+^C[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-15a21a88110fe
+[redis] connected
+[wave.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-wave-workers consumer=consumer-2c85577c43f9a
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-4a6552bbcd529
+^C[redis] connected
+[wave.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-wave-workers consumer=consumer-9ff6004f28d5e
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-ec09e57e0f94
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-3fd690facda0a
+[redis] connected
+[wave.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-wave-workers consumer=consumer-671b210b7818
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-04469a19b1c7d
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-43ef2ceb0783c
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-13b2485aeceb5
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-9d7a915d58331
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-a8c52614744bc
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-28b82ea1aba75
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-c954251ae1945
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-e8e1bd93c269
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-46644b1b1e77d
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-0359b5172435d
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-ffa1860e1531a
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-0bbd7151406a5
+^C[redis] connected
+[wave.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-wave-workers consumer=consumer-efb9def63bdb
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-c29a465a21e57
+^C[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-415abf201219b
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-be9df78096ebd
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-e2037234cebaa
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-16593ceb11001
+^C[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-65ee3c62608ec
+^C[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-4bf1206132a9c
+^C[redis] connected
+[wave.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-wave-workers consumer=consumer-de19729ff9017
+^C[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-33849d634f753
+^C[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-4d3c1100879a
+^C[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-f9541b71339c3
+^C[redis] connected
+[wave.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-wave-workers consumer=consumer-4f48ed058ccc4
+^C[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-4ef49ad14568e
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-d5e821527cad2
+^C[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-8c4759f55bfcc
+[redis] connected
+[wave.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-wave-workers consumer=consumer-bfb012128696d
+^C[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-99a3b8145dca1
+^C[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-72e75471ed1df
+^C[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-05cfc39be29dc
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-d5d044234b563
+[redis] connected
+[wave.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-wave-workers consumer=consumer-e0ca80286cfbd
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-8a5979c389455
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-fbce567c6205a
+^C[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-f304d2835b1f5
+^C[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-017359407224e
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-080e02a40761
+^C[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-de42dc04b48dc
+^C[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-fd6722dfd4ad5
+[redis] connected
+[dispatch.worker] zone=nyandarua stream=stream:dispatch:nyandarua group=dispatch-workers consumer=c-8b97b40736a4d

@@ -1,0 +1,178 @@
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-679eada1ee5fd
+^C[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-7f4b15d5c4aab
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-976abdf71983f
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-de6ad7bed65a2
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-d3165f36a5223
+[redis] connected
+[wave.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-wave-workers consumer=consumer-bdd1cf3cd3127
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-dc56b6efda208
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-92b90726a3048
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-c29da70f19632
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-d9a021bd257c9
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-35b84776c290d
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-b9ff432d88bf6
+[redis] connected
+[wave.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-wave-workers consumer=consumer-924ddda3e9029
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-6ce28a13035c5
+[redis] connected
+[wave.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-wave-workers consumer=consumer-e354427d9a3ee
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-ad83857989388
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-e6ff6919a223d
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-bfb71e47b9671
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-89c078e5d76e8
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-a0e81895d2c86
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-63547af717adf
+[redis] connected
+[wave.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-wave-workers consumer=consumer-cc32024e36628
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-2d759a60108c4
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-00c4ab91c2516
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-e5894bd38b01
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-a40662df2f6e8
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-491ae6e5926f5
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-b6397bfdcc623
+^C[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-48a782889bf5a
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-7e90ee5ddca9e
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-a0faee03ce3d4
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-ec96177fa829a
+[redis] connected
+[wave.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-wave-workers consumer=consumer-b6f51cc42d1e7
+^C[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-4cf87fed61bdb
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-9c7259a175dd7
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-626198905253e
+^C[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-1e0ecce40fe4
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-688ac1e5e9b05
+^C[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-13699e1a108f6
+^C[redis] connected
+[wave.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-wave-workers consumer=consumer-20b03da2259f5
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-42b0621ea9825
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-c0b10c0980c77
+[redis] connected
+[wave.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-wave-workers consumer=consumer-50226850f5121
+^C[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-8517e134bfa04
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-fa4727a7288a
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-976fe4097ab9
+[redis] connected
+[wave.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-wave-workers consumer=consumer-499eaaf79e564
+[redis] connected
+[wave.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-wave-workers consumer=consumer-db8150ca81274
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-b91cc46f59894
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-18f53660b6d2b
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-c5a74946941a4
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-f3ec503cf1c74
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-535f64c0cf266
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-c2394b5eeb6ab
+[redis] connected
+[wave.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-wave-workers consumer=consumer-0e600d9a6cf44
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-9101d2f5a3ff4
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-ade33f4a7a7da
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-fc9f022170548
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-d7d1321b00688
+^C[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-9266a3e3371f3
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-9dbe04432ef86
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-7c3c6fb9cb7be
+^C[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-604e6ce27bd82
+[redis] connected
+[wave.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-wave-workers consumer=consumer-a296e37ed7d8e
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-809c039139002
+^C[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-1d5bb1b3c9a29
+^C[redis] connected
+[wave.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-wave-workers consumer=consumer-357b3edb48f71
+^C[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-f99ccdd80ef62
+^C[redis] connected
+[wave.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-wave-workers consumer=consumer-d8e0321eb234
+^C[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-32bd97b44f995
+^C[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-0308fc9dc30e4
+[redis] connected
+[wave.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-wave-workers consumer=consumer-ce7b2c7274979
+^C[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-39e1eaf9c1fe1
+[redis] connected
+[wave.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-wave-workers consumer=consumer-e382dc6b32f6e
+^C[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-9555201e85b88
+[redis] connected
+[wave.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-wave-workers consumer=consumer-3234636d88449
+^C[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-5ac9c91d4248f
+^C[redis] connected
+[wave.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-wave-workers consumer=consumer-3097128f8ac69
+^C[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-144efabd04cfe
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-3d4bff5037392
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-e6d4d1d6e2acc
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-1a5c39c2c58dd
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-c986bb69ffdc3
+^C[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-56bcc71eca739
+^C[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-cb1516f19254c
+[redis] connected
+[wave.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-wave-workers consumer=consumer-8e1501f85db28
+^C[redis] connected
+[wave.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-wave-workers consumer=consumer-5f9447a32c04b
+^C[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-9f7763acd474f
+[redis] connected
+[dispatch.worker] zone=bungoma stream=stream:dispatch:bungoma group=dispatch-workers consumer=c-5106378862202

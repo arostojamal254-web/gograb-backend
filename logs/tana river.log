@@ -1,0 +1,181 @@
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-08e8a34f7c105
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-7c2259bd6bcb
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-9d09a51c77d29
+[redis] connected
+[wave.worker] zone=tana stream=stream:dispatch:tana group=dispatch-wave-workers consumer=consumer-22541c1657cdf
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-026f221a5baf4
+[redis] connected
+[wave.worker] zone=tana stream=stream:dispatch:tana group=dispatch-wave-workers consumer=consumer-dc7ef376fd533
+[redis] connected
+[wave.worker] zone=tana stream=stream:dispatch:tana group=dispatch-wave-workers consumer=consumer-07051062d7e65
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-66df9954c6fb9
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-519d4402f05da
+[redis] connected
+[wave.worker] zone=tana stream=stream:dispatch:tana group=dispatch-wave-workers consumer=consumer-92a3e3b853145
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-98a33e492e3fc
+[redis] connected
+[wave.worker] zone=tana stream=stream:dispatch:tana group=dispatch-wave-workers consumer=consumer-76487d9412027
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-73fddf77100ae
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-0bd91dc45f6c4
+[redis] connected
+[wave.worker] zone=tana stream=stream:dispatch:tana group=dispatch-wave-workers consumer=consumer-9870118fd835c
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-2bc8b1ae1b5a5
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-b6206ce414852
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-18696ee2c4029
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-f561194ef790d
+[redis] connected
+[wave.worker] zone=tana stream=stream:dispatch:tana group=dispatch-wave-workers consumer=consumer-219bacbd4b999
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-825c6328e5512
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-b6b826075078c
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-db86a851727ff
+[redis] connected
+[wave.worker] zone=tana stream=stream:dispatch:tana group=dispatch-wave-workers consumer=consumer-2d32dfdf594f2
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-dad1327d69fb8
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-e08f01adffe2d
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-8b576583a815e
+[redis] connected
+[wave.worker] zone=tana stream=stream:dispatch:tana group=dispatch-wave-workers consumer=consumer-794915e944668
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-81ab67e09f474
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-7d39cd4ac18f2
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-593c6744ca4d6
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-d6c75afa02498
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-550378ecd2623
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-21a0a3484c4f8
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-fd5775f218277
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-623ea32f15016
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-109a64dbb3d35
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-51848ff96abf6
+^C[redis] connected
+[wave.worker] zone=tana stream=stream:dispatch:tana group=dispatch-wave-workers consumer=consumer-1b5bafb47a2ea
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-931d389efd0f6
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-59fd3c0ce9663
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-3e703a3f3967
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-6d61cdcf47dbd
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-ebaa96a9c919e
+[redis] connected
+[wave.worker] zone=tana stream=stream:dispatch:tana group=dispatch-wave-workers consumer=consumer-bc1c68e7f3361
+[redis] connected
+[wave.worker] zone=tana stream=stream:dispatch:tana group=dispatch-wave-workers consumer=consumer-b88cbaf17e146
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-138c132d12ff9
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-38d686ebc2476
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-df1fa08cda5bc
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-b402f97f1124c
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-988c1083b48e9
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-9a50f42ee7a44
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-429855f3d1e0b
+[redis] connected
+[wave.worker] zone=tana stream=stream:dispatch:tana group=dispatch-wave-workers consumer=consumer-3bba23c953a8c
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-bb0ce849f1ef
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-17d4354eb3d28
+[redis] connected
+[wave.worker] zone=tana stream=stream:dispatch:tana group=dispatch-wave-workers consumer=consumer-ed3d8be0667d6
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-0224b5ef0b6bf
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-e0a2992fc91c2
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-6eba35c00c2ae
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-effd5f23007e7
+^C[redis] connected
+[wave.worker] zone=tana stream=stream:dispatch:tana group=dispatch-wave-workers consumer=consumer-7ed668f34d11c
+^C[redis] connected
+[wave.worker] zone=tana stream=stream:dispatch:tana group=dispatch-wave-workers consumer=consumer-42fb457ff4e89
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-eeb937856b6a6
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-cc45a4246231c
+[redis] connected
+[wave.worker] zone=tana stream=stream:dispatch:tana group=dispatch-wave-workers consumer=consumer-2c1d63972b2e6
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-0578c57035e04
+^C[redis] connected
+[wave.worker] zone=tana stream=stream:dispatch:tana group=dispatch-wave-workers consumer=consumer-47172c0db93e4
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-c0af778b33a11
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-40c5f4fc27cc1
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-a5d237dbf60cb
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-f915a7a07019c
+^C[redis] connected
+[wave.worker] zone=tana stream=stream:dispatch:tana group=dispatch-wave-workers consumer=consumer-c6a5393d94567
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-da591f9541ebb
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-5388ec93c9f7d
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-82cfb94dfcdbd
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-f6eac319342c8
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-d786d5da17d82
+^C[redis] connected
+[wave.worker] zone=tana stream=stream:dispatch:tana group=dispatch-wave-workers consumer=consumer-090e1101bcab1
+^C[redis] connected
+[wave.worker] zone=tana stream=stream:dispatch:tana group=dispatch-wave-workers consumer=consumer-9365087c9846e
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-d036d28cdc14d
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-27429e2150afe
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-7e1551d91df7b
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-00ff98ec22f34
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-4be35ead25f05
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-53a9046ebffdd
+[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-2551a8a22548b
+^C[redis] connected
+[wave.worker] zone=tana stream=stream:dispatch:tana group=dispatch-wave-workers consumer=consumer-e9bc082d52735
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-df120599f427
+^C[redis] connected
+[dispatch.worker] zone=tana stream=stream:dispatch:tana group=dispatch-workers consumer=c-3e38db94c1ee5
+^C

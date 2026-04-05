@@ -1,0 +1,183 @@
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-bc5375404bccd
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-b7162e5aeef24
+[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-834e833ca232f
+[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-038d53144d3e1
+[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-94d1f00e5d21e
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-28e81a5864fc3
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-bd37e048f135e
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-76853ea860ac6
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-798e0e46745bf
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-b10b2210dd11d
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-30079cf81a7ad
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-f39be870c759f
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-e1533dbdf139d
+[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-01180f0bf119b
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-fcb216f990915
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-f041dd9281e9f
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-15cb8b5931275
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-8106631fb32ec
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-e069cf2323439
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-9f252730ac39f
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-641bc34f5477a
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-d45cadeca9bbe
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-2f55268d1b4af
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-942f85fb0d75b
+[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-43570008fbb8c
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-8b7b485f0967e
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-80a14fd2729aa
+[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-5b8cd67275223
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-c90f5bc61b5ad
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-ac6e9ade484b1
+[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-38e8f6f41290d
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-a2f2013efcb89
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-14e2222d149d7
+[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-229a3e5325f8
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-26b2aa20c284e
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-74a9308ce24da
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-b04b443e4d8c5
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-ff960310822b9
+[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-c875cfc24a13a
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-c26a82619bddc
+[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-4d88c75743f7
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-b0772d076e4d9
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-d65cb44966992
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-346f8e6303f3b
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-839e81017f7e8
+[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-8a053a8f55c82
+[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-d43613775b6c6
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-ecd70db3e03d1
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-98e973a8cfe6b
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-fd08f6b60d10e
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-1a9319ae12448
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-447fd7239dd93
+[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-cfaecaa4a1a4b
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-9fa16c076ffe
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-faa5d87cf6bee
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-8c0a3f272b801
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-b2a959b6c0788
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-b6801a976ce3a
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-0daa81ea03fbc
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-a428eca738d55
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-c24654b4ea78d
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-c96bb4b233451
+^C[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-03df1ebe0ef9
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-8148571d75c99
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-55bd472f5a44b
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-f308770e07669
+^C[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-0b62f70f22dfd
+^C[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-e871222b4bb28
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-e0155b4ebde2c
+^C[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-01bdc693fcb9b
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-bffc9735d8244
+^C[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-84b8b9dbfaba1
+^C[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-7ae7c185f2fd6
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-f08d656675546
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-c3c597f65ce4e
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-314e76c8fa36b
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-0039618cc410a
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-32edd0aa9f81f
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-f92fadb278b08
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-a4b7342bb6575
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-0d664998b20b3
+[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-e2b3d6baefcd4
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-65721ebb6fdf
+[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-db2c9270b1745
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-11264fd8c4926
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-4081a4b6da11a
+^C[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-20c2dd2482704
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-e2917cd8f3f71
+^C[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-d3527552cc4af
+^C[redis] connected
+[dispatch.worker] zone=trans stream=stream:dispatch:trans group=dispatch-workers consumer=c-c0c7818c456e
+^C[redis] connected
+[wave.worker] zone=trans stream=stream:dispatch:trans group=dispatch-wave-workers consumer=consumer-7fc22cc4f5852
+^C

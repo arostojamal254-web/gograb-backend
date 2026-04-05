@@ -1,0 +1,182 @@
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-f4eac261ab4ed
+^C[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-4a1b1ef5e57ad
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-5a8a70795f91d
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-49034121a0c93
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-95255f36de52
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-c7403065f921c
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-662e14b136f83
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-d91e170840c8b
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-6ee4b21332f83
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-e24e99187b33c
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-d87c0943e9f21
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-86e796d1c8f89
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-81d005d43808c
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-1d962acf625e
+[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-2cd5b83c502c9
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-1b4569f6340f5
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-87b63ea8943ba
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-d7604bae9097f
+[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-d7bac31cbc126
+[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-3fac512cfc424
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-2fd45d9a2afad
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-8476ef684315
+[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-2325bd28da818
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-92feea3f1812f
+[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-ca02bd791c2cb
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-dee8df94f27b3
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-8391d9b314ac8
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-15c1df33db848
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-9f0fc23ec4938
+^C[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-16de409853919
+[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-c5effa3ca077d
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-107c62da7ac53
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-6260a80c2607c
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-cb210fd2c18a
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-38893d818032e
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-ea655e91b74cd
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-9246115fe1f26
+^C[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-10d983bce8902
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-8415e602f51f9
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-9c4b1095e8c3c
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-ca1383f2fcc58
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-7bcb43089e92b
+[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-be2b2573e0677
+[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-76527b68e350f
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-bd520ff90b7db
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-9cd1ffa41cd62
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-47d8627b7e316
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-24c20f1fc5753
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-eba822e2caa43
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-21f5c6d0e6996
+[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-768e6e3445efe
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-2e3a8c46f7c67
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-fe892f006a589
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-75630c36a6a6a
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-cdf8480df4091
+[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-55b06524e8468
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-d865baa6773d7
+[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-3818ce8f9e8a9
+[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-fe180eb7c6a72
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-cd00a9d203a92
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-361f4a871bc23
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-269a8c5c855
+^C[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-2b8baf2603ee3
+^C[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-28401de484c77
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-3f39e42653918
+^C[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-4c423a3d3429c
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-6bccc34c6ca01
+[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-49410fc4c034c
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-811b57d32e28c
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-83fcdbe7d8929
+^C[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-b17eaadca4656
+^C[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-99dedb74d2a22
+^C[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-687303d25a402
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-6a70e836896ce
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-c69c38b9b3736
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-a209b10f108b6
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-e1c6cd376eb05
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-4cdb1dee0b7a1
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-5ddc9de3226c9
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-d9c13b49903e6
+^C[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-7f69a9e5b6121
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-cfc013f082197
+[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-af5d6a459679a
+[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-72c7a13f7c2c1
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-e5eaff01c550d
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-0bfb683e9beba
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-bba7746e86dcf
+[redis] connected
+[wave.worker] zone=homa stream=stream:dispatch:homa group=dispatch-wave-workers consumer=consumer-db34274d7d529
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-faa5ba6b939c8
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-c6e107cdcc07e
+^C[redis] connected
+[dispatch.worker] zone=homa stream=stream:dispatch:homa group=dispatch-workers consumer=c-9a5fa004e9824

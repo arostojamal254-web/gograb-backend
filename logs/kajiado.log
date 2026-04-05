@@ -1,0 +1,178 @@
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-84b3d83d09612
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-aa701ae12f176
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-5f012f89c801b
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-74027004c00b
+[redis] connected
+[wave.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-wave-workers consumer=consumer-2051490404f5f
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-bd33a7d967275
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-817e7abd49b59
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-9f2ab53268b79
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-70c1a51a28e61
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-a2a4e8f755e38
+[redis] connected
+[wave.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-wave-workers consumer=consumer-dacf56315d97d
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-39d6fbfc33739
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-dc1491cff7028
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-11175a36ede8f
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-f358f5bceb242
+[redis] connected
+[wave.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-wave-workers consumer=consumer-9bdbf8bfd019b
+[redis] connected
+[wave.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-wave-workers consumer=consumer-e1f6c036a4586
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-ee24d36f2bc07
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-e2e347fe8a8d
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-30c19af9e7d7
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-c3d255a99663
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-f55665ab2e1ec
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-1d983b7bb003b
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-8b70d8769665e
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-c621fe6bee671
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-bcde822f634ad
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-8f3c134f475ae
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-7cc5117531d81
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-0b9aa0ef7f413
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-065d44baa495
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-79b3b77058f23
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-1e84a344579bf
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-d83fe3fa4e39f
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-88f194c4e4564
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-44aac333850b1
+^C[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-d36ea31ef4977
+^C[redis] connected
+[wave.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-wave-workers consumer=consumer-3bd2920016ee9
+^C[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-19692d15a7858
+^C[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-f4cd308f6f782
+^C[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-c35381c62c883
+^C[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-1a8603cbdb461
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-cf27797decf0e
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-2b45387ba9177
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-7a00bb716f713
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-aff45ce20f745
+^C[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-e9ab8bbeee2f3
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-1d05f45c1cdf8
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-89c9ba840399f
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-e5a6656f8a102
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-a5e63960b6d6d
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-6ad8c2fe704a3
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-6f8bc380c291d
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-0de80ec6bfccf
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-7d7f2314b4ef3
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-fc0519c7ea7d4
+[redis] connected
+[wave.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-wave-workers consumer=consumer-a050065b901ca
+[redis] connected
+[wave.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-wave-workers consumer=consumer-ea5d2b353a3c
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-accebf23743f3
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-3a1a2dde1a0ac
+^C[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-156edce8b3e56
+^C[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-4724102996607
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-7afaf5f2374ed
+[redis] connected
+[wave.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-wave-workers consumer=consumer-70e22d3fb09d6
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-4bf407a63d4d6
+[redis] connected
+[wave.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-wave-workers consumer=consumer-1e1fb0fbf3793
+^C[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-073bfca67ce08
+[redis] connected
+[wave.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-wave-workers consumer=consumer-d7da710e7227e
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-b523e5302cbc5
+^C[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-b51671bc65e37
+^C[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-81d5724644d05
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-73261272faa11
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-933745882dd6d
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-34d6d0cc07749
+^C[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-cc3ffea10bc32
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-c8586c9f86dc5
+[redis] connected
+[wave.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-wave-workers consumer=consumer-bc71106509cc5
+^C[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-a5c5253c6cf96
+^C[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-4c7a917d5cc41
+^C[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-4ae65bae88b7b
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-6e2236ece48e7
+[redis] connected
+[wave.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-wave-workers consumer=consumer-df28f53c40c63
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-8323409085e85
+^C[redis] connected
+[wave.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-wave-workers consumer=consumer-53eb238e11e13
+^C[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-5278c2b4ab883
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-4a0816d862768
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-ea660716e4cfe
+^C[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-bf99641faa22b
+^C[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-c9eab741e7fd2
+[redis] connected
+[dispatch.worker] zone=kajiado stream=stream:dispatch:kajiado group=dispatch-workers consumer=c-400753b6a9d7

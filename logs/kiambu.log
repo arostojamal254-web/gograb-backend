@@ -1,0 +1,178 @@
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-dcbf0b14ed0f7
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-48e7625f3d2c5
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-8af7edf89ad27
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-3b14d0193b67d
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-dd276a702d045
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-d017d3b3a3c02
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-a6b27672ad731
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-5ea9d65576757
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-ee810696fbb12
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-c3eda9b97c57c
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-2aa2ac4ebdb63
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-a6e760ef1e7d2
+[redis] connected
+[wave.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-wave-workers consumer=consumer-b1cff5d1197c7
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-9cd030462323d
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-7cfe57330698
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-a88fbd22e6bb9
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-40b91c9473a3c
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-95ebbf9f512ce
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-3e65461f537e8
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-c7fe54c00dddb
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-f445af0c626d1
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-2d0d54e158ccf
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-a10b51839e204
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-2f114c82912f4
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-274d887c99fc5
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-820cc3d55b6ef
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-2847752fc562b
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-26e1603d5f53
+^C[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-c578ec830bcda
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-eb732c3695f47
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-5b382528a770f
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-d62241650e343
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-eecfe7c334a2a
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-dd67137acf1cd
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-bae13e3fb64ea
+^C[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-a612a6f2e3f64
+^C[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-cb08dd5e09106
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-bd311d28f975a
+^C[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-b8591ad99f0b1
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-e9ee89e963631
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-91bea8348d61a
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-222794a59aa5c
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-96d208c4e9b37
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-105e03efff3a6
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-50f5e393fbceb
+^C[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-bf2aa69194545
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-0996bb79a7ec4
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-71b1aae6fa1f8
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-9a268dfc5c499
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-f8ba1e7cdb20c
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-524a87a331ca1
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-0f954024d2021
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-069e6985b779
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-15eb2925ce957
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-3c9997deaefc6
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-452df350a3b6f
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-53d149365553e
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-51074837e4643
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-2e136098ce3f
+^C[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-eae77579b0272
+^C[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-25f2d77aeecd7
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-5b0c33a2126af
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-bf77dba4fa7d9
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-697b25030d825
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-68e66985fc49c
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-68868591861e3
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-2f0a34d55da05
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-8314d5d6ef724
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-2008d86b6bfb3
+^C[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-296bb9210fbab
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-e66ec3633be7c
+^C[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-2635a1aca5473
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-fd3f3e8a38b16
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-192662548264a
+^C[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-85c6bc9467911
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-760de57f1358a
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-e80e305a06492
+^C[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-762db34e7004a
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-f85cd2d672865
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-c063d773c0543
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-c965e59f739f
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-83787e5df14d2
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-ce27d0aad48cc
+^C[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-6ee0a2308aefb
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-0386ca5784387
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-c0839964beda
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-34bee8d0d5073
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-40da2fbd3ed7f
+[redis] connected
+[dispatch.worker] zone=kiambu stream=stream:dispatch:kiambu group=dispatch-workers consumer=c-213051c639bd

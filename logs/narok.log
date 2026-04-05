@@ -1,0 +1,178 @@
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-e85e998e0b251
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-bbecbdd9e4113
+[redis] connected
+[wave.worker] zone=narok stream=stream:dispatch:narok group=dispatch-wave-workers consumer=consumer-49e268e5bfbc4
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-76c8451123d22
+[redis] connected
+[wave.worker] zone=narok stream=stream:dispatch:narok group=dispatch-wave-workers consumer=consumer-c8895cfac7401
+[redis] connected
+[wave.worker] zone=narok stream=stream:dispatch:narok group=dispatch-wave-workers consumer=consumer-b126f3673e3e2
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-8639a7bb6f72e
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-5e7b2717047bb
+[redis] connected
+[wave.worker] zone=narok stream=stream:dispatch:narok group=dispatch-wave-workers consumer=consumer-379a694b73866
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-0308745c861b1
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-19ce0da9c63cd
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-7de1e06115767
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-732e8144eab04
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-4d82be1f5096
+[redis] connected
+[wave.worker] zone=narok stream=stream:dispatch:narok group=dispatch-wave-workers consumer=consumer-c25ac87592bab
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-4d116695c163b
+[redis] connected
+[wave.worker] zone=narok stream=stream:dispatch:narok group=dispatch-wave-workers consumer=consumer-04d48350a9dda
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-ea19bbd3e358b
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-c9e33676574da
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-63e2b641b304a
+[redis] connected
+[wave.worker] zone=narok stream=stream:dispatch:narok group=dispatch-wave-workers consumer=consumer-2029090565cb8
+[redis] connected
+[wave.worker] zone=narok stream=stream:dispatch:narok group=dispatch-wave-workers consumer=consumer-a96ab6d035e5f
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-3b33614e924c4
+[redis] connected
+[wave.worker] zone=narok stream=stream:dispatch:narok group=dispatch-wave-workers consumer=consumer-d61a760ca2685
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-f25a8f5ab266a
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-311565a13bc2
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-2a8f2402ddd91
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-8f5aa5cf449ce
+^C[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-fd77889bd59d
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-4c5add1065d61
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-385680957f42e
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-785bf77b13e62
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-dc69a44c6955e
+[redis] connected
+[wave.worker] zone=narok stream=stream:dispatch:narok group=dispatch-wave-workers consumer=consumer-060615e2a9fcf
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-0783804560546
+^C[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-ef21f1aacdf6e
+^C[redis] connected
+[wave.worker] zone=narok stream=stream:dispatch:narok group=dispatch-wave-workers consumer=consumer-8469f3fa0ae
+^C[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-8e08eb2850623
+^C[redis] connected
+[wave.worker] zone=narok stream=stream:dispatch:narok group=dispatch-wave-workers consumer=consumer-f825175351118
+^C[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-0901cbae8beaa
+^C[redis] connected
+[wave.worker] zone=narok stream=stream:dispatch:narok group=dispatch-wave-workers consumer=consumer-6af47ce64b0b8
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-5fe1746d09d63
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-810b86ee12011
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-49a682f3e1226
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-11e449b5e84b5
+^C[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-19858dd2fe994
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-c692855886922
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-93342755c9b12
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-118d0ab4b32ae
+[redis] connected
+[wave.worker] zone=narok stream=stream:dispatch:narok group=dispatch-wave-workers consumer=consumer-1ab3af8222c9e
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-c8e9dab551d21
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-6d289c0fa5c6e
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-2de782c6cf77d
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-5c6576a212409
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-97f151bf059f9
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-d6f5222f62f69
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-581e4db72a7c7
+[redis] connected
+[wave.worker] zone=narok stream=stream:dispatch:narok group=dispatch-wave-workers consumer=consumer-8cef7349657c
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-5a00d5fa9cb57
+^C[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-c0d865c7681b3
+^C[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-824fee7e918a8
+[redis] connected
+[wave.worker] zone=narok stream=stream:dispatch:narok group=dispatch-wave-workers consumer=consumer-a4b4b65b86757
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-1ca29167fdf26
+[redis] connected
+[wave.worker] zone=narok stream=stream:dispatch:narok group=dispatch-wave-workers consumer=consumer-61c077e71ccaf
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-ec69011456d02
+^C[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-c3805384eaa6f
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-1a1ee18b20f35
+^C[redis] connected
+[wave.worker] zone=narok stream=stream:dispatch:narok group=dispatch-wave-workers consumer=consumer-78243c6702cb2
+^C[redis] connected
+[wave.worker] zone=narok stream=stream:dispatch:narok group=dispatch-wave-workers consumer=consumer-e6d47c53e3241
+^C[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-c1118676363fc
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-863d06c4a51f5
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-6ef4265da008c
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-582baf68163af
+^C[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-07b0c3efa3712
+^C[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-43934f1bec998
+^C[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-9240cc857a14e
+^C[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-241fb5f70351f
+^C[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-1805b80ffa437
+^C[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-e33fa47ec9e77
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-4d58f80f2576e
+[redis] connected
+[wave.worker] zone=narok stream=stream:dispatch:narok group=dispatch-wave-workers consumer=consumer-13e227b3ac61
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-bef6388d3691d
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-7a6be12fa724a
+^C[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-58717a05ef248
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-22bc736da8a56
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-ec697467ca0ab
+^C[redis] connected
+[wave.worker] zone=narok stream=stream:dispatch:narok group=dispatch-wave-workers consumer=consumer-21fcc2a02b6b
+^C[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-8174dfdfd8be1
+[redis] connected
+[dispatch.worker] zone=narok stream=stream:dispatch:narok group=dispatch-workers consumer=c-e38beb9c2aa86
