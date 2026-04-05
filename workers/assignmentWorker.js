@@ -1,9 +1,48 @@
 const admin = require('firebase-admin');
-const redisClient = require('../redis');
 const cron = require('node-cron');
-
 const db = admin.firestore();
 
+// ========== REDIS SETUP (Railway compatible) ==========
+let redisClient = null;
+let redisAvailable = false;
+
+(async () => {
+  try {
+    const redisUrl = process.env.REDIS_URL || 'redis://localhost:6379';
+    const redis = require('redis');
+    redisClient = redis.createClient({ url: redisUrl });
+    redisClient.on('error', (err) => console.error('[redis] error:', err));
+    await redisClient.connect();
+    redisAvailable = true;
+    console.log('[redis] connected');
+  } catch (err) {
+    console.warn('[redis] connection failed – auto‑assignment will use fallback', err.message);
+    redisAvailable = false;
+  }
+})();
+
+// Helper to safely get Redis key (returns null if Redis unavailable)
+async function redisGet(key) {
+  if (!redisAvailable) return null;
+  try {
+    return await redisClient.get(key);
+  } catch (err) {
+    console.warn(`[redis] get failed for ${key}:`, err.message);
+    return null;
+  }
+}
+
+// Helper to safely set Redis hash
+async function redisHSet(key, field, value) {
+  if (!redisAvailable) return;
+  try {
+    await redisClient.hSet(key, field, value);
+  } catch (err) {
+    console.warn(`[redis] hset failed for ${key}:`, err.message);
+  }
+}
+
+// ========== ASSIGNMENT LOGIC (unchanged) ==========
 function getDistance(lat1, lon1, lat2, lon2) {
   const R = 6371;
   const dLat = (lat2 - lat1) * Math.PI / 180;
@@ -16,7 +55,7 @@ function getDistance(lat1, lon1, lat2, lon2) {
 }
 
 async function getConfig() {
-  const configStr = await redisClient.get('assignment:config');
+  const configStr = await redisGet('assignment:config');
   if (configStr) return JSON.parse(configStr);
   return {
     baseCommissionRate: 0.1,
@@ -49,7 +88,6 @@ async function assignRider(orderId, orderData) {
     return false;
   }
 
-  // ✅ Correct Firestore syntax: .where(field, operator, value)
   const ridersSnapshot = await db.collection('users')
     .where('role', '==', 'rider')
     .where('status', '==', 'active')
@@ -114,7 +152,7 @@ async function processReadyOrders() {
     }
     const success = await assignRider(doc.id, orderData);
     if (!success) {
-      await redisClient.hset('assignment:failed', doc.id, JSON.stringify({
+      await redisHSet('assignment:failed', doc.id, JSON.stringify({
         orderId: doc.id,
         timestamp: new Date().toISOString(),
         reason: 'No eligible rider',
@@ -123,6 +161,7 @@ async function processReadyOrders() {
   }
 }
 
+// Run every 30 seconds
 cron.schedule('*/30 * * * * *', processReadyOrders);
 
 console.log('Auto‑assignment worker started (runs every 30s)');
