@@ -21,7 +21,11 @@ if (process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON) {
 const db = admin.firestore();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: '*', // Allow all origins (adjust for production if needed)
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 app.use(express.json());
 
 // ========== M‑Pesa Configuration (from environment variables) ==========
@@ -29,12 +33,12 @@ const MPESA_CONSUMER_KEY = process.env.MPESA_CONSUMER_KEY;
 const MPESA_CONSUMER_SECRET = process.env.MPESA_CONSUMER_SECRET;
 const MPESA_PASSKEY = process.env.MPESA_PASSKEY;
 const MPESA_SHORTCODE = process.env.MPESA_SHORTCODE;
-const MPESA_CALLBACK_URL = process.env.MPESA_CALLBACK_URL || 'https://nontenably-noncertified-fallon.ngrok-free.dev/mpesa/callback';
+const MPESA_CALLBACK_URL = process.env.MPESA_CALLBACK_URL || 'https://gograb-backend-production.up.railway.app/mpesa/callback';
 
 // Helper: Get OAuth token
 async function getMpesaAccessToken() {
   const auth = Buffer.from(`${MPESA_CONSUMER_KEY}:${MPESA_CONSUMER_SECRET}`).toString('base64');
-  const response = await axios.get('https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials', {
+  const response = await axios.get('https://api.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials', {
     headers: { Authorization: `Basic ${auth}` },
   });
   return response.data.access_token;
@@ -51,7 +55,7 @@ app.get('/', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-// ========== M‑Pesa STK Push endpoint (called by customer app) ==========
+// ========== M‑Pesa STK Push endpoint (real production) ==========
 app.post('/api/mpesa/stkpush', async (req, res) => {
   const { amount, phone, accountRef, desc } = req.body;
   if (!amount || !phone) {
@@ -78,12 +82,12 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
     };
 
     const response = await axios.post(
-      'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest',
+      'https://api.safaricom.co.ke/mpesa/stkpush/v1/processrequest',
       data,
       { headers: { Authorization: `Bearer ${accessToken}` } }
     );
 
-    // Store the transaction in Firestore for later callback matching
+    // Store transaction in Firestore for callback matching
     const transactionRef = db.collection('mpesa_transactions').doc(response.data.CheckoutRequestID);
     await transactionRef.set({
       checkoutRequestID: response.data.CheckoutRequestID,
@@ -94,10 +98,14 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
       createdAt: admin.firestore.FieldValue.serverTimestamp(),
     });
 
-    res.json({ success: true, message: 'STK push sent', checkoutRequestID: response.data.CheckoutRequestID });
+    res.json({
+      success: true,
+      message: 'STK push sent',
+      checkoutRequestID: response.data.CheckoutRequestID,
+    });
   } catch (error) {
     console.error('STK push error:', error.response?.data || error.message);
-    res.status(500).json({ error: 'Failed to initiate STK push' });
+    res.status(500).json({ error: 'Failed to initiate STK push. Please try again.' });
   }
 });
 
@@ -125,7 +133,6 @@ app.post('/mpesa/callback', async (req, res) => {
   };
 
   if (ResultCode === 0 && CallbackMetadata) {
-    // Payment successful – extract M-Pesa receipt number and amount
     const items = CallbackMetadata.Item;
     let receiptNumber = '';
     let paidAmount = 0;
@@ -137,10 +144,8 @@ app.post('/mpesa/callback', async (req, res) => {
     updateData.paidAmount = paidAmount;
     updateData.status = 'completed';
 
-    // Update wallet or order based on accountRef
     const { accountRef, amount, phone } = transaction;
     if (accountRef.startsWith('Order')) {
-      // Update order payment status
       const orderId = accountRef.replace('Order', '');
       await db.collection('orders').doc(orderId).update({
         paymentStatus: 'paid',
@@ -148,7 +153,6 @@ app.post('/mpesa/callback', async (req, res) => {
         paidAt: admin.firestore.FieldValue.serverTimestamp(),
       });
     } else if (accountRef === 'WalletTopUp') {
-      // Update wallet balance
       const userQuery = await db.collection('users').where('phone', '==', phone).limit(1).get();
       if (!userQuery.empty) {
         const userId = userQuery.docs[0].id;
@@ -183,14 +187,12 @@ app.post('/api/withdraw', async (req, res) => {
     const tillNumber = userData.tillNumber;
 
     // TODO: Implement M-Pesa B2C here if needed
-    // For now, simulate or integrate B2C later
     await db.collection('withdrawals').doc(withdrawalId).update({
       status: 'processed',
       processedAt: admin.firestore.FieldValue.serverTimestamp(),
       transactionId: `WTH_${Date.now()}`,
     });
 
-    // Deduct from wallet
     const walletRef = db.collection('wallets').doc(userId);
     await db.runTransaction(async (t) => {
       const walletDoc = await t.get(walletRef);
