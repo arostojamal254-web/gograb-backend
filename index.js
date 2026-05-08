@@ -21,76 +21,72 @@ if (process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON) {
 const db = admin.firestore();
 
 const app = express();
-app.use(cors({
-  origin: '*', // Allow all origins (adjust for production if needed)
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
-}));
+app.use(cors({ origin: '*', methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'] }));
 app.use(express.json());
-
-// ========== M‑Pesa Configuration (from environment variables) ==========
-const MPESA_CONSUMER_KEY = process.env.MPESA_CONSUMER_KEY;
-const MPESA_CONSUMER_SECRET = process.env.MPESA_CONSUMER_SECRET;
-const MPESA_PASSKEY = process.env.MPESA_PASSKEY;
-const MPESA_SHORTCODE = process.env.MPESA_SHORTCODE;
-const MPESA_CALLBACK_URL = process.env.MPESA_CALLBACK_URL || 'https://gograb-backend-production.up.railway.app/mpesa/callback';
-
-// Helper: Get OAuth token
-async function getMpesaAccessToken() {
-  const auth = Buffer.from(`${MPESA_CONSUMER_KEY}:${MPESA_CONSUMER_SECRET}`).toString('base64');
-  const response = await axios.get('https://api.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials', {
-    headers: { Authorization: `Basic ${auth}` },
-  });
-  return response.data.access_token;
-}
-
-// Helper: Generate password for STK push
-function generatePassword(shortcode, passkey, timestamp) {
-  const str = shortcode + passkey + timestamp;
-  return Buffer.from(str).toString('base64');
-}
 
 // ========== Health check ==========
 app.get('/', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-// ========== M‑Pesa STK Push endpoint (real production) ==========
+// ========== Real M‑Pesa STK Push endpoint ==========
 app.post('/api/mpesa/stkpush', async (req, res) => {
+  // CORS headers for web
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+
   const { amount, phone, accountRef, desc } = req.body;
   if (!amount || !phone) {
     return res.status(400).json({ error: 'Missing amount or phone' });
   }
 
-  try {
-    const accessToken = await getMpesaAccessToken();
-    const timestamp = new Date().toISOString().replace(/[^0-9]/g, '').slice(0, 14);
-    const password = generatePassword(MPESA_SHORTCODE, MPESA_PASSKEY, timestamp);
+  // Check if all required credentials are present
+  if (!process.env.MPESA_CONSUMER_KEY || !process.env.MPESA_CONSUMER_SECRET ||
+      !process.env.MPESA_PASSKEY || !process.env.MPESA_SHORTCODE) {
+    console.error('M-Pesa credentials missing – cannot send real STK push');
+    return res.status(500).json({ error: 'Payment gateway not configured' });
+  }
 
-    const data = {
-      BusinessShortCode: MPESA_SHORTCODE,
+  try {
+    // 1. Get OAuth token from Safaricom
+    const auth = Buffer.from(`${process.env.MPESA_CONSUMER_KEY}:${process.env.MPESA_CONSUMER_SECRET}`).toString('base64');
+    const tokenRes = await axios.get('https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials', {
+      headers: { Authorization: `Basic ${auth}` },
+    });
+    const accessToken = tokenRes.data.access_token;
+    console.log('Access token obtained');
+
+    // 2. Generate password
+    const timestamp = new Date().toISOString().replace(/[^0-9]/g, '').slice(0, 14);
+    const password = Buffer.from(process.env.MPESA_SHORTCODE + process.env.MPESA_PASSKEY + timestamp).toString('base64');
+
+    // 3. Build STK push payload
+    const payload = {
+      BusinessShortCode: process.env.MPESA_SHORTCODE,
       Password: password,
       Timestamp: timestamp,
       TransactionType: 'CustomerPayBillOnline',
       Amount: amount,
       PartyA: phone,
-      PartyB: MPESA_SHORTCODE,
+      PartyB: process.env.MPESA_SHORTCODE,
       PhoneNumber: phone,
-      CallBackURL: MPESA_CALLBACK_URL,
-      AccountReference: accountRef || 'GoGrabPayment',
-      TransactionDesc: desc || 'Payment for order/wallet',
+      CallBackURL: process.env.MPESA_CALLBACK_URL || 'https://gograb-backend-production.up.railway.app/mpesa/callback',
+      AccountReference: accountRef || 'GoGrab',
+      TransactionDesc: desc || 'Payment',
     };
 
-    const response = await axios.post(
-      'https://api.safaricom.co.ke/mpesa/stkpush/v1/processrequest',
-      data,
+    // 4. Send STK push request to Safaricom
+    const stkRes = await axios.post(
+      'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest',
+      payload,
       { headers: { Authorization: `Bearer ${accessToken}` } }
     );
 
+    console.log('Safaricom STK push response:', JSON.stringify(stkRes.data, null, 2));
+
     // Store transaction in Firestore for callback matching
-    const transactionRef = db.collection('mpesa_transactions').doc(response.data.CheckoutRequestID);
-    await transactionRef.set({
-      checkoutRequestID: response.data.CheckoutRequestID,
+    await db.collection('mpesa_transactions').doc(stkRes.data.CheckoutRequestID).set({
+      checkoutRequestID: stkRes.data.CheckoutRequestID,
       amount,
       phone,
       accountRef,
@@ -101,10 +97,10 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
     res.json({
       success: true,
       message: 'STK push sent',
-      checkoutRequestID: response.data.CheckoutRequestID,
+      checkoutRequestID: stkRes.data.CheckoutRequestID,
     });
   } catch (error) {
-    console.error('STK push error:', error.response?.data || error.message);
+    console.error('STK push error (Safaricom API):', error.response?.data || error.message);
     res.status(500).json({ error: 'Failed to initiate STK push. Please try again.' });
   }
 });
@@ -145,14 +141,7 @@ app.post('/mpesa/callback', async (req, res) => {
     updateData.status = 'completed';
 
     const { accountRef, amount, phone } = transaction;
-    if (accountRef.startsWith('Order')) {
-      const orderId = accountRef.replace('Order', '');
-      await db.collection('orders').doc(orderId).update({
-        paymentStatus: 'paid',
-        mpesaReceipt: receiptNumber,
-        paidAt: admin.firestore.FieldValue.serverTimestamp(),
-      });
-    } else if (accountRef === 'WalletTopUp') {
+    if (accountRef === 'WalletTopUp') {
       const userQuery = await db.collection('users').where('phone', '==', phone).limit(1).get();
       if (!userQuery.empty) {
         const userId = userQuery.docs[0].id;
