@@ -8,11 +8,15 @@ dotenv.config();
 
 // ========== Firebase Admin SDK ==========
 if (process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON) {
-  const serviceAccount = JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON);
-  admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
-    projectId: serviceAccount.project_id,
-  });
+  try {
+    const serviceAccount = JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON);
+    admin.initializeApp({
+      credential: admin.credential.cert(serviceAccount),
+      projectId: serviceAccount.project_id,
+    });
+  } catch (e) {
+    console.error('Failed to parse GOOGLE_APPLICATION_CREDENTIALS_JSON', e.message);
+  }
 } else {
   admin.initializeApp({
     projectId: process.env.FIREBASE_PROJECT_ID || 'gograb-ke',
@@ -29,34 +33,50 @@ app.get('/', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-// ========== Real M‑Pesa STK Push endpoint ==========
+// ========== Real M‑Pesa STK Push endpoint (with detailed error logging) ==========
 app.post('/api/mpesa/stkpush', async (req, res) => {
-  // CORS headers for web
+  // CORS headers
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
 
   const { amount, phone, accountRef, desc } = req.body;
+  console.log('STK push request received:', { amount, phone, accountRef, desc });
+
   if (!amount || !phone) {
     return res.status(400).json({ error: 'Missing amount or phone' });
   }
 
-  // Check if all required credentials are present
-  if (!process.env.MPESA_CONSUMER_KEY || !process.env.MPESA_CONSUMER_SECRET ||
-      !process.env.MPESA_PASSKEY || !process.env.MPESA_SHORTCODE) {
-    console.error('M-Pesa credentials missing – cannot send real STK push');
-    return res.status(500).json({ error: 'Payment gateway not configured' });
+  // Validate phone number format
+  let cleanedPhone = phone.replace(/\D/g, '');
+  if (cleanedPhone.startsWith('0')) cleanedPhone = '254' + cleanedPhone.substring(1);
+  if (!cleanedPhone.startsWith('254')) cleanedPhone = '254' + cleanedPhone;
+  if (cleanedPhone.length < 12) {
+    return res.status(400).json({ error: 'Invalid phone number format. Use 254XXXXXXXXX' });
+  }
+
+  // Check if all required credentials are present in environment variables
+  const missingVars = [];
+  if (!process.env.MPESA_CONSUMER_KEY) missingVars.push('MPESA_CONSUMER_KEY');
+  if (!process.env.MPESA_CONSUMER_SECRET) missingVars.push('MPESA_CONSUMER_SECRET');
+  if (!process.env.MPESA_PASSKEY) missingVars.push('MPESA_PASSKEY');
+  if (!process.env.MPESA_SHORTCODE) missingVars.push('MPESA_SHORTCODE');
+
+  if (missingVars.length > 0) {
+    console.error('Missing M-Pesa environment variables:', missingVars);
+    return res.status(500).json({ error: 'Payment gateway not configured. Missing credentials.' });
   }
 
   try {
-    // 1. Get OAuth token from Safaricom
+    // 1. Get OAuth token
     const auth = Buffer.from(`${process.env.MPESA_CONSUMER_KEY}:${process.env.MPESA_CONSUMER_SECRET}`).toString('base64');
     const tokenRes = await axios.get('https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials', {
       headers: { Authorization: `Basic ${auth}` },
+      timeout: 10000,
     });
     const accessToken = tokenRes.data.access_token;
-    console.log('Access token obtained');
+    console.log('✅ Access token obtained');
 
-    // 2. Generate password
+    // 2. Generate timestamp and password
     const timestamp = new Date().toISOString().replace(/[^0-9]/g, '').slice(0, 14);
     const password = Buffer.from(process.env.MPESA_SHORTCODE + process.env.MPESA_PASSKEY + timestamp).toString('base64');
 
@@ -67,28 +87,29 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
       Timestamp: timestamp,
       TransactionType: 'CustomerPayBillOnline',
       Amount: amount,
-      PartyA: phone,
+      PartyA: cleanedPhone,
       PartyB: process.env.MPESA_SHORTCODE,
-      PhoneNumber: phone,
+      PhoneNumber: cleanedPhone,
       CallBackURL: process.env.MPESA_CALLBACK_URL || 'https://gograb-backend-production.up.railway.app/mpesa/callback',
       AccountReference: accountRef || 'GoGrab',
       TransactionDesc: desc || 'Payment',
     };
 
-    // 4. Send STK push request to Safaricom
+    // 4. Send STK push
     const stkRes = await axios.post(
       'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest',
       payload,
-      { headers: { Authorization: `Bearer ${accessToken}` } }
+      { headers: { Authorization: `Bearer ${accessToken}` }, timeout: 15000 }
     );
 
-    console.log('Safaricom STK push response:', JSON.stringify(stkRes.data, null, 2));
+    console.log('✅ Safaricom STK push response:', JSON.stringify(stkRes.data, null, 2));
 
-    // Store transaction in Firestore for callback matching
-    await db.collection('mpesa_transactions').doc(stkRes.data.CheckoutRequestID).set({
+    // Store transaction
+    const transactionRef = db.collection('mpesa_transactions').doc(stkRes.data.CheckoutRequestID);
+    await transactionRef.set({
       checkoutRequestID: stkRes.data.CheckoutRequestID,
       amount,
-      phone,
+      phone: cleanedPhone,
       accountRef,
       status: 'pending',
       createdAt: admin.firestore.FieldValue.serverTimestamp(),
@@ -100,14 +121,18 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
       checkoutRequestID: stkRes.data.CheckoutRequestID,
     });
   } catch (error) {
-    console.error('STK push error (Safaricom API):', error.response?.data || error.message);
+    console.error('❌ STK push error:', error.response?.data || error.message);
+    // Provide more specific error messages
+    if (error.response?.data?.errorCode) {
+      return res.status(500).json({ error: `Safaricom error: ${error.response.data.errorCode} - ${error.response.data.errorMessage}` });
+    }
     res.status(500).json({ error: 'Failed to initiate STK push. Please try again.' });
   }
 });
 
-// ========== M‑Pesa Callback (Safaricom sends result here) ==========
+// ========== M-Pesa Callback ==========
 app.post('/mpesa/callback', async (req, res) => {
-  console.log('M-Pesa callback received', JSON.stringify(req.body, null, 2));
+  console.log('📞 M-Pesa callback received', JSON.stringify(req.body, null, 2));
   const { Body } = req.body;
   if (!Body || !Body.stkCallback) {
     return res.json({ ResultCode: 1, ResultDesc: 'Invalid request' });
@@ -161,7 +186,7 @@ app.post('/mpesa/callback', async (req, res) => {
   res.json({ ResultCode: 0, ResultDesc: 'Success' });
 });
 
-// ========== Withdrawal endpoint (admin) ==========
+// ========== Withdrawal endpoint ==========
 app.post('/api/withdraw', async (req, res) => {
   const { userId, amount, userType, withdrawalId } = req.body;
   if (!userId || !amount || !userType || !withdrawalId) {
@@ -172,10 +197,7 @@ app.post('/api/withdraw', async (req, res) => {
     const userDoc = await db.collection('users').doc(userId).get();
     if (!userDoc.exists) return res.status(404).json({ error: 'User not found' });
     const userData = userDoc.data();
-    const phone = userData.phone;
-    const tillNumber = userData.tillNumber;
 
-    // TODO: Implement M-Pesa B2C here if needed
     await db.collection('withdrawals').doc(withdrawalId).update({
       status: 'processed',
       processedAt: admin.firestore.FieldValue.serverTimestamp(),
