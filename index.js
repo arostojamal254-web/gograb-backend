@@ -33,20 +33,17 @@ app.get('/', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-// ========== Real M‑Pesa STK Push endpoint (with detailed error logging) ==========
+// ========== Live M‑Pesa STK Push ==========
 app.post('/api/mpesa/stkpush', async (req, res) => {
-  // CORS headers
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
 
   const { amount, phone, accountRef, desc } = req.body;
-  console.log('STK push request received:', { amount, phone, accountRef, desc });
-
   if (!amount || !phone) {
     return res.status(400).json({ error: 'Missing amount or phone' });
   }
 
-  // Validate phone number format
+  // Format phone to 254XXXXXXXXX
   let cleanedPhone = phone.replace(/\D/g, '');
   if (cleanedPhone.startsWith('0')) cleanedPhone = '254' + cleanedPhone.substring(1);
   if (!cleanedPhone.startsWith('254')) cleanedPhone = '254' + cleanedPhone;
@@ -54,7 +51,6 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
     return res.status(400).json({ error: 'Invalid phone number format. Use 254XXXXXXXXX' });
   }
 
-  // Check if all required credentials are present in environment variables
   const missingVars = [];
   if (!process.env.MPESA_CONSUMER_KEY) missingVars.push('MPESA_CONSUMER_KEY');
   if (!process.env.MPESA_CONSUMER_SECRET) missingVars.push('MPESA_CONSUMER_SECRET');
@@ -67,9 +63,9 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
   }
 
   try {
-    // 1. Get OAuth token
+    // 1. Get OAuth token (LIVE)
     const auth = Buffer.from(`${process.env.MPESA_CONSUMER_KEY}:${process.env.MPESA_CONSUMER_SECRET}`).toString('base64');
-    const tokenRes = await axios.get('https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials', {
+    const tokenRes = await axios.get('https://api.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials', {
       headers: { Authorization: `Basic ${auth}` },
       timeout: 10000,
     });
@@ -80,7 +76,7 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
     const timestamp = new Date().toISOString().replace(/[^0-9]/g, '').slice(0, 14);
     const password = Buffer.from(process.env.MPESA_SHORTCODE + process.env.MPESA_PASSKEY + timestamp).toString('base64');
 
-    // 3. Build STK push payload
+    // 3. Build payload
     const payload = {
       BusinessShortCode: process.env.MPESA_SHORTCODE,
       Password: password,
@@ -95,9 +91,9 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
       TransactionDesc: desc || 'Payment',
     };
 
-    // 4. Send STK push
+    // 4. Send STK push (LIVE)
     const stkRes = await axios.post(
-      'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest',
+      'https://api.safaricom.co.ke/mpesa/stkpush/v1/processrequest',
       payload,
       { headers: { Authorization: `Bearer ${accessToken}` }, timeout: 15000 }
     );
@@ -105,8 +101,7 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
     console.log('✅ Safaricom STK push response:', JSON.stringify(stkRes.data, null, 2));
 
     // Store transaction
-    const transactionRef = db.collection('mpesa_transactions').doc(stkRes.data.CheckoutRequestID);
-    await transactionRef.set({
+    await db.collection('mpesa_transactions').doc(stkRes.data.CheckoutRequestID).set({
       checkoutRequestID: stkRes.data.CheckoutRequestID,
       amount,
       phone: cleanedPhone,
@@ -122,7 +117,6 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
     });
   } catch (error) {
     console.error('❌ STK push error:', error.response?.data || error.message);
-    // Provide more specific error messages
     if (error.response?.data?.errorCode) {
       return res.status(500).json({ error: `Safaricom error: ${error.response.data.errorCode} - ${error.response.data.errorMessage}` });
     }
@@ -130,7 +124,7 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
   }
 });
 
-// ========== M-Pesa Callback ==========
+// ========== Callback (same as before) ==========
 app.post('/mpesa/callback', async (req, res) => {
   console.log('📞 M-Pesa callback received', JSON.stringify(req.body, null, 2));
   const { Body } = req.body;
@@ -219,6 +213,5 @@ app.post('/api/withdraw', async (req, res) => {
   }
 });
 
-// Start server
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Backend running on port ${PORT}`));
