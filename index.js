@@ -33,39 +33,45 @@ app.get('/', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-// ========== Live M‑Pesa STK Push ==========
+// ========== Live M‑Pesa STK Push endpoint ==========
 app.post('/api/mpesa/stkpush', async (req, res) => {
+  // CORS
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
 
   const { amount, phone, accountRef, desc } = req.body;
+  console.log('STK push request received:', { amount, phone, accountRef, desc });
+
   if (!amount || !phone) {
     return res.status(400).json({ error: 'Missing amount or phone' });
   }
 
-  // Format phone to 254XXXXXXXXX
+  // Format phone number to 254XXXXXXXXX
   let cleanedPhone = phone.replace(/\D/g, '');
   if (cleanedPhone.startsWith('0')) cleanedPhone = '254' + cleanedPhone.substring(1);
   if (!cleanedPhone.startsWith('254')) cleanedPhone = '254' + cleanedPhone;
-  if (cleanedPhone.length < 12) {
-    return res.status(400).json({ error: 'Invalid phone number format. Use 254XXXXXXXXX' });
+  if (cleanedPhone.length !== 12) {
+    return res.status(400).json({ error: 'Invalid phone number. Use 2547XXXXXXXX (12 digits).' });
   }
 
-  const missingVars = [];
-  if (!process.env.MPESA_CONSUMER_KEY) missingVars.push('MPESA_CONSUMER_KEY');
-  if (!process.env.MPESA_CONSUMER_SECRET) missingVars.push('MPESA_CONSUMER_SECRET');
-  if (!process.env.MPESA_PASSKEY) missingVars.push('MPESA_PASSKEY');
-  if (!process.env.MPESA_SHORTCODE) missingVars.push('MPESA_SHORTCODE');
-
-  if (missingVars.length > 0) {
-    console.error('Missing M-Pesa environment variables:', missingVars);
-    return res.status(500).json({ error: 'Payment gateway not configured. Missing credentials.' });
+  // Check live credentials
+  const missing = [];
+  if (!process.env.MPESA_CONSUMER_KEY) missing.push('MPESA_CONSUMER_KEY');
+  if (!process.env.MPESA_CONSUMER_SECRET) missing.push('MPESA_CONSUMER_SECRET');
+  if (!process.env.MPESA_PASSKEY) missing.push('MPESA_PASSKEY');
+  if (!process.env.MPESA_SHORTCODE) missing.push('MPESA_SHORTCODE');
+  if (missing.length) {
+    console.error('Missing environment variables:', missing);
+    return res.status(500).json({ error: 'Payment gateway not configured' });
   }
+
+  // Live API base URL
+  const baseUrl = 'https://api.safaricom.co.ke';
 
   try {
-    // 1. Get OAuth token (LIVE)
+    // 1. Get OAuth token
     const auth = Buffer.from(`${process.env.MPESA_CONSUMER_KEY}:${process.env.MPESA_CONSUMER_SECRET}`).toString('base64');
-    const tokenRes = await axios.get('https://api.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials', {
+    const tokenRes = await axios.get(`${baseUrl}/oauth/v1/generate?grant_type=client_credentials`, {
       headers: { Authorization: `Basic ${auth}` },
       timeout: 10000,
     });
@@ -91,16 +97,15 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
       TransactionDesc: desc || 'Payment',
     };
 
-    // 4. Send STK push (LIVE)
-    const stkRes = await axios.post(
-      'https://api.safaricom.co.ke/mpesa/stkpush/v1/processrequest',
-      payload,
-      { headers: { Authorization: `Bearer ${accessToken}` }, timeout: 15000 }
-    );
+    // 4. Send STK push
+    const stkRes = await axios.post(`${baseUrl}/mpesa/stkpush/v1/processrequest`, payload, {
+      headers: { Authorization: `Bearer ${accessToken}` },
+      timeout: 15000,
+    });
 
-    console.log('✅ Safaricom STK push response:', JSON.stringify(stkRes.data, null, 2));
+    console.log('✅ Live Safaricom response:', JSON.stringify(stkRes.data, null, 2));
 
-    // Store transaction
+    // Store transaction for callback
     await db.collection('mpesa_transactions').doc(stkRes.data.CheckoutRequestID).set({
       checkoutRequestID: stkRes.data.CheckoutRequestID,
       amount,
@@ -116,15 +121,15 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
       checkoutRequestID: stkRes.data.CheckoutRequestID,
     });
   } catch (error) {
-    console.error('❌ STK push error:', error.response?.data || error.message);
-    if (error.response?.data?.errorCode) {
-      return res.status(500).json({ error: `Safaricom error: ${error.response.data.errorCode} - ${error.response.data.errorMessage}` });
+    console.error('❌ STK push error (live):', error.response?.data || error.message);
+    if (error.response?.data) {
+      return res.status(500).json({ error: `Safaricom: ${error.response.data.errorCode} - ${error.response.data.errorMessage}` });
     }
-    res.status(500).json({ error: 'Failed to initiate STK push. Please try again.' });
+    res.status(500).json({ error: 'Failed to initiate STK push. Check logs.' });
   }
 });
 
-// ========== Callback (same as before) ==========
+// ========== M‑Pesa Callback (live) ==========
 app.post('/mpesa/callback', async (req, res) => {
   console.log('📞 M-Pesa callback received', JSON.stringify(req.body, null, 2));
   const { Body } = req.body;
@@ -190,7 +195,6 @@ app.post('/api/withdraw', async (req, res) => {
   try {
     const userDoc = await db.collection('users').doc(userId).get();
     if (!userDoc.exists) return res.status(404).json({ error: 'User not found' });
-    const userData = userDoc.data();
 
     await db.collection('withdrawals').doc(withdrawalId).update({
       status: 'processed',
@@ -213,5 +217,6 @@ app.post('/api/withdraw', async (req, res) => {
   }
 });
 
+// Start server
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Backend running on port ${PORT}`));
