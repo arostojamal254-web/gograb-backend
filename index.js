@@ -6,7 +6,7 @@ const axios = require('axios');
 
 dotenv.config();
 
-// ========== Firebase Admin SDK ==========
+// Firebase Admin SDK
 if (process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON) {
   try {
     const serviceAccount = JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON);
@@ -28,14 +28,12 @@ const app = express();
 app.use(cors({ origin: '*', methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'] }));
 app.use(express.json());
 
-// ========== Health check ==========
 app.get('/', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-// ========== Live M‑Pesa STK Push endpoint ==========
+// ---------- Live M‑Pesa STK Push ----------
 app.post('/api/mpesa/stkpush', async (req, res) => {
-  // CORS
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
 
@@ -62,16 +60,13 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
   if (!process.env.MPESA_SHORTCODE) missing.push('MPESA_SHORTCODE');
   if (missing.length) {
     console.error('Missing environment variables:', missing);
-    return res.status(500).json({ error: 'Payment gateway not configured' });
+    return res.status(500).json({ error: `Missing credentials: ${missing.join(', ')}` });
   }
-
-  // Live API base URL
-  const baseUrl = 'https://api.safaricom.co.ke';
 
   try {
     // 1. Get OAuth token
     const auth = Buffer.from(`${process.env.MPESA_CONSUMER_KEY}:${process.env.MPESA_CONSUMER_SECRET}`).toString('base64');
-    const tokenRes = await axios.get(`${baseUrl}/oauth/v1/generate?grant_type=client_credentials`, {
+    const tokenRes = await axios.get('https://api.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials', {
       headers: { Authorization: `Basic ${auth}` },
       timeout: 10000,
     });
@@ -82,7 +77,7 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
     const timestamp = new Date().toISOString().replace(/[^0-9]/g, '').slice(0, 14);
     const password = Buffer.from(process.env.MPESA_SHORTCODE + process.env.MPESA_PASSKEY + timestamp).toString('base64');
 
-    // 3. Build payload
+    // 3. Build payload (mask sensitive fields for logging)
     const payload = {
       BusinessShortCode: process.env.MPESA_SHORTCODE,
       Password: password,
@@ -97,15 +92,19 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
       TransactionDesc: desc || 'Payment',
     };
 
-    // 4. Send STK push
-    const stkRes = await axios.post(`${baseUrl}/mpesa/stkpush/v1/processrequest`, payload, {
+    // Log the full payload (mask password)
+    const logPayload = { ...payload, Password: '*****' };
+    console.log('📤 STK Push payload sent to Safaricom:', JSON.stringify(logPayload, null, 2));
+
+    // 4. Send STK push (live)
+    const stkRes = await axios.post('https://api.safaricom.co.ke/mpesa/stkpush/v1/processrequest', payload, {
       headers: { Authorization: `Bearer ${accessToken}` },
       timeout: 15000,
     });
 
-    console.log('✅ Live Safaricom response:', JSON.stringify(stkRes.data, null, 2));
+    console.log('✅ Safaricom live response:', JSON.stringify(stkRes.data, null, 2));
 
-    // Store transaction for callback
+    // Store transaction
     await db.collection('mpesa_transactions').doc(stkRes.data.CheckoutRequestID).set({
       checkoutRequestID: stkRes.data.CheckoutRequestID,
       amount,
@@ -121,17 +120,20 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
       checkoutRequestID: stkRes.data.CheckoutRequestID,
     });
   } catch (error) {
-    console.error('❌ STK push error (live):', error.response?.data || error.message);
+    console.error('❌ STK push error:', error.response?.data || error.message);
     if (error.response?.data) {
-      return res.status(500).json({ error: `Safaricom: ${error.response.data.errorCode} - ${error.response.data.errorMessage}` });
+      return res.status(500).json({
+        error: `Safaricom error: ${error.response.data.errorCode} - ${error.response.data.errorMessage}`,
+        details: error.response.data,
+      });
     }
     res.status(500).json({ error: 'Failed to initiate STK push. Check logs.' });
   }
 });
 
-// ========== M‑Pesa Callback (live) ==========
+// ---------- M‑Pesa Callback ----------
 app.post('/mpesa/callback', async (req, res) => {
-  console.log('📞 M-Pesa callback received', JSON.stringify(req.body, null, 2));
+  console.log('📞 Callback received:', JSON.stringify(req.body, null, 2));
   const { Body } = req.body;
   if (!Body || !Body.stkCallback) {
     return res.json({ ResultCode: 1, ResultDesc: 'Invalid request' });
@@ -146,22 +148,17 @@ app.post('/mpesa/callback', async (req, res) => {
   }
 
   const transaction = transactionDoc.data();
-  const updateData = {
-    resultCode: ResultCode,
-    resultDesc: ResultDesc,
-    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-  };
+  const updateData = { resultCode: ResultCode, resultDesc: ResultDesc, updatedAt: admin.firestore.FieldValue.serverTimestamp() };
 
   if (ResultCode === 0 && CallbackMetadata) {
     const items = CallbackMetadata.Item;
-    let receiptNumber = '';
-    let paidAmount = 0;
+    let receipt = '', paid = 0;
     for (let item of items) {
-      if (item.Name === 'MpesaReceiptNumber') receiptNumber = item.Value;
-      if (item.Name === 'Amount') paidAmount = item.Value;
+      if (item.Name === 'MpesaReceiptNumber') receipt = item.Value;
+      if (item.Name === 'Amount') paid = item.Value;
     }
-    updateData.receiptNumber = receiptNumber;
-    updateData.paidAmount = paidAmount;
+    updateData.receiptNumber = receipt;
+    updateData.paidAmount = paid;
     updateData.status = 'completed';
 
     const { accountRef, amount, phone } = transaction;
@@ -185,7 +182,7 @@ app.post('/mpesa/callback', async (req, res) => {
   res.json({ ResultCode: 0, ResultDesc: 'Success' });
 });
 
-// ========== Withdrawal endpoint ==========
+// ---------- Withdrawal endpoint ----------
 app.post('/api/withdraw', async (req, res) => {
   const { userId, amount, userType, withdrawalId } = req.body;
   if (!userId || !amount || !userType || !withdrawalId) {
@@ -217,6 +214,5 @@ app.post('/api/withdraw', async (req, res) => {
   }
 });
 
-// Start server
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Backend running on port ${PORT}`));
