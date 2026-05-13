@@ -317,6 +317,128 @@ app.post('/api/withdraw', async (req, res) => {
   return app.handle(req, res, '/api/b2c/withdraw');
 });
 
-// Start server
+// ========== 4. FCM Push Notifications on Order Status Change ==========
+// This listener runs in the background and sends FCM messages to customers,
+// vendors, and riders when an order's status changes.
+(async function startFCMListener() {
+  console.log('Starting FCM order status listener...');
+  
+  db.collection('orders_shared')
+    .where('status', 'in', [
+      'pending',
+      'accepted',
+      'preparing',
+      'readyForPickup',
+      'rider_assigned',
+      'picked_up',
+      'delivering',
+      'delivered'
+    ])
+    .onSnapshot(async (snapshot) => {
+      snapshot.docChanges().forEach(async (change) => {
+        // Only handle modified documents (status changes)
+        if (change.type !== 'modified') return;
+
+        const beforeData = change.doc._previousData;  // may be undefined
+        const afterData = change.doc.data();
+        const orderId = change.doc.id;
+
+        const oldStatus = beforeData ? beforeData.status : null;
+        const newStatus = afterData.status;
+
+        // Avoid duplicate notifications if status didn't change
+        if (oldStatus === newStatus) return;
+
+        console.log(`Order ${orderId} changed from ${oldStatus} to ${newStatus}`);
+
+        const customerId = afterData.userId || afterData.customerId;
+        const vendorId = afterData.vendorId;
+        const riderId = afterData.riderId;
+
+        // Decide who to notify based on new status
+        switch (newStatus) {
+          case 'pending':
+            // New order – notify vendor
+            if (vendorId) await sendFCM(vendorId, '🛎️ New Order', `Order #${orderId.substring(0,6)} just placed`, orderId, 'delivery');
+            break;
+
+          case 'accepted':
+            if (customerId) await sendFCM(customerId, '✅ Vendor Accepted', `Your order #${orderId.substring(0,6)} has been accepted`, orderId, 'delivery');
+            break;
+
+          case 'preparing':
+            if (customerId) await sendFCM(customerId, '🍳 Order Preparing', `Your order #${orderId.substring(0,6)} is being prepared`, orderId, 'delivery');
+            break;
+
+          case 'readyForPickup':
+            if (customerId) await sendFCM(customerId, '📦 Order Ready', `Your order #${orderId.substring(0,6)} is ready for pickup`, orderId, 'delivery');
+            // Optionally notify riders (you already have Redis for auto‑assignment)
+            break;
+
+          case 'rider_assigned':
+            if (customerId) await sendFCM(customerId, '🛵 Rider Assigned', `A rider is heading to pick up your order #${orderId.substring(0,6)}`, orderId, 'delivery');
+            if (riderId) await sendFCM(riderId, '🛵 New Delivery', `You have been assigned to deliver order #${orderId.substring(0,6)}`, orderId, 'delivery');
+            break;
+
+          case 'picked_up':
+            if (customerId) await sendFCM(customerId, '📦 Order Picked Up', `Your order #${orderId.substring(0,6)} is on the way`, orderId, 'delivery');
+            break;
+
+          case 'delivering':
+            if (customerId) await sendFCM(customerId, '🚚 On the Way', `Your order #${orderId.substring(0,6)} is being delivered`, orderId, 'delivery');
+            break;
+
+          case 'delivered':
+            if (customerId) await sendFCM(customerId, '📬 Delivered!', `Your order #${orderId.substring(0,6)} has been delivered`, orderId, 'delivery');
+            if (vendorId) await sendFCM(vendorId, '🏁 Order Delivered', `Order #${orderId.substring(0,6)} was delivered successfully`, orderId, 'delivery');
+            break;
+        }
+      });
+    }, (error) => {
+      console.error('FCM listener error:', error);
+    });
+})();
+
+// Helper function to send FCM push notification to a specific user
+async function sendFCM(userId, title, body, orderId, type) {
+  try {
+    // Retrieve the user's FCM token from Firestore (assumes tokens stored in `fcm_tokens/{userId}`)
+    const tokenDoc = await db.collection('fcm_tokens').doc(userId).get();
+    if (!tokenDoc.exists) {
+      console.log(`No FCM token found for user ${userId}`);
+      return;
+    }
+
+    const token = tokenDoc.data().token;
+    if (!token) return;
+
+    const message = {
+      token: token,
+      notification: {
+        title: title,
+        body: body,
+      },
+      data: {
+        orderId: orderId,
+        type: type,
+        click_action: 'FLUTTER_NOTIFICATION_CLICK',
+      },
+      android: {
+        priority: 'high',
+        notification: {
+          channelId: 'gograb_channel',
+          icon: 'ic_launcher',
+        },
+      },
+    };
+
+    const response = await admin.messaging().send(message);
+    console.log(`FCM sent to ${userId}: ${response}`);
+  } catch (error) {
+    console.error(`Error sending FCM to ${userId}:`, error);
+  }
+}
+
+// ========== Start Server ==========
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Backend running on port ${PORT}`));
