@@ -18,10 +18,10 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 8080;
 
-// ✅ Base URL for callbacks
+// Base URL for callbacks
 const BASE_URL = process.env.BASE_URL || 'https://gograb-backend-production.up.railway.app';
 
-// ========== STK PUSH ==========
+// ========== STK PUSH (customer payment) ==========
 app.post('/api/mpesa/stkpush', async (req, res) => {
   try {
     const { amount, phone, accountRef, desc } = req.body;
@@ -75,7 +75,7 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
   }
 });
 
-// ========== STK CALLBACK ==========
+// ========== STK CALLBACK (update wallet after payment) ==========
 app.post('/mpesa/callback', async (req, res) => {
   try {
     const callback = req.body.Body.stkCallback;
@@ -104,15 +104,12 @@ app.post('/mpesa/callback', async (req, res) => {
   }
 });
 
-// ========== WITHDRAWAL PROCESSING (no auth required) ==========
+// ========== WITHDRAWAL PROCESSING ==========
 app.post('/api/withdraw', async (req, res) => {
   try {
     const { userId, amount, userType, withdrawalId } = req.body;
 
-    // The admin app sends the token, but we don't verify it here.
-    // This endpoint is only called by the admin app, which is already authenticated.
-
-    const b2cResult = await initiateB2C(userId, amount, userType);
+    const b2cResult = await initiateB2C(userId, amount, userType, withdrawalId);
     if (!b2cResult.success) {
       return res.status(500).json({ success: false, error: b2cResult.error || 'B2C payment failed' });
     }
@@ -132,34 +129,39 @@ app.post('/api/withdraw', async (req, res) => {
 });
 
 // ========== B2C Helper ==========
-async function initiateB2C(userId, amount, userType) {
+async function initiateB2C(userId, amount, userType, withdrawalId) {
   try {
     console.log('Initiating B2C payment...');
-    console.log(`UserId: ${userId}, Amount: ${amount}, UserType: ${userType}`);
+    console.log(`UserId: ${userId}, Amount: ${amount}, UserType: ${userType}, WithdrawalId: ${withdrawalId}`);
 
-    const userDoc = await admin.firestore().collection('users').doc(userId).get();
-    const userData = userDoc.data() || {};
+    // ========== 1. Get phone number from the withdrawal request ==========
+    let userPhone = null;
 
-    let userPhone = userData.phone || userData.phoneNumber;
-    if (!userPhone) {
-      const withdrawalDoc = await admin.firestore()
-        .collection('withdrawals')
-        .where('vendorId', '==', userId)
-        .orderBy('createdAt', 'desc')
-        .limit(1)
-        .get();
-      if (!withdrawalDoc.empty) {
-        userPhone = withdrawalDoc.docs[0].data().accountDetails || '';
+    if (withdrawalId) {
+      const withdrawalDoc = await admin.firestore().collection('withdrawals').doc(withdrawalId).get();
+      if (withdrawalDoc.exists) {
+        const withdrawalData = withdrawalDoc.data();
+        userPhone = withdrawalData.accountDetails; // the phone/till number the user entered
+        console.log(`Phone from withdrawal request: ${userPhone}`);
       }
+    }
+
+    // Fallback: look in users collection
+    if (!userPhone || userPhone === '0700000005') {
+      const userDoc = await admin.firestore().collection('users').doc(userId).get();
+      const userData = userDoc.data() || {};
+      userPhone = userData.phone || userData.phoneNumber;
     }
 
     if (!userPhone || userPhone === '0700000005') {
       return { success: false, error: 'No valid phone number found for user' };
     }
 
+    // Clean the phone number (strip + and leading 0, add 254)
     const cleanPhone = userPhone.replace(/^\+/, '').replace(/^0/, '254');
-    console.log(`Phone: ${cleanPhone}`);
+    console.log(`Final phone: ${cleanPhone}`);
 
+    // ========== 2. Get access token ==========
     const auth = Buffer.from(
       `${process.env.MPESA_CONSUMER_KEY}:${process.env.MPESA_CONSUMER_SECRET}`
     ).toString('base64');
@@ -171,6 +173,7 @@ async function initiateB2C(userId, amount, userType) {
 
     const accessToken = tokenResponse.data.access_token;
 
+    // ========== 3. Send B2C request ==========
     const b2cPayload = {
       InitiatorName: process.env.MPESA_B2C_INITIATOR_NAME,
       SecurityCredential: process.env.MPESA_B2C_SECURITY_CREDENTIAL,
