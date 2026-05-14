@@ -47,7 +47,7 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
       TransactionType: TransactionType || 'CustomerBuyGoodsOnline',
       Amount: amount,
       PartyA: phone,
-      PartyB: '4565781',                // ✅ Fixed till number
+      PartyB: '4565781',
       PhoneNumber: phone,
       CallBackURL: `${BASE_URL}/mpesa/callback`,
       AccountReference: accountRef,
@@ -86,7 +86,6 @@ app.post('/mpesa/callback', async (req, res) => {
     if (callback && callback.ResultCode === 0) {
       console.log('✅ Payment successful');
 
-      // Safely extract Amount and AccountReference from metadata
       let amount = null;
       let accountRef = null;
 
@@ -105,28 +104,58 @@ app.post('/mpesa/callback', async (req, res) => {
 
       console.log(`Amount: ${amount}, AccountRef: ${accountRef}`);
 
-      // Find the order by mpesaReceipt (shortRef)
-      const ordersRef = admin.firestore().collection('orders');
-      const orderSnapshot = await ordersRef.where('mpesaReceipt', '==', accountRef).limit(1).get();
+      // Find the order in orders_shared (or orders) by mpesaReceipt
+      const ordersSharedRef = admin.firestore().collection('orders_shared');
+      const orderSnapshot = await ordersSharedRef.where('mpesaReceipt', '==', accountRef).limit(1).get();
 
       if (!orderSnapshot.empty) {
-        const order = orderSnapshot.docs[0].data();
+        const orderDoc = orderSnapshot.docs[0];
+        const order = orderDoc.data();
         const userId = order.userId;
 
-        await admin.firestore().collection('wallets').doc(userId).set({
+        // Update order status to 'paid' or 'pending' as needed
+        await orderDoc.ref.update({
+          paymentStatus: 'paid',
+          mpesaReceiptNumber: accountRef,
+        });
+
+        // Update wallet balance
+        const walletRef = admin.firestore().collection('wallets').doc(userId);
+        await walletRef.set({
           balance: admin.firestore.FieldValue.increment(Number(amount)),
           updatedAt: admin.firestore.FieldValue.serverTimestamp(),
         }, { merge: true });
 
-        console.log('✅ Wallet updated');
+        console.log('✅ Wallet updated and order status set to paid');
       } else {
-        console.log(`❌ No order found with mpesaReceipt: ${accountRef}`);
+        // Try the legacy 'orders' collection
+        const ordersRef = admin.firestore().collection('orders');
+        const legacySnapshot = await ordersRef.where('mpesaReceipt', '==', accountRef).limit(1).get();
+        if (!legacySnapshot.empty) {
+          const orderDoc = legacySnapshot.docs[0];
+          const order = orderDoc.data();
+          const userId = order.userId;
+
+          await orderDoc.ref.update({
+            paymentStatus: 'paid',
+            mpesaReceiptNumber: accountRef,
+          });
+
+          const walletRef = admin.firestore().collection('wallets').doc(userId);
+          await walletRef.set({
+            balance: admin.firestore.FieldValue.increment(Number(amount)),
+            updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+          }, { merge: true });
+
+          console.log('✅ Wallet updated (legacy orders)');
+        } else {
+          console.log(`❌ No order found with mpesaReceipt: ${accountRef}`);
+        }
       }
     } else {
       console.log('❌ Payment failed/cancelled:', callback?.ResultDesc);
     }
 
-    // Always respond immediately to Safaricom
     res.json({ ResultCode: 0, ResultDesc: 'Success' });
   } catch (error) {
     console.error('Callback error:', error);
