@@ -88,69 +88,71 @@ app.post('/mpesa/callback', async (req, res) => {
 
       let amount = null;
       let accountRef = null;
+      let mpesaReceiptNumber = null;
+      let checkoutRequestID = callback.CheckoutRequestID;
 
       const items = callback.CallbackMetadata?.Item;
       if (items) {
         for (const item of items) {
           if (item.Name === 'Amount') amount = item.Value;
           if (item.Name === 'AccountReference') accountRef = item.Value;
+          if (item.Name === 'MpesaReceiptNumber') mpesaReceiptNumber = item.Value;
         }
       }
 
-      if (!amount || !accountRef) {
-        console.log('⚠️ Missing Amount or AccountReference – wallet not updated');
+      if (!amount) {
+        console.log('⚠️ Missing Amount – wallet not updated');
         return res.json({ ResultCode: 0, ResultDesc: 'Success' });
       }
 
-      console.log(`Amount: ${amount}, AccountRef: ${accountRef}`);
+      // ===== Look up the order =====
+      let orderDoc = null;
+      let collectionName = 'orders';
 
-      // Find the order in orders_shared (or orders) by mpesaReceipt
-      const ordersSharedRef = admin.firestore().collection('orders_shared');
-      const orderSnapshot = await ordersSharedRef.where('mpesaReceipt', '==', accountRef).limit(1).get();
+      // 1. Try by AccountReference (mpesaReceipt)
+      if (accountRef) {
+        const snap = await admin.firestore().collection('orders').where('mpesaReceipt', '==', accountRef).limit(1).get();
+        if (!snap.empty) orderDoc = snap.docs[0];
+      }
 
-      if (!orderSnapshot.empty) {
-        const orderDoc = orderSnapshot.docs[0];
+      // 2. Try by CheckoutRequestID
+      if (!orderDoc && checkoutRequestID) {
+        const snap = await admin.firestore().collection('orders').where('mpesaCheckoutRequestID', '==', checkoutRequestID).limit(1).get();
+        if (!snap.empty) orderDoc = snap.docs[0];
+      }
+
+      // 3. Also try orders_shared by same fields
+      if (!orderDoc) {
+        if (accountRef) {
+          const snap = await admin.firestore().collection('orders_shared').where('mpesaReceipt', '==', accountRef).limit(1).get();
+          if (!snap.empty) { orderDoc = snap.docs[0]; collectionName = 'orders_shared'; }
+        }
+        if (!orderDoc && checkoutRequestID) {
+          const snap = await admin.firestore().collection('orders_shared').where('mpesaCheckoutRequestID', '==', checkoutRequestID).limit(1).get();
+          if (!snap.empty) { orderDoc = snap.docs[0]; collectionName = 'orders_shared'; }
+        }
+      }
+
+      if (orderDoc) {
         const order = orderDoc.data();
         const userId = order.userId;
 
-        // Update order status to 'paid' or 'pending' as needed
+        // Update order payment status and receipt number
         await orderDoc.ref.update({
           paymentStatus: 'paid',
-          mpesaReceiptNumber: accountRef,
+          mpesaReceiptNumber: mpesaReceiptNumber || accountRef,
+          mpesaCheckoutRequestID: checkoutRequestID,
         });
 
         // Update wallet balance
-        const walletRef = admin.firestore().collection('wallets').doc(userId);
-        await walletRef.set({
+        await admin.firestore().collection('wallets').doc(userId).set({
           balance: admin.firestore.FieldValue.increment(Number(amount)),
           updatedAt: admin.firestore.FieldValue.serverTimestamp(),
         }, { merge: true });
 
-        console.log('✅ Wallet updated and order status set to paid');
+        console.log(`✅ Wallet updated for user ${userId} (+KES ${amount})`);
       } else {
-        // Try the legacy 'orders' collection
-        const ordersRef = admin.firestore().collection('orders');
-        const legacySnapshot = await ordersRef.where('mpesaReceipt', '==', accountRef).limit(1).get();
-        if (!legacySnapshot.empty) {
-          const orderDoc = legacySnapshot.docs[0];
-          const order = orderDoc.data();
-          const userId = order.userId;
-
-          await orderDoc.ref.update({
-            paymentStatus: 'paid',
-            mpesaReceiptNumber: accountRef,
-          });
-
-          const walletRef = admin.firestore().collection('wallets').doc(userId);
-          await walletRef.set({
-            balance: admin.firestore.FieldValue.increment(Number(amount)),
-            updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-          }, { merge: true });
-
-          console.log('✅ Wallet updated (legacy orders)');
-        } else {
-          console.log(`❌ No order found with mpesaReceipt: ${accountRef}`);
-        }
+        console.log('❌ Order not found for the given payment');
       }
     } else {
       console.log('❌ Payment failed/cancelled:', callback?.ResultDesc);
