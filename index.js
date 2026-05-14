@@ -86,9 +86,26 @@ app.post('/mpesa/callback', async (req, res) => {
     if (callback && callback.ResultCode === 0) {
       console.log('✅ Payment successful');
 
-      const amount = callback.CallbackMetadata?.Item?.find(i => i.Name === 'Amount')?.Value;
-      const accountRef = callback.CallbackMetadata?.Item?.find(i => i.Name === 'AccountReference')?.Value;
+      // Safely extract Amount and AccountReference from metadata
+      let amount = null;
+      let accountRef = null;
 
+      const items = callback.CallbackMetadata?.Item;
+      if (items) {
+        for (const item of items) {
+          if (item.Name === 'Amount') amount = item.Value;
+          if (item.Name === 'AccountReference') accountRef = item.Value;
+        }
+      }
+
+      if (!amount || !accountRef) {
+        console.log('⚠️ Missing Amount or AccountReference – wallet not updated');
+        return res.json({ ResultCode: 0, ResultDesc: 'Success' });
+      }
+
+      console.log(`Amount: ${amount}, AccountRef: ${accountRef}`);
+
+      // Find the order by mpesaReceipt (shortRef)
       const ordersRef = admin.firestore().collection('orders');
       const orderSnapshot = await ordersRef.where('mpesaReceipt', '==', accountRef).limit(1).get();
 
@@ -109,6 +126,7 @@ app.post('/mpesa/callback', async (req, res) => {
       console.log('❌ Payment failed/cancelled:', callback?.ResultDesc);
     }
 
+    // Always respond immediately to Safaricom
     res.json({ ResultCode: 0, ResultDesc: 'Success' });
   } catch (error) {
     console.error('Callback error:', error);
