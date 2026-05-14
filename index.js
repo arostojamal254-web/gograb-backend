@@ -60,6 +60,7 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
       }
     );
 
+    console.log('STK Push sent:', stkResponse.data);
     res.json({
       success: true,
       checkoutRequestID: stkResponse.data.CheckoutRequestID,
@@ -73,28 +74,45 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
   }
 });
 
-// ========== STK CALLBACK ==========
+// ========== STK CALLBACK (now with logging) ==========
 app.post('/mpesa/callback', async (req, res) => {
   try {
+    console.log('📩 Callback received:', JSON.stringify(req.body, null, 2));
+
     const callback = req.body.Body.stkCallback;
-    if (callback.ResultCode === 0) {
+    if (callback && callback.ResultCode === 0) {
+      console.log('✅ Payment successful, ResultCode 0');
+
       const amount = callback.CallbackMetadata?.Item?.find(i => i.Name === 'Amount')?.Value;
       const accountRef = callback.CallbackMetadata?.Item?.find(i => i.Name === 'AccountReference')?.Value;
 
+      console.log(`Amount: ${amount}, AccountRef: ${accountRef}`);
+
+      // Find the order by mpesaReceipt (shortRef)
       const ordersRef = admin.firestore().collection('orders');
       const orderSnapshot = await ordersRef.where('mpesaReceipt', '==', accountRef).limit(1).get();
-      
+
       if (!orderSnapshot.empty) {
         const order = orderSnapshot.docs[0].data();
         const userId = order.userId;
-        
+
+        console.log(`✅ Order found for user ${userId}, updating wallet...`);
+
         const walletRef = admin.firestore().collection('wallets').doc(userId);
         await walletRef.set({
           balance: admin.firestore.FieldValue.increment(Number(amount)),
           updatedAt: admin.firestore.FieldValue.serverTimestamp(),
         }, { merge: true });
+
+        console.log('✅ Wallet updated successfully');
+      } else {
+        console.log(`❌ No order found with mpesaReceipt: ${accountRef}`);
       }
+    } else {
+      console.log('❌ Payment failed or cancelled:', callback?.ResultDesc);
     }
+
+    // Always respond immediately to Safaricom
     res.json({ ResultCode: 0, ResultDesc: 'Success' });
   } catch (error) {
     console.error('Callback error:', error);
