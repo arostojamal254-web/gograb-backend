@@ -6,7 +6,6 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
-// Initialize Firebase Admin SDK
 const serviceAccount = JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON || '{}');
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -19,7 +18,10 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 8080;
 
-// ========== STK PUSH (customer payment) ==========
+// ✅ Base URL for callbacks
+const BASE_URL = process.env.BASE_URL || 'https://gograb-backend-production.up.railway.app';
+
+// ========== STK PUSH ==========
 app.post('/api/mpesa/stkpush', async (req, res) => {
   try {
     const { amount, phone, accountRef, desc } = req.body;
@@ -51,7 +53,7 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
         PartyA: phone.replace(/^\+/, ''),
         PartyB: process.env.MPESA_SHORTCODE,
         PhoneNumber: phone.replace(/^\+/, ''),
-        CallBackURL: `${process.env.BASE_URL}/mpesa/callback`,
+        CallBackURL: `${BASE_URL}/mpesa/callback`,
         AccountReference: accountRef,
         TransactionDesc: desc,
       },
@@ -73,13 +75,12 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
   }
 });
 
-// ========== STK CALLBACK (update wallet after payment) ==========
+// ========== STK CALLBACK ==========
 app.post('/mpesa/callback', async (req, res) => {
   try {
     const callback = req.body.Body.stkCallback;
     if (callback.ResultCode === 0) {
       const amount = callback.CallbackMetadata?.Item?.find(i => i.Name === 'Amount')?.Value;
-      const phone = callback.CallbackMetadata?.Item?.find(i => i.Name === 'PhoneNumber')?.Value;
       const accountRef = callback.CallbackMetadata?.Item?.find(i => i.Name === 'AccountReference')?.Value;
 
       const ordersRef = admin.firestore().collection('orders');
@@ -103,7 +104,7 @@ app.post('/mpesa/callback', async (req, res) => {
   }
 });
 
-// ========== WITHDRAWAL PROCESSING (admin only, no wallet balance check) ==========
+// ========== WITHDRAWAL PROCESSING ==========
 app.post('/api/withdraw', async (req, res) => {
   try {
     const { userId, amount, userType, withdrawalId } = req.body;
@@ -113,7 +114,6 @@ app.post('/api/withdraw', async (req, res) => {
       return res.status(401).json({ success: false, error: 'Missing auth token' });
     }
 
-    // Verify admin role (accept any role containing 'admin')
     const decoded = await admin.auth().verifyIdToken(idToken);
     const adminUserDoc = await admin.firestore().collection('users').doc(decoded.uid).get();
     const adminRole = adminUserDoc.data()?.role || '';
@@ -121,13 +121,11 @@ app.post('/api/withdraw', async (req, res) => {
       return res.status(403).json({ success: false, error: 'Only admins can process withdrawals' });
     }
 
-    // Initiate B2C payment
     const b2cResult = await initiateB2C(userId, amount, userType);
     if (!b2cResult.success) {
       return res.status(500).json({ success: false, error: b2cResult.error || 'B2C payment failed' });
     }
 
-    // Mark withdrawal as processed
     if (withdrawalId) {
       await admin.firestore().collection('withdrawals').doc(withdrawalId).update({
         status: 'processed',
@@ -145,18 +143,36 @@ app.post('/api/withdraw', async (req, res) => {
 // ========== B2C Helper ==========
 async function initiateB2C(userId, amount, userType) {
   try {
-    // Log the B2C request details (hide full credentials)
     console.log('Initiating B2C payment...');
     console.log(`UserId: ${userId}, Amount: ${amount}, UserType: ${userType}`);
-    console.log(`Initiator: ${process.env.MPESA_B2C_INITIATOR_NAME}`);
-    console.log(`Shortcode: ${process.env.MPESA_B2C_SHORTCODE}`);
-    console.log(`Security Credential length: ${process.env.MPESA_B2C_SECURITY_CREDENTIAL?.length}`);
 
+    // ✅ Get the correct phone number from Firestore
     const userDoc = await admin.firestore().collection('users').doc(userId).get();
-    const userPhone = userDoc.data()?.phone;
+    const userData = userDoc.data() || {};
+
+    // For vendors, the phone field is stored under 'phone'
+    let userPhone = userData.phone || userData.phoneNumber;
     if (!userPhone) {
-      return { success: false, error: 'User phone not found' };
+      // Also check the withdrawal request for account details
+      const withdrawalDoc = await admin.firestore()
+        .collection('withdrawals')
+        .where('vendorId', '==', userId)
+        .orderBy('createdAt', 'desc')
+        .limit(1)
+        .get();
+      if (!withdrawalDoc.empty) {
+        userPhone = withdrawalDoc.docs[0].data().accountDetails || '';
+      }
     }
+
+    if (!userPhone || userPhone === '0700000005') {
+      console.log('No valid phone found for user', userId);
+      return { success: false, error: 'No valid phone number found for user' };
+    }
+
+    // Clean the phone number
+    const cleanPhone = userPhone.replace(/^\+/, '').replace(/^0/, '254');
+    console.log(`Phone: ${cleanPhone}`);
 
     // Get fresh access token
     const auth = Buffer.from(
@@ -169,19 +185,17 @@ async function initiateB2C(userId, amount, userType) {
     );
 
     const accessToken = tokenResponse.data.access_token;
-    console.log('Access token obtained for B2C');
 
-    // B2C request
     const b2cPayload = {
       InitiatorName: process.env.MPESA_B2C_INITIATOR_NAME,
       SecurityCredential: process.env.MPESA_B2C_SECURITY_CREDENTIAL,
       CommandID: 'BusinessPayment',
       Amount: amount,
       PartyA: process.env.MPESA_B2C_SHORTCODE,
-      PartyB: userPhone,
+      PartyB: cleanPhone,
       Remarks: `Withdrawal for ${userType}`,
-      QueueTimeOutURL: `${process.env.BASE_URL}/api/b2c/queue-timeout`,
-      ResultURL: `${process.env.BASE_URL}/api/b2c/result`,
+      QueueTimeOutURL: `${BASE_URL}/api/b2c/queue-timeout`,
+      ResultURL: `${BASE_URL}/api/b2c/result`,
       Occasion: 'Withdrawal',
     };
 
@@ -200,15 +214,21 @@ async function initiateB2C(userId, amount, userType) {
     if (b2cResponse.data.ResponseCode === '0') {
       return { success: true };
     } else {
-      return { success: false, error: b2cResponse.data.ResponseDescription || b2cResponse.data.errorMessage };
+      return {
+        success: false,
+        error: b2cResponse.data.ResponseDescription || b2cResponse.data.errorMessage,
+      };
     }
   } catch (error) {
     console.error('B2C error:', error.response?.data || error.message);
-    return { success: false, error: error.response?.data?.errorMessage || error.message };
+    return {
+      success: false,
+      error: error.response?.data?.errorMessage || error.message,
+    };
   }
 }
 
-// ========== ORDER STATUS LISTENER (FCM) ==========
+// ========== ORDER STATUS LISTENER ==========
 function startFCMListener() {
   console.log('Starting FCM order status listener...');
   admin.firestore().collection('orders_shared').onSnapshot(snapshot => {
@@ -220,18 +240,6 @@ function startFCMListener() {
         const oldStatus = previous?.status;
         if (newStatus !== oldStatus) {
           console.log(`Order ${change.doc.id} changed from ${oldStatus} to ${newStatus}`);
-          const userIds = [order.userId, order.vendorId, order.riderId].filter(Boolean);
-          for (const userId of userIds) {
-            try {
-              const userTokensDoc = await admin.firestore().collection('fcm_tokens').doc(userId).get();
-              if (userTokensDoc.exists) {
-                const tokens = userTokensDoc.data()?.tokens || [];
-                console.log(`No FCM token found for user ${userId}`);
-              }
-            } catch (e) {
-              console.error(`Error sending FCM to ${userId}:`, e);
-            }
-          }
         }
       }
     });
