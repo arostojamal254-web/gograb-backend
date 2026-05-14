@@ -22,7 +22,7 @@ const BASE_URL = process.env.BASE_URL || 'https://gograb-backend-production.up.r
 // ========== STK PUSH ==========
 app.post('/api/mpesa/stkpush', async (req, res) => {
   try {
-    const { amount, phone, accountRef, desc } = req.body;
+    const { amount, phone, accountRef, desc, BusinessShortCode, PartyB, TransactionType } = req.body;
 
     const timestamp = new Date().toISOString().replace(/[-:T.]/g, '').slice(0, 14);
     const password = Buffer.from(
@@ -43,14 +43,14 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
     const stkResponse = await axios.post(
       'https://api.safaricom.co.ke/mpesa/stkpush/v1/processrequest',
       {
-        BusinessShortCode: process.env.MPESA_SHORTCODE,
+        BusinessShortCode: BusinessShortCode || process.env.MPESA_SHORTCODE,
         Password: password,
         Timestamp: timestamp,
-        TransactionType: 'CustomerBuyGoodsOnline',
+        TransactionType: TransactionType || 'CustomerBuyGoodsOnline',
         Amount: amount,
-        PartyA: phone.replace(/^\+/, ''),
-        PartyB: process.env.MPESA_SHORTCODE,
-        PhoneNumber: phone.replace(/^\+/, ''),
+        PartyA: phone,
+        PartyB: PartyB || process.env.MPESA_SHORTCODE,
+        PhoneNumber: phone,
         CallBackURL: `${BASE_URL}/mpesa/callback`,
         AccountReference: accountRef,
         TransactionDesc: desc,
@@ -107,11 +107,8 @@ app.post('/api/withdraw', async (req, res) => {
   try {
     const { userId, amount, userType, withdrawalId } = req.body;
 
-    // Initiate B2C and forward the exact Safaricom response
     const b2cResult = await initiateB2C(userId, amount, userType, withdrawalId);
-
     if (!b2cResult.success) {
-      // Return the real Safaricom error to the admin app
       return res.status(400).json({
         success: false,
         error: b2cResult.error || 'B2C payment failed',
@@ -119,7 +116,6 @@ app.post('/api/withdraw', async (req, res) => {
       });
     }
 
-    // Mark withdrawal as processed
     if (withdrawalId) {
       await admin.firestore().collection('withdrawals').doc(withdrawalId).update({
         status: 'processed',
@@ -134,13 +130,12 @@ app.post('/api/withdraw', async (req, res) => {
   }
 });
 
-// ========== B2C Helper (returns full Safaricom error) ==========
+// ========== B2C Helper ==========
 async function initiateB2C(userId, amount, userType, withdrawalId) {
   try {
     console.log('Initiating B2C payment...');
     console.log(`UserId: ${userId}, Amount: ${amount}, UserType: ${userType}, WithdrawalId: ${withdrawalId}`);
 
-    // 1. Get phone number from withdrawal request
     let userPhone = null;
 
     if (withdrawalId) {
@@ -152,7 +147,6 @@ async function initiateB2C(userId, amount, userType, withdrawalId) {
       }
     }
 
-    // Fallback
     if (!userPhone || userPhone === '0700000005') {
       const userDoc = await admin.firestore().collection('users').doc(userId).get();
       const userData = userDoc.data() || {};
@@ -166,7 +160,6 @@ async function initiateB2C(userId, amount, userType, withdrawalId) {
     const cleanPhone = userPhone.replace(/^\+/, '').replace(/^0/, '254');
     console.log(`Final phone: ${cleanPhone}`);
 
-    // 2. Get access token
     const auth = Buffer.from(
       `${process.env.MPESA_CONSUMER_KEY}:${process.env.MPESA_CONSUMER_SECRET}`
     ).toString('base64');
@@ -178,7 +171,6 @@ async function initiateB2C(userId, amount, userType, withdrawalId) {
 
     const accessToken = tokenResponse.data.access_token;
 
-    // 3. Send B2C request
     const b2cPayload = {
       InitiatorName: process.env.MPESA_B2C_INITIATOR_NAME,
       SecurityCredential: process.env.MPESA_B2C_SECURITY_CREDENTIAL,
@@ -205,10 +197,9 @@ async function initiateB2C(userId, amount, userType, withdrawalId) {
     if (b2cResponse.data.ResponseCode === '0') {
       return { success: true };
     } else {
-      // Return the exact error from Safaricom
       return {
         success: false,
-        error: b2cResponse.data.ResponseDescription || b2cResponse.data.errorMessage || 'B2C failed',
+        error: b2cResponse.data.ResponseDescription || b2cResponse.data.errorMessage,
         details: b2cResponse.data,
       };
     }
@@ -216,7 +207,7 @@ async function initiateB2C(userId, amount, userType, withdrawalId) {
     console.error('B2C error:', error.response?.data || error.message);
     return {
       success: false,
-      error: error.response?.data?.errorMessage || error.message || 'B2C request failed',
+      error: error.response?.data?.errorMessage || error.message,
       details: error.response?.data || null,
     };
   }
