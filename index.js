@@ -22,7 +22,7 @@ const BASE_URL = process.env.BASE_URL || 'https://gograb-backend-production.up.r
 // ========== STK PUSH ==========
 app.post('/api/mpesa/stkpush', async (req, res) => {
   try {
-    const { amount, phone, accountRef, desc, BusinessShortCode, PartyB, TransactionType } = req.body;
+    const { amount, phone, accountRef, desc, BusinessShortCode, TransactionType } = req.body;
 
     const timestamp = new Date().toISOString().replace(/[-:T.]/g, '').slice(0, 14);
     const password = Buffer.from(
@@ -40,9 +40,6 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
 
     const accessToken = tokenResponse.data.access_token;
 
-    // If the app provides a PartyB, use it; otherwise default to shortcode
-    const finalPartyB = PartyB || BusinessShortCode || process.env.MPESA_SHORTCODE;
-
     const payload = {
       BusinessShortCode: BusinessShortCode || process.env.MPESA_SHORTCODE,
       Password: password,
@@ -50,7 +47,7 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
       TransactionType: TransactionType || 'CustomerBuyGoodsOnline',
       Amount: amount,
       PartyA: phone,
-      PartyB: finalPartyB,
+      PartyB: '4565781',                // ✅ Fixed till number
       PhoneNumber: phone,
       CallBackURL: `${BASE_URL}/mpesa/callback`,
       AccountReference: accountRef,
