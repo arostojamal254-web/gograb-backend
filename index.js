@@ -121,9 +121,6 @@ app.post('/api/withdraw', async (req, res) => {
       return res.status(403).json({ success: false, error: 'Only admins can process withdrawals' });
     }
 
-    // ✅ No wallet balance check – admin has already verified the amount
-    // ✅ No wallet deduction – vendors/rider don't use wallet balance for payouts
-
     // Initiate B2C payment
     const b2cResult = await initiateB2C(userId, amount, userType);
     if (!b2cResult.success) {
@@ -148,12 +145,20 @@ app.post('/api/withdraw', async (req, res) => {
 // ========== B2C Helper ==========
 async function initiateB2C(userId, amount, userType) {
   try {
+    // Log the B2C request details (hide full credentials)
+    console.log('Initiating B2C payment...');
+    console.log(`UserId: ${userId}, Amount: ${amount}, UserType: ${userType}`);
+    console.log(`Initiator: ${process.env.MPESA_B2C_INITIATOR_NAME}`);
+    console.log(`Shortcode: ${process.env.MPESA_B2C_SHORTCODE}`);
+    console.log(`Security Credential length: ${process.env.MPESA_B2C_SECURITY_CREDENTIAL?.length}`);
+
     const userDoc = await admin.firestore().collection('users').doc(userId).get();
     const userPhone = userDoc.data()?.phone;
     if (!userPhone) {
       return { success: false, error: 'User phone not found' };
     }
 
+    // Get fresh access token
     const auth = Buffer.from(
       `${process.env.MPESA_CONSUMER_KEY}:${process.env.MPESA_CONSUMER_SECRET}`
     ).toString('base64');
@@ -164,30 +169,38 @@ async function initiateB2C(userId, amount, userType) {
     );
 
     const accessToken = tokenResponse.data.access_token;
+    console.log('Access token obtained for B2C');
+
+    // B2C request
+    const b2cPayload = {
+      InitiatorName: process.env.MPESA_B2C_INITIATOR_NAME,
+      SecurityCredential: process.env.MPESA_B2C_SECURITY_CREDENTIAL,
+      CommandID: 'BusinessPayment',
+      Amount: amount,
+      PartyA: process.env.MPESA_B2C_SHORTCODE,
+      PartyB: userPhone,
+      Remarks: `Withdrawal for ${userType}`,
+      QueueTimeOutURL: `${process.env.BASE_URL}/api/b2c/queue-timeout`,
+      ResultURL: `${process.env.BASE_URL}/api/b2c/result`,
+      Occasion: 'Withdrawal',
+    };
+
+    console.log('B2C payload:', JSON.stringify(b2cPayload, null, 2));
 
     const b2cResponse = await axios.post(
       'https://api.safaricom.co.ke/mpesa/b2c/v1/paymentrequest',
-      {
-        InitiatorName: process.env.MPESA_B2C_INITIATOR_NAME,
-        SecurityCredential: process.env.MPESA_B2C_SECURITY_CREDENTIAL,
-        CommandID: 'BusinessPayment',
-        Amount: amount,
-        PartyA: process.env.MPESA_B2C_SHORTCODE,
-        PartyB: userPhone,
-        Remarks: `Withdrawal for ${userType}`,
-        QueueTimeOutURL: `${process.env.BASE_URL}/api/b2c/queue-timeout`,
-        ResultURL: `${process.env.BASE_URL}/api/b2c/result`,
-        Occasion: 'Withdrawal',
-      },
+      b2cPayload,
       {
         headers: { Authorization: `Bearer ${accessToken}` },
       }
     );
 
+    console.log('B2C response:', JSON.stringify(b2cResponse.data, null, 2));
+
     if (b2cResponse.data.ResponseCode === '0') {
       return { success: true };
     } else {
-      return { success: false, error: b2cResponse.data.ResponseDescription };
+      return { success: false, error: b2cResponse.data.ResponseDescription || b2cResponse.data.errorMessage };
     }
   } catch (error) {
     console.error('B2C error:', error.response?.data || error.message);
