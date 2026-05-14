@@ -49,7 +49,7 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
         TransactionType: TransactionType || 'CustomerBuyGoodsOnline',
         Amount: amount,
         PartyA: phone,
-        PartyB: PartyB || process.env.MPESA_SHORTCODE,
+        PartyB: BusinessShortCode || process.env.MPESA_SHORTCODE,   // ✅ same as shortcode
         PhoneNumber: phone,
         CallBackURL: `${BASE_URL}/mpesa/callback`,
         AccountReference: accountRef,
@@ -74,7 +74,7 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
   }
 });
 
-// ========== STK CALLBACK (now with logging) ==========
+// ========== STK CALLBACK ==========
 app.post('/mpesa/callback', async (req, res) => {
   try {
     console.log('📩 Callback received:', JSON.stringify(req.body, null, 2));
@@ -86,9 +86,6 @@ app.post('/mpesa/callback', async (req, res) => {
       const amount = callback.CallbackMetadata?.Item?.find(i => i.Name === 'Amount')?.Value;
       const accountRef = callback.CallbackMetadata?.Item?.find(i => i.Name === 'AccountReference')?.Value;
 
-      console.log(`Amount: ${amount}, AccountRef: ${accountRef}`);
-
-      // Find the order by mpesaReceipt (shortRef)
       const ordersRef = admin.firestore().collection('orders');
       const orderSnapshot = await ordersRef.where('mpesaReceipt', '==', accountRef).limit(1).get();
 
@@ -96,23 +93,20 @@ app.post('/mpesa/callback', async (req, res) => {
         const order = orderSnapshot.docs[0].data();
         const userId = order.userId;
 
-        console.log(`✅ Order found for user ${userId}, updating wallet...`);
-
         const walletRef = admin.firestore().collection('wallets').doc(userId);
         await walletRef.set({
           balance: admin.firestore.FieldValue.increment(Number(amount)),
           updatedAt: admin.firestore.FieldValue.serverTimestamp(),
         }, { merge: true });
 
-        console.log('✅ Wallet updated successfully');
+        console.log('✅ Wallet updated');
       } else {
         console.log(`❌ No order found with mpesaReceipt: ${accountRef}`);
       }
     } else {
-      console.log('❌ Payment failed or cancelled:', callback?.ResultDesc);
+      console.log('❌ Payment failed/cancelled:', callback?.ResultDesc);
     }
 
-    // Always respond immediately to Safaricom
     res.json({ ResultCode: 0, ResultDesc: 'Success' });
   } catch (error) {
     console.error('Callback error:', error);
@@ -161,7 +155,6 @@ async function initiateB2C(userId, amount, userType, withdrawalId) {
       if (withdrawalDoc.exists) {
         const withdrawalData = withdrawalDoc.data();
         userPhone = withdrawalData.accountDetails;
-        console.log(`Phone from withdrawal request: ${userPhone}`);
       }
     }
 
@@ -176,7 +169,6 @@ async function initiateB2C(userId, amount, userType, withdrawalId) {
     }
 
     const cleanPhone = userPhone.replace(/^\+/, '').replace(/^0/, '254');
-    console.log(`Final phone: ${cleanPhone}`);
 
     const auth = Buffer.from(
       `${process.env.MPESA_CONSUMER_KEY}:${process.env.MPESA_CONSUMER_SECRET}`
@@ -205,9 +197,7 @@ async function initiateB2C(userId, amount, userType, withdrawalId) {
     const b2cResponse = await axios.post(
       'https://api.safaricom.co.ke/mpesa/b2c/v1/paymentrequest',
       b2cPayload,
-      {
-        headers: { Authorization: `Bearer ${accessToken}` },
-      }
+      { headers: { Authorization: `Bearer ${accessToken}` } }
     );
 
     console.log('B2C response:', JSON.stringify(b2cResponse.data, null, 2));
