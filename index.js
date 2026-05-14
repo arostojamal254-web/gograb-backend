@@ -82,6 +82,7 @@ app.post('/mpesa/callback', async (req, res) => {
       const phone = callback.CallbackMetadata?.Item?.find(i => i.Name === 'PhoneNumber')?.Value;
       const accountRef = callback.CallbackMetadata?.Item?.find(i => i.Name === 'AccountReference')?.Value;
 
+      // Find the order/user and update wallet
       const ordersRef = admin.firestore().collection('orders');
       const orderSnapshot = await ordersRef.where('mpesaReceipt', '==', accountRef).limit(1).get();
       
@@ -89,6 +90,7 @@ app.post('/mpesa/callback', async (req, res) => {
         const order = orderSnapshot.docs[0].data();
         const userId = order.userId;
         
+        // Update wallet balance
         const walletRef = admin.firestore().collection('wallets').doc(userId);
         await walletRef.set({
           balance: admin.firestore.FieldValue.increment(Number(amount)),
@@ -103,7 +105,9 @@ app.post('/mpesa/callback', async (req, res) => {
   }
 });
 
-// ========== WITHDRAWAL PROCESSING (any admin role) ==========
+// ========== WITHDRAWAL PROCESSING (admin only) ==========
+// This endpoint is called by the admin app when processing a payout.
+// It validates the admin token, deducts wallet, and initiates B2C payment.
 app.post('/api/withdraw', async (req, res) => {
   try {
     const { userId, amount, userType, withdrawalId } = req.body;
@@ -113,14 +117,11 @@ app.post('/api/withdraw', async (req, res) => {
       return res.status(401).json({ success: false, error: 'Missing auth token' });
     }
 
-    // Verify the caller is an admin (any level)
+    // Verify the caller is an admin (accept any role containing 'admin')
     const decoded = await admin.auth().verifyIdToken(idToken);
     const adminUserDoc = await admin.firestore().collection('users').doc(decoded.uid).get();
-    const adminRole = adminUserDoc.data()?.role;
-
-    // ✅ Allow superadmin, regional_admin, county_admin, and plain admin
-    const allowedRoles = ['admin', 'superadmin', 'regional_admin', 'county_admin'];
-    if (!allowedRoles.includes(adminRole)) {
+    const adminRole = adminUserDoc.data()?.role || '';
+    if (!adminRole.includes('admin')) {
       return res.status(403).json({ success: false, error: 'Only admins can process withdrawals' });
     }
 
@@ -162,12 +163,14 @@ app.post('/api/withdraw', async (req, res) => {
 // ========== B2C Helper ==========
 async function initiateB2C(userId, amount, userType) {
   try {
+    // Get user phone from Firestore
     const userDoc = await admin.firestore().collection('users').doc(userId).get();
     const userPhone = userDoc.data()?.phone;
     if (!userPhone) {
       return { success: false, error: 'User phone not found' };
     }
 
+    // Safaricom B2C API authentication
     const auth = Buffer.from(
       `${process.env.MPESA_CONSUMER_KEY}:${process.env.MPESA_CONSUMER_SECRET}`
     ).toString('base64');
@@ -179,6 +182,7 @@ async function initiateB2C(userId, amount, userType) {
 
     const accessToken = tokenResponse.data.access_token;
 
+    // B2C request
     const b2cResponse = await axios.post(
       'https://api.safaricom.co.ke/mpesa/b2c/v1/paymentrequest',
       {
@@ -221,12 +225,14 @@ function startFCMListener() {
         const oldStatus = previous?.status;
         if (newStatus !== oldStatus) {
           console.log(`Order ${change.doc.id} changed from ${oldStatus} to ${newStatus}`);
+          // Send FCM notification to involved users
           const userIds = [order.userId, order.vendorId, order.riderId].filter(Boolean);
           for (const userId of userIds) {
             try {
               const userTokensDoc = await admin.firestore().collection('fcm_tokens').doc(userId).get();
               if (userTokensDoc.exists) {
                 const tokens = userTokensDoc.data()?.tokens || [];
+                // Send notification (simplified – replace with actual messaging)
                 console.log(`No FCM token found for user ${userId}`);
               }
             } catch (e) {
