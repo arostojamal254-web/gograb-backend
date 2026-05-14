@@ -40,27 +40,33 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
 
     const accessToken = tokenResponse.data.access_token;
 
+    // If the app provides a PartyB, use it; otherwise default to shortcode
+    const finalPartyB = PartyB || BusinessShortCode || process.env.MPESA_SHORTCODE;
+
+    const payload = {
+      BusinessShortCode: BusinessShortCode || process.env.MPESA_SHORTCODE,
+      Password: password,
+      Timestamp: timestamp,
+      TransactionType: TransactionType || 'CustomerBuyGoodsOnline',
+      Amount: amount,
+      PartyA: phone,
+      PartyB: finalPartyB,
+      PhoneNumber: phone,
+      CallBackURL: `${BASE_URL}/mpesa/callback`,
+      AccountReference: accountRef,
+      TransactionDesc: desc,
+    };
+
+    console.log('STK Push payload:', JSON.stringify(payload, null, 2));
+
     const stkResponse = await axios.post(
       'https://api.safaricom.co.ke/mpesa/stkpush/v1/processrequest',
-      {
-        BusinessShortCode: BusinessShortCode || process.env.MPESA_SHORTCODE,
-        Password: password,
-        Timestamp: timestamp,
-        TransactionType: TransactionType || 'CustomerBuyGoodsOnline',
-        Amount: amount,
-        PartyA: phone,
-        PartyB: BusinessShortCode || process.env.MPESA_SHORTCODE,   // ✅ same as shortcode
-        PhoneNumber: phone,
-        CallBackURL: `${BASE_URL}/mpesa/callback`,
-        AccountReference: accountRef,
-        TransactionDesc: desc,
-      },
-      {
-        headers: { Authorization: `Bearer ${accessToken}` },
-      }
+      payload,
+      { headers: { Authorization: `Bearer ${accessToken}` } }
     );
 
-    console.log('STK Push sent:', stkResponse.data);
+    console.log('STK Push response:', JSON.stringify(stkResponse.data, null, 2));
+
     res.json({
       success: true,
       checkoutRequestID: stkResponse.data.CheckoutRequestID,
@@ -81,7 +87,7 @@ app.post('/mpesa/callback', async (req, res) => {
 
     const callback = req.body.Body.stkCallback;
     if (callback && callback.ResultCode === 0) {
-      console.log('✅ Payment successful, ResultCode 0');
+      console.log('✅ Payment successful');
 
       const amount = callback.CallbackMetadata?.Item?.find(i => i.Name === 'Amount')?.Value;
       const accountRef = callback.CallbackMetadata?.Item?.find(i => i.Name === 'AccountReference')?.Value;
@@ -93,8 +99,7 @@ app.post('/mpesa/callback', async (req, res) => {
         const order = orderSnapshot.docs[0].data();
         const userId = order.userId;
 
-        const walletRef = admin.firestore().collection('wallets').doc(userId);
-        await walletRef.set({
+        await admin.firestore().collection('wallets').doc(userId).set({
           balance: admin.firestore.FieldValue.increment(Number(amount)),
           updatedAt: admin.firestore.FieldValue.serverTimestamp(),
         }, { merge: true });
@@ -153,8 +158,7 @@ async function initiateB2C(userId, amount, userType, withdrawalId) {
     if (withdrawalId) {
       const withdrawalDoc = await admin.firestore().collection('withdrawals').doc(withdrawalId).get();
       if (withdrawalDoc.exists) {
-        const withdrawalData = withdrawalDoc.data();
-        userPhone = withdrawalData.accountDetails;
+        userPhone = withdrawalDoc.data().accountDetails;
       }
     }
 
