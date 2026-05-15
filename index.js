@@ -89,7 +89,7 @@ app.post('/mpesa/callback', async (req, res) => {
       let amount = null;
       let accountRef = null;
       let mpesaReceiptNumber = null;
-      let checkoutRequestID = callback.CheckoutRequestID;
+      const checkoutRequestID = callback.CheckoutRequestID;
 
       const items = callback.CallbackMetadata?.Item;
       if (items) {
@@ -105,39 +105,36 @@ app.post('/mpesa/callback', async (req, res) => {
         return res.json({ ResultCode: 0, ResultDesc: 'Success' });
       }
 
-      // ===== Look up the order =====
+      // ===== Search across ALL service collections =====
       let orderDoc = null;
-      let collectionName = 'orders';
+      let userId = null;
+      const collectionsToSearch = ['orders', 'orders_shared', 'rides', 'parcels'];
 
-      // 1. Try by AccountReference (mpesaReceipt)
-      if (accountRef) {
-        const snap = await admin.firestore().collection('orders').where('mpesaReceipt', '==', accountRef).limit(1).get();
-        if (!snap.empty) orderDoc = snap.docs[0];
-      }
-
-      // 2. Try by CheckoutRequestID
-      if (!orderDoc && checkoutRequestID) {
-        const snap = await admin.firestore().collection('orders').where('mpesaCheckoutRequestID', '==', checkoutRequestID).limit(1).get();
-        if (!snap.empty) orderDoc = snap.docs[0];
-      }
-
-      // 3. Also try orders_shared by same fields
-      if (!orderDoc) {
+      for (const collection of collectionsToSearch) {
+        // Try by AccountReference
         if (accountRef) {
-          const snap = await admin.firestore().collection('orders_shared').where('mpesaReceipt', '==', accountRef).limit(1).get();
-          if (!snap.empty) { orderDoc = snap.docs[0]; collectionName = 'orders_shared'; }
+          const snap = await admin.firestore().collection(collection)
+            .where('mpesaReceipt', '==', accountRef).limit(1).get();
+          if (!snap.empty) {
+            orderDoc = snap.docs[0];
+            userId = orderDoc.data().userId || orderDoc.data().customerId;
+            break;
+          }
         }
-        if (!orderDoc && checkoutRequestID) {
-          const snap = await admin.firestore().collection('orders_shared').where('mpesaCheckoutRequestID', '==', checkoutRequestID).limit(1).get();
-          if (!snap.empty) { orderDoc = snap.docs[0]; collectionName = 'orders_shared'; }
+        // Try by CheckoutRequestID
+        if (checkoutRequestID && !orderDoc) {
+          const snap = await admin.firestore().collection(collection)
+            .where('mpesaCheckoutRequestID', '==', checkoutRequestID).limit(1).get();
+          if (!snap.empty) {
+            orderDoc = snap.docs[0];
+            userId = orderDoc.data().userId || orderDoc.data().customerId;
+            break;
+          }
         }
       }
 
-      if (orderDoc) {
-        const order = orderDoc.data();
-        const userId = order.userId;
-
-        // Update order payment status and receipt number
+      if (orderDoc && userId) {
+        // Update order with payment proof
         await orderDoc.ref.update({
           paymentStatus: 'paid',
           mpesaReceiptNumber: mpesaReceiptNumber || accountRef,
@@ -145,7 +142,8 @@ app.post('/mpesa/callback', async (req, res) => {
         });
 
         // Update wallet balance
-        await admin.firestore().collection('wallets').doc(userId).set({
+        const walletRef = admin.firestore().collection('wallets').doc(userId);
+        await walletRef.set({
           balance: admin.firestore.FieldValue.increment(Number(amount)),
           updatedAt: admin.firestore.FieldValue.serverTimestamp(),
         }, { merge: true });
