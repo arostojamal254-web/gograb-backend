@@ -47,7 +47,7 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
       TransactionType: TransactionType || 'CustomerBuyGoodsOnline',
       Amount: amount,
       PartyA: phone,
-      PartyB: '4565781',               // ✅ Correct till number linked to shortcode 4565717
+      PartyB: '4565781',               // ✅ Correct till number
       PhoneNumber: phone,
       CallBackURL: `${BASE_URL}/mpesa/callback`,
       AccountReference: accountRef,
