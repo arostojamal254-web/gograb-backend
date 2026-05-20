@@ -19,10 +19,13 @@ app.use(express.json());
 const PORT = process.env.PORT || 8080;
 const BASE_URL = process.env.BASE_URL || 'https://gograb-backend-production.up.railway.app';
 
-// ========== STK PUSH ==========
+// ────────── STK PUSH – stores full order data temporarily ──────────
 app.post('/api/mpesa/stkpush', async (req, res) => {
   try {
-    const { amount, phone, accountRef, desc, BusinessShortCode, TransactionType } = req.body;
+    const {
+      amount, phone, accountRef, desc,
+      serviceData   // full order data sent by the app
+    } = req.body;
 
     const timestamp = new Date().toISOString().replace(/[-:T.]/g, '').slice(0, 14);
     const password = Buffer.from(
@@ -41,13 +44,13 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
     const accessToken = tokenResponse.data.access_token;
 
     const payload = {
-      BusinessShortCode: BusinessShortCode || process.env.MPESA_SHORTCODE,
+      BusinessShortCode: process.env.MPESA_SHORTCODE,
       Password: password,
       Timestamp: timestamp,
-      TransactionType: TransactionType || 'CustomerBuyGoodsOnline',
+      TransactionType: 'CustomerBuyGoodsOnline',
       Amount: amount,
       PartyA: phone,
-      PartyB: '4565781',
+      PartyB: process.env.MPESA_TILL || process.env.MPESA_SHORTCODE,
       PhoneNumber: phone,
       CallBackURL: `${BASE_URL}/mpesa/callback`,
       AccountReference: accountRef,
@@ -56,14 +59,17 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
 
     console.log('STK Push payload:', JSON.stringify(payload, null, 2));
 
-    // Store the request data temporarily so callback can create the order
-    await admin.firestore().collection('stk_requests').doc(accountRef).set({
-      amount,
-      phone,
-      accountRef,
-      desc,
-      timestamp: admin.firestore.FieldValue.serverTimestamp(),
-    });
+    // Store the complete order data temporarily so the callback can create the order
+    if (serviceData) {
+      await admin.firestore().collection('stk_requests').doc(accountRef).set({
+        ...serviceData,
+        amount,
+        phone,
+        accountRef,
+        createdAt: admin.firestore.FieldValue.serverTimestamp(),
+      });
+      console.log(`Stored order data for ref ${accountRef}`);
+    }
 
     const stkResponse = await axios.post(
       'https://api.safaricom.co.ke/mpesa/stkpush/v1/processrequest',
@@ -86,7 +92,7 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
   }
 });
 
-// ========== STK CALLBACK (creates order on success) ==========
+// ────────── STK CALLBACK – creates order after successful payment ──────────
 app.post('/mpesa/callback', async (req, res) => {
   try {
     console.log('📩 Callback received:', JSON.stringify(req.body, null, 2));
@@ -97,7 +103,6 @@ app.post('/mpesa/callback', async (req, res) => {
 
       let amount = null;
       let accountRef = null;
-
       const items = callback.CallbackMetadata?.Item;
       if (items) {
         for (const item of items) {
@@ -111,34 +116,82 @@ app.post('/mpesa/callback', async (req, res) => {
         return res.json({ ResultCode: 0, ResultDesc: 'Success' });
       }
 
-      // Retrieve the original request data (order details)
+      // Retrieve the stored order data
       const stkRequestDoc = await admin.firestore().collection('stk_requests').doc(accountRef).get();
       if (!stkRequestDoc.exists) {
-        console.log('❌ No matching STK request found');
+        console.log(`❌ No pending STK request found for ref ${accountRef}`);
         return res.json({ ResultCode: 0, ResultDesc: 'Success' });
       }
-      const stkData = stkRequestDoc.data();
 
-      // The order should be created by the customer app before payment, but we duplicate creation here for safety.
-      // We'll attempt to find an existing order with this receipt and create if missing.
-      const ordersSharedRef = admin.firestore().collection('orders_shared');
-      const existingOrder = await ordersSharedRef.where('mpesaReceipt', '==', accountRef).limit(1).get();
-      if (!existingOrder.empty) {
-        console.log('Order already exists, updating payment status');
-        await existingOrder.docs[0].ref.update({
+      const orderData = stkRequestDoc.data();
+      const type = orderData.type || 'order';   // 'order', 'ride', 'parcel'
+
+      // Build the document depending on the type
+      const commonData = {
+        ...orderData,
+        mpesaReceipt: accountRef,
+        paymentStatus: 'paid',
+        status: type === 'order' ? 'pending' : (type === 'ride' ? 'pending' : 'pending'),
+        createdAt: admin.firestore.FieldValue.serverTimestamp(),
+        updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+      };
+
+      delete commonData.accountRef;  // not needed in final document
+
+      let docRef;
+      if (type === 'order') {
+        docRef = admin.firestore().collection('orders').doc();
+        const orderId = docRef.id;
+        commonData.id = orderId;
+        await docRef.set(commonData);
+        // Also create in orders_shared
+        const sharedData = {
+          id: orderId,
+          userId: commonData.userId,
+          vendorId: commonData.vendorId,
+          vendorName: commonData.vendorName,
+          total: commonData.total,
+          deliveryFee: commonData.deliveryFee,
+          status: 'pending',
+          customerName: commonData.customerName,
+          customerPhone: commonData.customerPhone,
+          deliveryAddress: commonData.deliveryAddress,
+          items: commonData.items || [],
+          pickupStops: commonData.pickupStops || [],
+          deliveryLat: commonData.deliveryLat,
+          deliveryLng: commonData.deliveryLng,
+          paymentMethod: 'M-Pesa',
           paymentStatus: 'paid',
-          mpesaReceiptNumber: accountRef,
-        });
-      } else {
-        console.log('Creating new order from callback...');
-        // Create a minimal order – the full data would ideally come from the app, but for now we log it.
-        // This is a fallback; the app should have created the order already.
+          mpesaReceipt: accountRef,
+          createdAt: admin.firestore.FieldValue.serverTimestamp(),
+        };
+        await admin.firestore().collection('orders_shared').doc(orderId).set(sharedData);
+        console.log(`✅ Order ${orderId} created in orders and orders_shared`);
+      } else if (type === 'ride') {
+        docRef = admin.firestore().collection('rides').doc();
+        commonData.id = docRef.id;
+        await docRef.set(commonData);
+        console.log(`✅ Ride ${docRef.id} created`);
+      } else if (type === 'parcel') {
+        docRef = admin.firestore().collection('parcels').doc();
+        commonData.id = docRef.id;
+        await docRef.set(commonData);
+        console.log(`✅ Parcel ${docRef.id} created`);
+      }
+
+      // Update wallet balance for the customer
+      const userId = commonData.userId;
+      if (userId) {
+        const walletRef = admin.firestore().collection('wallets').doc(userId);
+        await walletRef.set({
+          balance: admin.firestore.FieldValue.increment(Number(amount)),
+          updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+        }, { merge: true });
+        console.log(`✅ Wallet updated for user ${userId}`);
       }
 
       // Delete the temporary STK request
       await stkRequestDoc.ref.delete();
-
-      console.log('✅ Callback processed successfully');
     } else {
       console.log('❌ Payment failed/cancelled:', callback?.ResultDesc);
     }
@@ -150,7 +203,7 @@ app.post('/mpesa/callback', async (req, res) => {
   }
 });
 
-// ========== WITHDRAWAL PROCESSING ==========
+// ────────── WITHDRAWAL PROCESSING (unchanged) ──────────
 app.post('/api/withdraw', async (req, res) => {
   try {
     const { userId, amount, userType, withdrawalId } = req.body;
@@ -178,14 +231,13 @@ app.post('/api/withdraw', async (req, res) => {
   }
 });
 
-// ========== B2C Helper ==========
+// ────────── B2C Helper (unchanged) ──────────
 async function initiateB2C(userId, amount, userType, withdrawalId) {
   try {
     console.log('Initiating B2C payment...');
     console.log(`UserId: ${userId}, Amount: ${amount}, UserType: ${userType}, WithdrawalId: ${withdrawalId}`);
 
     let userPhone = null;
-
     if (withdrawalId) {
       const withdrawalDoc = await admin.firestore().collection('withdrawals').doc(withdrawalId).get();
       if (withdrawalDoc.exists) {
@@ -217,11 +269,11 @@ async function initiateB2C(userId, amount, userType, withdrawalId) {
     const accessToken = tokenResponse.data.access_token;
 
     const b2cPayload = {
-      InitiatorName: process.env.MPESA_B2C_INITIATOR_NAME,
+      InitiatorName: process.env.MPESA_B2C_INITIATOR_NAME || 'Arosto',
       SecurityCredential: process.env.MPESA_B2C_SECURITY_CREDENTIAL,
       CommandID: 'BusinessPayment',
       Amount: amount,
-      PartyA: process.env.MPESA_B2C_SHORTCODE,
+      PartyA: process.env.MPESA_B2C_SHORTCODE || process.env.MPESA_SHORTCODE,
       PartyB: cleanPhone,
       Remarks: `Withdrawal for ${userType}`,
       QueueTimeOutURL: `${BASE_URL}/api/b2c/queue-timeout`,
@@ -256,7 +308,7 @@ async function initiateB2C(userId, amount, userType, withdrawalId) {
   }
 }
 
-// ========== ORDER STATUS LISTENER ==========
+// ────────── START SERVER ──────────
 function startFCMListener() {
   console.log('Starting FCM order status listener...');
   admin.firestore().collection('orders_shared').onSnapshot(snapshot => {
@@ -274,7 +326,6 @@ function startFCMListener() {
   });
 }
 
-// ========== START SERVER ==========
 app.listen(PORT, () => {
   console.log(`Backend running on port ${PORT}`);
   startFCMListener();
