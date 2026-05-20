@@ -41,13 +41,13 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
     const accessToken = tokenResponse.data.access_token;
 
     const payload = {
-      BusinessShortCode: BusinessShortCode || process.env.MPESA_SHORTCODE,
+      BusinessShortCode: BusinessShortCode || '4565747',    // ✅ organization shortcode
       Password: password,
       Timestamp: timestamp,
       TransactionType: TransactionType || 'CustomerBuyGoodsOnline',
       Amount: amount,
       PartyA: phone,
-      PartyB: '4565781',               // ✅ Correct till number
+      PartyB: '4565781',                                    // ✅ your till number
       PhoneNumber: phone,
       CallBackURL: `${BASE_URL}/mpesa/callback`,
       AccountReference: accountRef,
@@ -229,7 +229,7 @@ async function initiateB2C(userId, amount, userType, withdrawalId) {
       SecurityCredential: process.env.MPESA_B2C_SECURITY_CREDENTIAL,
       CommandID: 'BusinessPayment',
       Amount: amount,
-      PartyA: process.env.MPESA_B2C_SHORTCODE,
+      PartyA: '4565747',             // ✅ organization shortcode
       PartyB: cleanPhone,
       Remarks: `Withdrawal for ${userType}`,
       QueueTimeOutURL: `${BASE_URL}/api/b2c/queue-timeout`,
