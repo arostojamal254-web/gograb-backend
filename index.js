@@ -2,7 +2,6 @@
 const admin = require('firebase-admin');
 const cors = require('cors');
 const axios = require('axios');
-const crypto = require('crypto');
 const dotenv = require('dotenv');
 
 dotenv.config();
@@ -20,10 +19,10 @@ app.use(express.json());
 const PORT = process.env.PORT || 8080;
 const BASE_URL = process.env.BASE_URL || 'https://gograb-backend-production.up.railway.app';
 
-// ========== STK PUSH ==========
+// ========== STK PUSH (customer payment) – always uses parent shortcode 4565717 ==========
 app.post('/api/mpesa/stkpush', async (req, res) => {
   try {
-    const { amount, phone, accountRef, desc, BusinessShortCode, TransactionType } = req.body;
+    const { amount, phone, accountRef, desc, TransactionType } = req.body;
 
     const timestamp = new Date().toISOString().replace(/[-:T.]/g, '').slice(0, 14);
     const password = Buffer.from(
@@ -42,13 +41,13 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
     const accessToken = tokenResponse.data.access_token;
 
     const payload = {
-      BusinessShortCode: BusinessShortCode || process.env.MPESA_SHORTCODE,
+      BusinessShortCode: '4565717',            // ✅ parent shortcode for STK
       Password: password,
       Timestamp: timestamp,
       TransactionType: TransactionType || 'CustomerBuyGoodsOnline',
       Amount: amount,
       PartyA: phone,
-      PartyB: '4565781',               // ✅ Correct till number linked to shortcode 4565717
+      PartyB: '4565781',                      // ✅ till number linked to 4565717
       PhoneNumber: phone,
       CallBackURL: `${BASE_URL}/mpesa/callback`,
       AccountReference: accountRef,
@@ -160,7 +159,7 @@ app.post('/mpesa/callback', async (req, res) => {
   }
 });
 
-// ========== WITHDRAWAL PROCESSING ==========
+// ========== WITHDRAWAL PROCESSING (B2C) – uses child shortcode 4565747 ==========
 app.post('/api/withdraw', async (req, res) => {
   try {
     const { userId, amount, userType, withdrawalId } = req.body;
@@ -188,7 +187,7 @@ app.post('/api/withdraw', async (req, res) => {
   }
 });
 
-// ========== B2C Helper with automatic Security Credential generation ==========
+// ========== B2C Helper ==========
 async function initiateB2C(userId, amount, userType, withdrawalId) {
   try {
     console.log('Initiating B2C payment...');
@@ -212,7 +211,6 @@ async function initiateB2C(userId, amount, userType, withdrawalId) {
     const cleanPhone = userPhone.replace(/^\+/, '').replace(/^0/, '254');
     console.log(`Phone: ${cleanPhone}`);
 
-    // Get access token
     const auth = Buffer.from(
       `${process.env.MPESA_CONSUMER_KEY}:${process.env.MPESA_CONSUMER_SECRET}`
     ).toString('base64');
@@ -223,43 +221,13 @@ async function initiateB2C(userId, amount, userType, withdrawalId) {
     );
 
     const accessToken = tokenResponse.data.access_token;
-    console.log('Access token obtained');
-
-    // ---------- Generate Security Credential from plain password ----------
-    const initiatorPassword = process.env.MPESA_B2C_INITIATOR_PASSWORD;
-    if (!initiatorPassword) {
-      console.error('❌ MPESA_B2C_INITIATOR_PASSWORD is not set');
-      return { success: false, error: 'B2C initiator password not configured' };
-    }
-
-    // Fetch or embed the production certificate
-    const certUrl = 'https://developer.safaricom.co.ke/sites/default/files/cert/cert_prod/cert.cer';
-    let cert;
-    try {
-      const certResponse = await axios.get(certUrl, { responseType: 'arraybuffer' });
-      cert = Buffer.from(certResponse.data);
-    } catch (certError) {
-      console.error('❌ Failed to fetch Safaricom production certificate:', certError.message);
-      return { success: false, error: 'Failed to fetch encryption certificate' };
-    }
-
-    // Encrypt the password with the certificate
-    const encrypted = crypto.publicEncrypt(
-      {
-        key: cert,
-        padding: crypto.constants.RSA_PKCS1_PADDING,
-      },
-      Buffer.from(initiatorPassword)
-    );
-    const securityCredential = encrypted.toString('base64');
-    console.log('Security Credential generated (first 20 chars):', securityCredential.substring(0, 20) + '...');
 
     const b2cPayload = {
       InitiatorName: process.env.MPESA_B2C_INITIATOR_NAME,
-      SecurityCredential: securityCredential,   // ✅ auto‑generated
+      SecurityCredential: process.env.MPESA_B2C_SECURITY_CREDENTIAL,
       CommandID: 'BusinessPayment',
       Amount: amount,
-      PartyA: process.env.MPESA_B2C_SHORTCODE,
+      PartyA: '4565747',                // ✅ child shortcode for B2C
       PartyB: cleanPhone,
       Remarks: `Withdrawal for ${userType}`,
       QueueTimeOutURL: `${BASE_URL}/api/b2c/queue-timeout`,
@@ -280,7 +248,6 @@ async function initiateB2C(userId, amount, userType, withdrawalId) {
     if (b2cResponse.data.ResponseCode === '0') {
       return { success: true };
     } else {
-      console.error('B2C failed:', b2cResponse.data);
       return {
         success: false,
         error: b2cResponse.data.ResponseDescription || b2cResponse.data.errorMessage,
