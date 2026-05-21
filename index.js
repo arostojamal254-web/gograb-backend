@@ -2,6 +2,7 @@
 const admin = require('firebase-admin');
 const cors = require('cors');
 const axios = require('axios');
+const crypto = require('crypto');
 const dotenv = require('dotenv');
 
 dotenv.config();
@@ -41,13 +42,13 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
     const accessToken = tokenResponse.data.access_token;
 
     const payload = {
-      BusinessShortCode: BusinessShortCode || '4565747',    // ✅ organization shortcode
+      BusinessShortCode: BusinessShortCode || process.env.MPESA_SHORTCODE,
       Password: password,
       Timestamp: timestamp,
       TransactionType: TransactionType || 'CustomerBuyGoodsOnline',
       Amount: amount,
       PartyA: phone,
-      PartyB: '4565781',                                    // ✅ your till number
+      PartyB: '4565781',               // ✅ Correct till number linked to shortcode 4565717
       PhoneNumber: phone,
       CallBackURL: `${BASE_URL}/mpesa/callback`,
       AccountReference: accountRef,
@@ -187,7 +188,7 @@ app.post('/api/withdraw', async (req, res) => {
   }
 });
 
-// ========== B2C Helper ==========
+// ========== B2C Helper with automatic Security Credential generation ==========
 async function initiateB2C(userId, amount, userType, withdrawalId) {
   try {
     console.log('Initiating B2C payment...');
@@ -224,12 +225,41 @@ async function initiateB2C(userId, amount, userType, withdrawalId) {
     const accessToken = tokenResponse.data.access_token;
     console.log('Access token obtained');
 
+    // ---------- Generate Security Credential from plain password ----------
+    const initiatorPassword = process.env.MPESA_B2C_INITIATOR_PASSWORD;
+    if (!initiatorPassword) {
+      console.error('❌ MPESA_B2C_INITIATOR_PASSWORD is not set');
+      return { success: false, error: 'B2C initiator password not configured' };
+    }
+
+    // Fetch or embed the production certificate
+    const certUrl = 'https://developer.safaricom.co.ke/sites/default/files/cert/cert_prod/cert.cer';
+    let cert;
+    try {
+      const certResponse = await axios.get(certUrl, { responseType: 'arraybuffer' });
+      cert = Buffer.from(certResponse.data);
+    } catch (certError) {
+      console.error('❌ Failed to fetch Safaricom production certificate:', certError.message);
+      return { success: false, error: 'Failed to fetch encryption certificate' };
+    }
+
+    // Encrypt the password with the certificate
+    const encrypted = crypto.publicEncrypt(
+      {
+        key: cert,
+        padding: crypto.constants.RSA_PKCS1_PADDING,
+      },
+      Buffer.from(initiatorPassword)
+    );
+    const securityCredential = encrypted.toString('base64');
+    console.log('Security Credential generated (first 20 chars):', securityCredential.substring(0, 20) + '...');
+
     const b2cPayload = {
       InitiatorName: process.env.MPESA_B2C_INITIATOR_NAME,
-      SecurityCredential: process.env.MPESA_B2C_SECURITY_CREDENTIAL,
+      SecurityCredential: securityCredential,   // ✅ auto‑generated
       CommandID: 'BusinessPayment',
       Amount: amount,
-      PartyA: '4565747',             // ✅ organization shortcode
+      PartyA: process.env.MPESA_B2C_SHORTCODE,
       PartyB: cleanPhone,
       Remarks: `Withdrawal for ${userType}`,
       QueueTimeOutURL: `${BASE_URL}/api/b2c/queue-timeout`,
