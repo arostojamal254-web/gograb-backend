@@ -19,7 +19,7 @@ app.use(express.json());
 const PORT = process.env.PORT || 8080;
 const BASE_URL = process.env.BASE_URL || 'https://gograb-backend-production.up.railway.app';
 
-// ========== STK PUSH (customer payment) – always uses parent shortcode 4565717 ==========
+// ========== STK PUSH (customer payment) – parent shortcode 4565717 ==========
 app.post('/api/mpesa/stkpush', async (req, res) => {
   try {
     const { amount, phone, accountRef, desc, TransactionType } = req.body;
@@ -41,13 +41,13 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
     const accessToken = tokenResponse.data.access_token;
 
     const payload = {
-      BusinessShortCode: '4565717',            // ✅ parent shortcode for STK
+      BusinessShortCode: '4565717',
       Password: password,
       Timestamp: timestamp,
       TransactionType: TransactionType || 'CustomerBuyGoodsOnline',
       Amount: amount,
       PartyA: phone,
-      PartyB: '4565781',                      // ✅ till number linked to 4565717
+      PartyB: '4565781',               // ✅ till number linked to 4565717
       PhoneNumber: phone,
       CallBackURL: `${BASE_URL}/mpesa/callback`,
       AccountReference: accountRef,
@@ -159,7 +159,7 @@ app.post('/mpesa/callback', async (req, res) => {
   }
 });
 
-// ========== WITHDRAWAL PROCESSING (B2C) – uses child shortcode 4565747 ==========
+// ========== WITHDRAWAL PROCESSING (B2C) – child shortcode 4565747 ==========
 app.post('/api/withdraw', async (req, res) => {
   try {
     const { userId, amount, userType, withdrawalId } = req.body;
