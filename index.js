@@ -19,14 +19,17 @@ app.use(express.json());
 const PORT = process.env.PORT || 8080;
 const BASE_URL = process.env.BASE_URL || 'https://gograb-backend-production.up.railway.app';
 
-// ========== STK PUSH (customer payment) – parent shortcode 4565717 ==========
+// ✅ New combined shortcode
+const SHORTCODE = '4053477';
+
+// ========== STK PUSH ==========
 app.post('/api/mpesa/stkpush', async (req, res) => {
   try {
-    const { amount, phone, accountRef, desc, TransactionType } = req.body;
+    const { amount, phone, accountRef, desc, BusinessShortCode, PartyB, TransactionType } = req.body;
 
     const timestamp = new Date().toISOString().replace(/[-:T.]/g, '').slice(0, 14);
     const password = Buffer.from(
-      `${process.env.MPESA_SHORTCODE}${process.env.MPESA_PASSKEY}${timestamp}`
+      `${SHORTCODE}${process.env.MPESA_PASSKEY}${timestamp}`
     ).toString('base64');
 
     const auth = Buffer.from(
@@ -41,13 +44,13 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
     const accessToken = tokenResponse.data.access_token;
 
     const payload = {
-      BusinessShortCode: '4565717',
+      BusinessShortCode: BusinessShortCode || SHORTCODE,
       Password: password,
       Timestamp: timestamp,
       TransactionType: TransactionType || 'CustomerBuyGoodsOnline',
       Amount: amount,
       PartyA: phone,
-      PartyB: '4565781',               // ✅ till number linked to 4565717
+      PartyB: PartyB || SHORTCODE,               // ✅ same as shortcode
       PhoneNumber: phone,
       CallBackURL: `${BASE_URL}/mpesa/callback`,
       AccountReference: accountRef,
@@ -78,7 +81,7 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
 });
 
 // ========== STK CALLBACK ==========
-app.post('/mpesa/callback', async (req, res) => {
+app.post('/mpesa/callback', async (req, res) {
   try {
     console.log('📩 Callback received:', JSON.stringify(req.body, null, 2));
 
@@ -104,6 +107,7 @@ app.post('/mpesa/callback', async (req, res) => {
 
       console.log(`Amount: ${amount}, AccountRef: ${accountRef}`);
 
+      // Find order in orders_shared or orders
       const ordersSharedRef = admin.firestore().collection('orders_shared');
       const orderSnapshot = await ordersSharedRef.where('mpesaReceipt', '==', accountRef).limit(1).get();
 
@@ -159,7 +163,7 @@ app.post('/mpesa/callback', async (req, res) => {
   }
 });
 
-// ========== WITHDRAWAL PROCESSING (B2C) – child shortcode 4565747 ==========
+// ========== WITHDRAWAL PROCESSING ==========
 app.post('/api/withdraw', async (req, res) => {
   try {
     const { userId, amount, userType, withdrawalId } = req.body;
@@ -194,22 +198,25 @@ async function initiateB2C(userId, amount, userType, withdrawalId) {
     console.log(`UserId: ${userId}, Amount: ${amount}, UserType: ${userType}, WithdrawalId: ${withdrawalId}`);
 
     let userPhone = null;
+
     if (withdrawalId) {
       const withdrawalDoc = await admin.firestore().collection('withdrawals').doc(withdrawalId).get();
       if (withdrawalDoc.exists) {
         userPhone = withdrawalDoc.data().accountDetails;
       }
     }
+
     if (!userPhone || userPhone === '0700000005') {
       const userDoc = await admin.firestore().collection('users').doc(userId).get();
       const userData = userDoc.data() || {};
       userPhone = userData.phone || userData.phoneNumber;
     }
+
     if (!userPhone || userPhone === '0700000005') {
       return { success: false, error: 'No valid phone number found for user' };
     }
+
     const cleanPhone = userPhone.replace(/^\+/, '').replace(/^0/, '254');
-    console.log(`Phone: ${cleanPhone}`);
 
     const auth = Buffer.from(
       `${process.env.MPESA_CONSUMER_KEY}:${process.env.MPESA_CONSUMER_SECRET}`
@@ -227,15 +234,13 @@ async function initiateB2C(userId, amount, userType, withdrawalId) {
       SecurityCredential: process.env.MPESA_B2C_SECURITY_CREDENTIAL,
       CommandID: 'BusinessPayment',
       Amount: amount,
-      PartyA: '4565747',                // ✅ child shortcode for B2C
+      PartyA: SHORTCODE,                        // ✅ new shortcode
       PartyB: cleanPhone,
       Remarks: `Withdrawal for ${userType}`,
       QueueTimeOutURL: `${BASE_URL}/api/b2c/queue-timeout`,
       ResultURL: `${BASE_URL}/api/b2c/result`,
       Occasion: 'Withdrawal',
     };
-
-    console.log('B2C payload:', JSON.stringify(b2cPayload, null, 2));
 
     const b2cResponse = await axios.post(
       'https://api.safaricom.co.ke/mpesa/b2c/v1/paymentrequest',
