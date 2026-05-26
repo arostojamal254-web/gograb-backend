@@ -19,7 +19,6 @@ app.use(express.json());
 const PORT = process.env.PORT || 8080;
 const BASE_URL = process.env.BASE_URL || 'https://gograb-backend-production.up.railway.app';
 
-// ✅ New combined shortcode
 const SHORTCODE = '4053477';
 
 // ========== STK PUSH ==========
@@ -50,7 +49,7 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
       TransactionType: TransactionType || 'CustomerBuyGoodsOnline',
       Amount: amount,
       PartyA: phone,
-      PartyB: PartyB || SHORTCODE,               // ✅ same as shortcode
+      PartyB: PartyB || SHORTCODE,
       PhoneNumber: phone,
       CallBackURL: `${BASE_URL}/mpesa/callback`,
       AccountReference: accountRef,
@@ -81,7 +80,7 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
 });
 
 // ========== STK CALLBACK ==========
-app.post('/mpesa/callback', async (req, res) => {      // ✅ fixed syntax
+app.post('/mpesa/callback', async (req, res) => {
   try {
     console.log('📩 Callback received:', JSON.stringify(req.body, null, 2));
 
@@ -107,7 +106,6 @@ app.post('/mpesa/callback', async (req, res) => {      // ✅ fixed syntax
 
       console.log(`Amount: ${amount}, AccountRef: ${accountRef}`);
 
-      // Find order in orders_shared or orders
       const ordersSharedRef = admin.firestore().collection('orders_shared');
       const orderSnapshot = await ordersSharedRef.where('mpesaReceipt', '==', accountRef).limit(1).get();
 
@@ -163,24 +161,26 @@ app.post('/mpesa/callback', async (req, res) => {      // ✅ fixed syntax
   }
 });
 
-// ========== WITHDRAWAL PROCESSING ==========
+// ========== WITHDRAWAL PROCESSING (now open to any authenticated user) ==========
 app.post('/api/withdraw', async (req, res) => {
   try {
-    const { userId, amount, userType, withdrawalId } = req.body;
+    const { userId, amount, userType, accountDetails } = req.body;
+    const idToken = req.headers.authorization?.split('Bearer ')[1];
 
-    const b2cResult = await initiateB2C(userId, amount, userType, withdrawalId);
+    if (!idToken) {
+      return res.status(401).json({ success: false, error: 'Missing auth token' });
+    }
+
+    // Verify the user is authenticated (no role check)
+    await admin.auth().verifyIdToken(idToken);
+
+    // Initiate B2C payment using the account details from the request
+    const b2cResult = await initiateB2C(userId, amount, userType, accountDetails);
     if (!b2cResult.success) {
       return res.status(400).json({
         success: false,
         error: b2cResult.error || 'B2C payment failed',
         details: b2cResult.details || null,
-      });
-    }
-
-    if (withdrawalId) {
-      await admin.firestore().collection('withdrawals').doc(withdrawalId).update({
-        status: 'processed',
-        processedAt: admin.firestore.FieldValue.serverTimestamp(),
       });
     }
 
@@ -191,25 +191,20 @@ app.post('/api/withdraw', async (req, res) => {
   }
 });
 
-// ========== B2C Helper ==========
-async function initiateB2C(userId, amount, userType, withdrawalId) {
+// ========== B2C Helper (now accepts accountDetails directly) ==========
+async function initiateB2C(userId, amount, userType, accountDetails) {
   try {
     console.log('Initiating B2C payment...');
-    console.log(`UserId: ${userId}, Amount: ${amount}, UserType: ${userType}, WithdrawalId: ${withdrawalId}`);
+    console.log(`UserId: ${userId}, Amount: ${amount}, UserType: ${userType}, AccountDetails: ${accountDetails}`);
 
-    let userPhone = null;
+    let userPhone = accountDetails;
 
-    if (withdrawalId) {
-      const withdrawalDoc = await admin.firestore().collection('withdrawals').doc(withdrawalId).get();
-      if (withdrawalDoc.exists) {
-        userPhone = withdrawalDoc.data().accountDetails;
-      }
-    }
-
-    if (!userPhone || userPhone === '0700000005') {
+    // If accountDetails is a till number (starts with 4), it might not be a phone number.
+    // Fallback: get phone from user document if accountDetails looks like a till number.
+    if (!userPhone || userPhone.startsWith('4')) {
       const userDoc = await admin.firestore().collection('users').doc(userId).get();
       const userData = userDoc.data() || {};
-      userPhone = userData.phone || userData.phoneNumber;
+      userPhone = userData.phone || userData.phoneNumber || accountDetails;
     }
 
     if (!userPhone || userPhone === '0700000005') {
@@ -217,6 +212,7 @@ async function initiateB2C(userId, amount, userType, withdrawalId) {
     }
 
     const cleanPhone = userPhone.replace(/^\+/, '').replace(/^0/, '254');
+    console.log(`Final phone: ${cleanPhone}`);
 
     const auth = Buffer.from(
       `${process.env.MPESA_CONSUMER_KEY}:${process.env.MPESA_CONSUMER_SECRET}`
@@ -234,7 +230,7 @@ async function initiateB2C(userId, amount, userType, withdrawalId) {
       SecurityCredential: process.env.MPESA_B2C_SECURITY_CREDENTIAL,
       CommandID: 'BusinessPayment',
       Amount: amount,
-      PartyA: SHORTCODE,                        // ✅ new shortcode
+      PartyA: SHORTCODE,
       PartyB: cleanPhone,
       Remarks: `Withdrawal for ${userType}`,
       QueueTimeOutURL: `${BASE_URL}/api/b2c/queue-timeout`,
