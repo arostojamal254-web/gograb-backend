@@ -81,7 +81,7 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
 });
 
 // ========== STK CALLBACK ==========
-app.post('/mpesa/callback', async (req, res) {
+app.post('/mpesa/callback', async (req, res) => {      // ✅ fixed syntax
   try {
     console.log('📩 Callback received:', JSON.stringify(req.body, null, 2));
 
