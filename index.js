@@ -19,7 +19,9 @@ app.use(express.json());
 const PORT = process.env.PORT || 8080;
 const BASE_URL = process.env.BASE_URL || 'https://gograb-backend-production.up.railway.app';
 
-const SHORTCODE = '4053477';
+// ✅ Working shortcode & till for Paybill
+const SHORTCODE = '4565717';
+const PARTY_B   = '4565781';
 
 // ========== STK PUSH ==========
 app.post('/api/mpesa/stkpush', async (req, res) => {
@@ -43,13 +45,13 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
     const accessToken = tokenResponse.data.access_token;
 
     const payload = {
-      BusinessShortCode: BusinessShortCode || SHORTCODE,
+      BusinessShortCode: SHORTCODE,
       Password: password,
       Timestamp: timestamp,
-      TransactionType: TransactionType || 'CustomerBuyGoodsOnline',
+      TransactionType: TransactionType || 'CustomerPayBillOnline',   // ✅ Paybill
       Amount: amount,
       PartyA: phone,
-      PartyB: PartyB || SHORTCODE,
+      PartyB: PARTY_B,               // ✅ working till number
       PhoneNumber: phone,
       CallBackURL: `${BASE_URL}/mpesa/callback`,
       AccountReference: accountRef,
@@ -161,7 +163,7 @@ app.post('/mpesa/callback', async (req, res) => {
   }
 });
 
-// ========== WITHDRAWAL PROCESSING (now open to any authenticated user) ==========
+// ========== WITHDRAWAL PROCESSING ==========
 app.post('/api/withdraw', async (req, res) => {
   try {
     const { userId, amount, userType, accountDetails } = req.body;
@@ -171,10 +173,8 @@ app.post('/api/withdraw', async (req, res) => {
       return res.status(401).json({ success: false, error: 'Missing auth token' });
     }
 
-    // Verify the user is authenticated (no role check)
     await admin.auth().verifyIdToken(idToken);
 
-    // Initiate B2C payment using the account details from the request
     const b2cResult = await initiateB2C(userId, amount, userType, accountDetails);
     if (!b2cResult.success) {
       return res.status(400).json({
@@ -191,7 +191,7 @@ app.post('/api/withdraw', async (req, res) => {
   }
 });
 
-// ========== B2C Helper (now accepts accountDetails directly) ==========
+// ========== B2C Helper ==========
 async function initiateB2C(userId, amount, userType, accountDetails) {
   try {
     console.log('Initiating B2C payment...');
@@ -199,8 +199,6 @@ async function initiateB2C(userId, amount, userType, accountDetails) {
 
     let userPhone = accountDetails;
 
-    // If accountDetails is a till number (starts with 4), it might not be a phone number.
-    // Fallback: get phone from user document if accountDetails looks like a till number.
     if (!userPhone || userPhone.startsWith('4')) {
       const userDoc = await admin.firestore().collection('users').doc(userId).get();
       const userData = userDoc.data() || {};
