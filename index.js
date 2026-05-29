@@ -162,7 +162,7 @@ app.post('/mpesa/callback', async (req, res) => {
   }
 });
 
-// ========== WITHDRAWAL PROCESSING (existing) ==========
+// ========== GENERIC WITHDRAWAL (with auth token) ==========
 app.post('/api/withdraw', async (req, res) => {
   try {
     const { userId, amount, userType, accountDetails } = req.body;
@@ -190,7 +190,7 @@ app.post('/api/withdraw', async (req, res) => {
   }
 });
 
-// 🆕 NEW ENDPOINT – matches the vendor app call
+// ========== VENDOR WITHDRAWAL (from vendor app) ==========
 app.post('/api/request-withdrawal', async (req, res) => {
   try {
     const { vendorId, amount, phoneNumber } = req.body;
@@ -201,7 +201,6 @@ app.post('/api/request-withdrawal', async (req, res) => {
       return res.status(400).json({ success: false, message: 'Amount must be between 50 and 150,000' });
     }
 
-    // Use existing B2C helper – userType = 'vendor', accountDetails = phoneNumber
     const b2cResult = await initiateB2C(vendorId, amount, 'vendor', phoneNumber);
     if (!b2cResult.success) {
       return res.status(400).json({
@@ -212,7 +211,33 @@ app.post('/api/request-withdrawal', async (req, res) => {
 
     res.json({ success: true, message: 'Withdrawal processed' });
   } catch (error) {
-    console.error('Request Withdrawal error:', error);
+    console.error('Vendor Withdrawal error:', error);
+    res.status(500).json({ success: false, message: error.message });
+  }
+});
+
+// 🆕 RIDER WITHDRAWAL (from rider app)
+app.post('/api/rider-request-withdrawal', async (req, res) => {
+  try {
+    const { riderId, amount, phoneNumber } = req.body;
+    if (!riderId || !amount || !phoneNumber) {
+      return res.status(400).json({ success: false, message: 'Missing fields' });
+    }
+    if (amount < 50 || amount > 150000) {
+      return res.status(400).json({ success: false, message: 'Amount must be between 50 and 150,000' });
+    }
+
+    const b2cResult = await initiateB2C(riderId, amount, 'rider', phoneNumber);
+    if (!b2cResult.success) {
+      return res.status(400).json({
+        success: false,
+        message: b2cResult.error || 'B2C payment failed',
+      });
+    }
+
+    res.json({ success: true, message: 'Withdrawal processed' });
+  } catch (error) {
+    console.error('Rider Withdrawal error:', error);
     res.status(500).json({ success: false, message: error.message });
   }
 });
