@@ -47,10 +47,10 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
       BusinessShortCode: SHORTCODE,
       Password: password,
       Timestamp: timestamp,
-      TransactionType: TransactionType || 'CustomerPayBillOnline',   // ← Paybill
+      TransactionType: TransactionType || 'CustomerPayBillOnline',
       Amount: amount,
       PartyA: phone,
-      PartyB: PartyB || SHORTCODE,                                  // same as shortcode
+      PartyB: PartyB || SHORTCODE,
       PhoneNumber: phone,
       CallBackURL: `${BASE_URL}/mpesa/callback`,
       AccountReference: accountRef,
@@ -162,7 +162,7 @@ app.post('/mpesa/callback', async (req, res) => {
   }
 });
 
-// ========== WITHDRAWAL PROCESSING ==========
+// ========== WITHDRAWAL PROCESSING (existing) ==========
 app.post('/api/withdraw', async (req, res) => {
   try {
     const { userId, amount, userType, accountDetails } = req.body;
@@ -187,6 +187,33 @@ app.post('/api/withdraw', async (req, res) => {
   } catch (error) {
     console.error('Withdrawal error:', error);
     res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// 🆕 NEW ENDPOINT – matches the vendor app call
+app.post('/api/request-withdrawal', async (req, res) => {
+  try {
+    const { vendorId, amount, phoneNumber } = req.body;
+    if (!vendorId || !amount || !phoneNumber) {
+      return res.status(400).json({ success: false, message: 'Missing fields' });
+    }
+    if (amount < 50 || amount > 150000) {
+      return res.status(400).json({ success: false, message: 'Amount must be between 50 and 150,000' });
+    }
+
+    // Use existing B2C helper – userType = 'vendor', accountDetails = phoneNumber
+    const b2cResult = await initiateB2C(vendorId, amount, 'vendor', phoneNumber);
+    if (!b2cResult.success) {
+      return res.status(400).json({
+        success: false,
+        message: b2cResult.error || 'B2C payment failed',
+      });
+    }
+
+    res.json({ success: true, message: 'Withdrawal processed' });
+  } catch (error) {
+    console.error('Request Withdrawal error:', error);
+    res.status(500).json({ success: false, message: error.message });
   }
 });
 
@@ -227,7 +254,7 @@ async function initiateB2C(userId, amount, userType, accountDetails) {
       SecurityCredential: process.env.MPESA_B2C_SECURITY_CREDENTIAL,
       CommandID: 'BusinessPayment',
       Amount: amount,
-      PartyA: SHORTCODE,              // ← same Paybill
+      PartyA: SHORTCODE,
       PartyB: cleanPhone,
       Remarks: `Withdrawal for ${userType}`,
       QueueTimeOutURL: `${BASE_URL}/api/b2c/queue-timeout`,
