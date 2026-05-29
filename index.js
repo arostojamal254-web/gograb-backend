@@ -19,11 +19,10 @@ app.use(express.json());
 const PORT = process.env.PORT || 8080;
 const BASE_URL = process.env.BASE_URL || 'https://gograb-backend-production.up.railway.app';
 
-// ✅ Paybill configuration
+// ✅ PAYBILL 4053477 – used for both STK Push and B2C
 const SHORTCODE = '4053477';
-const PARTY_B   = '4565781';
 
-// ========== STK PUSH (Paybill) ==========
+// ========== STK PUSH ==========
 app.post('/api/mpesa/stkpush', async (req, res) => {
   try {
     const { amount, phone, accountRef, desc, BusinessShortCode, PartyB, TransactionType } = req.body;
@@ -48,10 +47,10 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
       BusinessShortCode: SHORTCODE,
       Password: password,
       Timestamp: timestamp,
-      TransactionType: TransactionType || 'CustomerPayBillOnline',
+      TransactionType: TransactionType || 'CustomerPayBillOnline',   // ← Paybill
       Amount: amount,
       PartyA: phone,
-      PartyB: PARTY_B,
+      PartyB: PartyB || SHORTCODE,                                  // same as shortcode
       PhoneNumber: phone,
       CallBackURL: `${BASE_URL}/mpesa/callback`,
       AccountReference: accountRef,
@@ -163,7 +162,7 @@ app.post('/mpesa/callback', async (req, res) => {
   }
 });
 
-// ========== WITHDRAWAL PROCESSING (B2C with 4053477) ==========
+// ========== WITHDRAWAL PROCESSING ==========
 app.post('/api/withdraw', async (req, res) => {
   try {
     const { userId, amount, userType, accountDetails } = req.body;
@@ -228,7 +227,7 @@ async function initiateB2C(userId, amount, userType, accountDetails) {
       SecurityCredential: process.env.MPESA_B2C_SECURITY_CREDENTIAL,
       CommandID: 'BusinessPayment',
       Amount: amount,
-      PartyA: SHORTCODE,               // ✅ 4053477
+      PartyA: SHORTCODE,              // ← same Paybill
       PartyB: cleanPhone,
       Remarks: `Withdrawal for ${userType}`,
       QueueTimeOutURL: `${BASE_URL}/api/b2c/queue-timeout`,
