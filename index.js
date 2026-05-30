@@ -25,7 +25,7 @@ const SHORTCODE = '4053477';
 // ========== STK PUSH ==========
 app.post('/api/mpesa/stkpush', async (req, res) => {
   try {
-    const { amount, phone, accountRef, desc, BusinessShortCode, PartyB, TransactionType } = req.body;
+    const { amount, phone, accountRef, desc, TransactionType, orderId, userId, serviceType } = req.body;
 
     const timestamp = new Date().toISOString().replace(/[-:T.]/g, '').slice(0, 14);
     const password = Buffer.from(
@@ -50,7 +50,7 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
       TransactionType: TransactionType || 'CustomerPayBillOnline',
       Amount: amount,
       PartyA: phone,
-      PartyB: PartyB || SHORTCODE,
+      PartyB: SHORTCODE,
       PhoneNumber: phone,
       CallBackURL: `${BASE_URL}/mpesa/callback`,
       AccountReference: accountRef,
@@ -67,9 +67,22 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
 
     console.log('STK Push response:', JSON.stringify(stkResponse.data, null, 2));
 
+    const checkoutRequestID = stkResponse.data.CheckoutRequestID;
+
+    // Save pending transaction so callback can find the order
+    await admin.firestore().collection('pending_mpesa').doc(checkoutRequestID).set({
+      amount: Number(amount),
+      orderId: orderId || null,
+      userId: userId || null,
+      serviceType: serviceType || 'order',
+      accountRef: accountRef,
+      status: 'pending',
+      createdAt: admin.firestore.FieldValue.serverTimestamp(),
+    });
+
     res.json({
       success: true,
-      checkoutRequestID: stkResponse.data.CheckoutRequestID,
+      checkoutRequestID: checkoutRequestID,
     });
   } catch (error) {
     console.error('STK Push error:', error.response?.data || error.message);
@@ -86,73 +99,107 @@ app.post('/mpesa/callback', async (req, res) => {
     console.log('📩 Callback received:', JSON.stringify(req.body, null, 2));
 
     const callback = req.body.Body.stkCallback;
-    if (callback && callback.ResultCode === 0) {
+    if (!callback) {
+      console.log('❌ Invalid callback body');
+      return res.json({ ResultCode: 1, ResultDesc: 'Invalid body' });
+    }
+
+    if (callback.ResultCode === 0) {
       console.log('✅ Payment successful');
 
+      // Extract data from metadata
       let amount = null;
-      let accountRef = null;
+      let mpesaReceipt = null;
+      let phoneNumber = null;
 
       const items = callback.CallbackMetadata?.Item;
       if (items) {
         for (const item of items) {
-          if (item.Name === 'Amount') amount = item.Value;
-          if (item.Name === 'AccountReference') accountRef = item.Value;
+          if (item.Name === 'Amount') amount = Number(item.Value);
+          if (item.Name === 'MpesaReceiptNumber') mpesaReceipt = item.Value;
+          if (item.Name === 'PhoneNumber') phoneNumber = String(item.Value);
         }
       }
 
-      if (!amount || !accountRef) {
-        console.log('⚠️ Missing Amount or AccountReference – wallet not updated');
+      const checkoutRequestID = callback.CheckoutRequestID;
+
+      if (!checkoutRequestID) {
+        console.log('⚠️ Missing CheckoutRequestID – cannot find pending transaction');
         return res.json({ ResultCode: 0, ResultDesc: 'Success' });
       }
 
-      console.log(`Amount: ${amount}, AccountRef: ${accountRef}`);
+      // Retrieve pending transaction
+      const pendingRef = admin.firestore().collection('pending_mpesa').doc(checkoutRequestID);
+      const pendingDoc = await pendingRef.get();
 
-      const ordersSharedRef = admin.firestore().collection('orders_shared');
-      const orderSnapshot = await ordersSharedRef.where('mpesaReceipt', '==', accountRef).limit(1).get();
+      if (!pendingDoc.exists) {
+        console.log('❌ No pending transaction found for CheckoutRequestID:', checkoutRequestID);
+        return res.json({ ResultCode: 0, ResultDesc: 'No pending record' });
+      }
 
-      if (!orderSnapshot.empty) {
-        const orderDoc = orderSnapshot.docs[0];
-        const order = orderDoc.data();
-        const userId = order.userId;
+      const pendingData = pendingDoc.data();
+      const orderId = pendingData.orderId;
+      const userId = pendingData.userId;
+      const serviceType = pendingData.serviceType;
 
-        await orderDoc.ref.update({
-          paymentStatus: 'paid',
-          mpesaReceiptNumber: accountRef,
-        });
+      // If we don't have amount from metadata, use the one from pending doc
+      if (!amount) amount = pendingData.amount;
 
-        const walletRef = admin.firestore().collection('wallets').doc(userId);
-        await walletRef.set({
-          balance: admin.firestore.FieldValue.increment(Number(amount)),
-          updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-        }, { merge: true });
-
-        console.log('✅ Wallet updated and order status set to paid');
-      } else {
-        const ordersRef = admin.firestore().collection('orders');
-        const legacySnapshot = await ordersRef.where('mpesaReceipt', '==', accountRef).limit(1).get();
-        if (!legacySnapshot.empty) {
-          const orderDoc = legacySnapshot.docs[0];
-          const order = orderDoc.data();
-          const userId = order.userId;
-
-          await orderDoc.ref.update({
+      // Update the appropriate order document
+      if (orderId) {
+        let collection = 'orders';
+        if (serviceType === 'delivery' || serviceType === 'order') {
+          // Try orders_shared first, then orders
+          const ordersSharedRef = admin.firestore().collection('orders_shared').doc(orderId);
+          const doc = await ordersSharedRef.get();
+          if (doc.exists) {
+            await ordersSharedRef.update({
+              paymentStatus: 'paid',
+              mpesaReceiptNumber: mpesaReceipt,
+              updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+            });
+          } else {
+            await admin.firestore().collection('orders').doc(orderId).update({
+              paymentStatus: 'paid',
+              mpesaReceiptNumber: mpesaReceipt,
+              updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+            });
+          }
+        } else if (serviceType === 'ride') {
+          await admin.firestore().collection('rides').doc(orderId).update({
             paymentStatus: 'paid',
-            mpesaReceiptNumber: accountRef,
-          });
-
-          const walletRef = admin.firestore().collection('wallets').doc(userId);
-          await walletRef.set({
-            balance: admin.firestore.FieldValue.increment(Number(amount)),
+            mpesaReceiptNumber: mpesaReceipt,
             updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-          }, { merge: true });
-
-          console.log('✅ Wallet updated (legacy orders)');
-        } else {
-          console.log(`❌ No order found with mpesaReceipt: ${accountRef}`);
+          });
+        } else if (serviceType === 'parcel') {
+          await admin.firestore().collection('parcels').doc(orderId).update({
+            paymentStatus: 'paid',
+            mpesaReceiptNumber: mpesaReceipt,
+            updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+          });
         }
       }
+
+      // Update wallet
+      if (userId && amount) {
+        await admin.firestore().collection('wallets').doc(userId).set({
+          balance: admin.firestore.FieldValue.increment(amount),
+          updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+        }, { merge: true });
+        console.log(`✅ Wallet of ${userId} credited with ${amount}`);
+      } else {
+        console.log('⚠️ Missing userId or amount – wallet not updated');
+      }
+
+      // Delete pending record
+      await pendingRef.delete();
+
     } else {
-      console.log('❌ Payment failed/cancelled:', callback?.ResultDesc);
+      console.log('❌ Payment failed/cancelled:', callback.ResultDesc);
+      // Clean up pending record if cancelled
+      if (callback.CheckoutRequestID) {
+        await admin.firestore().collection('pending_mpesa').doc(callback.CheckoutRequestID).delete();
+      }
     }
 
     res.json({ ResultCode: 0, ResultDesc: 'Success' });
