@@ -69,7 +69,7 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
 
     const checkoutRequestID = stkResponse.data.CheckoutRequestID;
 
-    // Save pending transaction so callback can find the order/booking
+    // Save pending transaction so callback can find the order/booking/top-up
     await admin.firestore().collection('pending_mpesa').doc(checkoutRequestID).set({
       amount: Number(amount),
       orderId: orderId || null,
@@ -145,6 +145,22 @@ app.post('/mpesa/callback', async (req, res) => {
       // If we don't have amount from metadata, use the one from pending doc
       if (!amount) amount = pendingData.amount;
 
+      // ──────────────────── TOP‑UP handling ────────────────────
+      if (serviceType === 'topup') {
+        if (userId && amount) {
+          await admin.firestore().collection('wallets').doc(userId).set({
+            balance: admin.firestore.FieldValue.increment(amount),
+            updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+          }, { merge: true });
+          console.log(`✅ Top‑up: wallet of ${userId} credited with ${amount}`);
+        } else {
+          console.log('⚠️ Top‑up: missing userId or amount – wallet not updated');
+        }
+        await pendingRef.delete();
+        return res.json({ ResultCode: 0, ResultDesc: 'Top‑up processed' });
+      }
+      // ──────────────────────────────────────────────────────────
+
       // Determine which collection to update based on serviceType
       const collectionMap = {
         'order': 'orders',
@@ -153,7 +169,7 @@ app.post('/mpesa/callback', async (req, res) => {
         'parcel': 'parcels',
         'accommodation': 'accommodations',
         'booking': 'bookings',
-        'bookings': 'bookings',
+        'topup': 'none',   // not used, but added for completeness
       };
       const collection = collectionMap[serviceType] || 'orders';
 
@@ -171,7 +187,7 @@ app.post('/mpesa/callback', async (req, res) => {
         }
       }
 
-      // Update wallet
+      // Update wallet (for orders, rides, parcels, etc. – but not top‑up, already handled above)
       if (userId && amount) {
         await admin.firestore().collection('wallets').doc(userId).set({
           balance: admin.firestore.FieldValue.increment(amount),
