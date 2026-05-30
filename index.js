@@ -69,7 +69,7 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
 
     const checkoutRequestID = stkResponse.data.CheckoutRequestID;
 
-    // Save pending transaction so callback can find the order
+    // Save pending transaction so callback can find the order/booking
     await admin.firestore().collection('pending_mpesa').doc(checkoutRequestID).set({
       amount: Number(amount),
       orderId: orderId || null,
@@ -145,38 +145,29 @@ app.post('/mpesa/callback', async (req, res) => {
       // If we don't have amount from metadata, use the one from pending doc
       if (!amount) amount = pendingData.amount;
 
-      // Update the appropriate order document
+      // Determine which collection to update based on serviceType
+      const collectionMap = {
+        'order': 'orders',
+        'delivery': 'orders_shared',
+        'ride': 'rides',
+        'parcel': 'parcels',
+        'accommodation': 'accommodations',
+        'booking': 'bookings',
+        'bookings': 'bookings',
+      };
+      const collection = collectionMap[serviceType] || 'orders';
+
+      // Update the appropriate service document
       if (orderId) {
-        let collection = 'orders';
-        if (serviceType === 'delivery' || serviceType === 'order') {
-          // Try orders_shared first, then orders
-          const ordersSharedRef = admin.firestore().collection('orders_shared').doc(orderId);
-          const doc = await ordersSharedRef.get();
-          if (doc.exists) {
-            await ordersSharedRef.update({
-              paymentStatus: 'paid',
-              mpesaReceiptNumber: mpesaReceipt,
-              updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-            });
-          } else {
-            await admin.firestore().collection('orders').doc(orderId).update({
-              paymentStatus: 'paid',
-              mpesaReceiptNumber: mpesaReceipt,
-              updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-            });
-          }
-        } else if (serviceType === 'ride') {
-          await admin.firestore().collection('rides').doc(orderId).update({
+        try {
+          await admin.firestore().collection(collection).doc(orderId).set({
             paymentStatus: 'paid',
             mpesaReceiptNumber: mpesaReceipt,
             updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-          });
-        } else if (serviceType === 'parcel') {
-          await admin.firestore().collection('parcels').doc(orderId).update({
-            paymentStatus: 'paid',
-            mpesaReceiptNumber: mpesaReceipt,
-            updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-          });
+          }, { merge: true });
+          console.log(`✅ ${collection} ${orderId} marked as paid`);
+        } catch (err) {
+          console.error(`Failed to update ${collection}/${orderId}:`, err);
         }
       }
 
