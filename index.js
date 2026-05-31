@@ -237,6 +237,22 @@ app.post('/api/withdraw', async (req, res) => {
       });
     }
 
+    // ✅ Update the pending withdrawal document to completed
+    const withdrawalsSnap = await admin.firestore()
+        .collection('withdrawals')
+        .where('vendorId', '==', userId)
+        .where('status', '==', 'pending')
+        .orderBy('createdAt', 'desc')
+        .limit(1)
+        .get();
+
+    if (!withdrawalsSnap.empty) {
+      await withdrawalsSnap.docs[0].ref.update({
+        status: 'completed',
+        updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+      });
+    }
+
     res.json({ success: true, message: 'Withdrawal processed' });
   } catch (error) {
     console.error('Withdrawal error:', error);
@@ -263,6 +279,22 @@ app.post('/api/request-withdrawal', async (req, res) => {
       });
     }
 
+    // ✅ Update the pending withdrawal to completed
+    const withdrawalsSnap = await admin.firestore()
+        .collection('withdrawals')
+        .where('vendorId', '==', vendorId)
+        .where('status', '==', 'pending')
+        .orderBy('createdAt', 'desc')
+        .limit(1)
+        .get();
+
+    if (!withdrawalsSnap.empty) {
+      await withdrawalsSnap.docs[0].ref.update({
+        status: 'completed',
+        updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+      });
+    }
+
     res.json({ success: true, message: 'Withdrawal processed' });
   } catch (error) {
     console.error('Vendor Withdrawal error:', error);
@@ -286,6 +318,22 @@ app.post('/api/rider-request-withdrawal', async (req, res) => {
       return res.status(400).json({
         success: false,
         message: b2cResult.error || 'B2C payment failed',
+      });
+    }
+
+    // ✅ Update the pending withdrawal to completed
+    const withdrawalsSnap = await admin.firestore()
+        .collection('withdrawals')
+        .where('vendorId', '==', riderId)
+        .where('status', '==', 'pending')
+        .orderBy('createdAt', 'desc')
+        .limit(1)
+        .get();
+
+    if (!withdrawalsSnap.empty) {
+      await withdrawalsSnap.docs[0].ref.update({
+        status: 'completed',
+        updatedAt: admin.firestore.FieldValue.serverTimestamp(),
       });
     }
 
