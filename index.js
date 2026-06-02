@@ -161,6 +161,23 @@ app.post('/mpesa/callback', async (req, res) => {
       }
       // ──────────────────────────────────────────────────────────
 
+      // 🔥 NEW: Get the full order data before updating (for orders)
+      let fullOrderData = {};
+      if (orderId && serviceType === 'order') {
+        try {
+          // Check if order exists in orders_shared (it should have items)
+          const sharedOrderDoc = await admin.firestore().collection('orders_shared').doc(orderId).get();
+          if (sharedOrderDoc.exists) {
+            fullOrderData = sharedOrderDoc.data();
+            console.log(`✅ Retrieved full order data for ${orderId}, items exist: ${!!fullOrderData.items}`);
+          } else {
+            console.log(`⚠️ No orders_shared document found for ${orderId}`);
+          }
+        } catch (err) {
+          console.error(`Failed to fetch full order data: ${err}`);
+        }
+      }
+
       // Determine which collection to update based on serviceType
       const collectionMap = {
         'order': 'orders',
@@ -169,18 +186,40 @@ app.post('/mpesa/callback', async (req, res) => {
         'parcel': 'parcels',
         'accommodation': 'accommodations',
         'booking': 'bookings',
-        'topup': 'none',   // not used, but added for completeness
+        'topup': 'none',
       };
       const collection = collectionMap[serviceType] || 'orders';
 
       // Update the appropriate service document
       if (orderId) {
         try {
-          await admin.firestore().collection(collection).doc(orderId).set({
+          // Create update data with payment info
+          const updateData = {
             paymentStatus: 'paid',
             mpesaReceiptNumber: mpesaReceipt,
             updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-          }, { merge: true });
+          };
+          
+          // ✅ ADD FULL ORDER DATA FOR ORDERS COLLECTION
+          if (serviceType === 'order' && fullOrderData.items) {
+            updateData.items = fullOrderData.items;
+            updateData.vendorId = fullOrderData.vendorId;
+            updateData.customerId = fullOrderData.customerId || userId;
+            updateData.totalAmount = fullOrderData.totalAmount || amount;
+            updateData.orderStatus = fullOrderData.orderStatus || 'confirmed';
+            updateData.customerName = fullOrderData.customerName;
+            updateData.customerPhone = fullOrderData.customerPhone;
+            updateData.deliveryAddress = fullOrderData.deliveryAddress;
+            updateData.createdAt = fullOrderData.createdAt || admin.firestore.FieldValue.serverTimestamp();
+            console.log(`✅ Added items (${fullOrderData.items.length} items) to orders/${orderId}`);
+          }
+          
+          // Also add items for delivery service type if needed
+          if (serviceType === 'delivery' && fullOrderData.items) {
+            updateData.items = fullOrderData.items;
+          }
+          
+          await admin.firestore().collection(collection).doc(orderId).set(updateData, { merge: true });
           console.log(`✅ ${collection} ${orderId} marked as paid`);
         } catch (err) {
           console.error(`Failed to update ${collection}/${orderId}:`, err);
@@ -188,7 +227,7 @@ app.post('/mpesa/callback', async (req, res) => {
       }
 
       // Update wallet (for orders, rides, parcels, etc. – but not top‑up, already handled above)
-      if (userId && amount) {
+      if (userId && amount && serviceType !== 'topup') {
         await admin.firestore().collection('wallets').doc(userId).set({
           balance: admin.firestore.FieldValue.increment(amount),
           updatedAt: admin.firestore.FieldValue.serverTimestamp(),
