@@ -69,7 +69,6 @@ app.post('/api/mpesa/stkpush', async (req, res) => {
 
     const checkoutRequestID = stkResponse.data.CheckoutRequestID;
 
-    // Save pending transaction so callback can find the order/booking/top-up
     await admin.firestore().collection('pending_mpesa').doc(checkoutRequestID).set({
       amount: Number(amount),
       orderId: orderId || null,
@@ -107,7 +106,6 @@ app.post('/mpesa/callback', async (req, res) => {
     if (callback.ResultCode === 0) {
       console.log('✅ Payment successful');
 
-      // Extract data from metadata
       let amount = null;
       let mpesaReceipt = null;
       let phoneNumber = null;
@@ -128,7 +126,6 @@ app.post('/mpesa/callback', async (req, res) => {
         return res.json({ ResultCode: 0, ResultDesc: 'Success' });
       }
 
-      // Retrieve pending transaction
       const pendingRef = admin.firestore().collection('pending_mpesa').doc(checkoutRequestID);
       const pendingDoc = await pendingRef.get();
 
@@ -142,7 +139,6 @@ app.post('/mpesa/callback', async (req, res) => {
       const userId = pendingData.userId;
       const serviceType = pendingData.serviceType;
 
-      // If we don't have amount from metadata, use the one from pending doc
       if (!amount) amount = pendingData.amount;
 
       // ──────────────────── TOP‑UP handling ────────────────────
@@ -159,9 +155,7 @@ app.post('/mpesa/callback', async (req, res) => {
         await pendingRef.delete();
         return res.json({ ResultCode: 0, ResultDesc: 'Top‑up processed' });
       }
-      // ──────────────────────────────────────────────────────────
 
-      // Determine which collection to update based on serviceType
       const collectionMap = {
         'order': 'orders',
         'delivery': 'orders_shared',
@@ -173,7 +167,6 @@ app.post('/mpesa/callback', async (req, res) => {
       };
       const collection = collectionMap[serviceType] || 'orders';
 
-      // Update the appropriate service document
       if (orderId) {
         try {
           const updateData = {
@@ -182,7 +175,6 @@ app.post('/mpesa/callback', async (req, res) => {
             updatedAt: admin.firestore.FieldValue.serverTimestamp(),
           };
 
-          // ✅ THE FIX: For orders, copy items from orders collection to orders_shared
           if (serviceType === 'order' || serviceType === 'delivery') {
             const sourceDoc = await admin.firestore().collection('orders').doc(orderId).get();
             if (sourceDoc.exists && sourceDoc.data().items) {
@@ -198,7 +190,6 @@ app.post('/mpesa/callback', async (req, res) => {
         }
       }
 
-      // Update wallet
       if (userId && amount && serviceType !== 'topup') {
         await admin.firestore().collection('wallets').doc(userId).set({
           balance: admin.firestore.FieldValue.increment(amount),
@@ -209,12 +200,10 @@ app.post('/mpesa/callback', async (req, res) => {
         console.log('⚠️ Missing userId or amount – wallet not updated');
       }
 
-      // Delete pending record
       await pendingRef.delete();
 
     } else {
       console.log('❌ Payment failed/cancelled:', callback.ResultDesc);
-      // Clean up pending record if cancelled
       if (callback.CheckoutRequestID) {
         await admin.firestore().collection('pending_mpesa').doc(callback.CheckoutRequestID).delete();
       }
@@ -248,7 +237,6 @@ app.post('/api/withdraw', async (req, res) => {
       });
     }
 
-    // ✅ Update the pending withdrawal document to completed
     const withdrawalsSnap = await admin.firestore()
         .collection('withdrawals')
         .where('vendorId', '==', userId)
@@ -271,7 +259,7 @@ app.post('/api/withdraw', async (req, res) => {
   }
 });
 
-// ========== VENDOR WITHDRAWAL (from vendor app) ==========
+// ========== VENDOR WITHDRAWAL ==========
 app.post('/api/request-withdrawal', async (req, res) => {
   try {
     const { vendorId, amount, phoneNumber } = req.body;
@@ -290,7 +278,6 @@ app.post('/api/request-withdrawal', async (req, res) => {
       });
     }
 
-    // ✅ Update the pending withdrawal to completed
     const withdrawalsSnap = await admin.firestore()
         .collection('withdrawals')
         .where('vendorId', '==', vendorId)
@@ -313,7 +300,7 @@ app.post('/api/request-withdrawal', async (req, res) => {
   }
 });
 
-// 🆕 RIDER WITHDRAWAL (from rider app)
+// ========== RIDER WITHDRAWAL ==========
 app.post('/api/rider-request-withdrawal', async (req, res) => {
   try {
     const { riderId, amount, phoneNumber } = req.body;
@@ -332,7 +319,6 @@ app.post('/api/rider-request-withdrawal', async (req, res) => {
       });
     }
 
-    // ✅ Update the pending withdrawal to completed
     const withdrawalsSnap = await admin.firestore()
         .collection('withdrawals')
         .where('vendorId', '==', riderId)
@@ -427,9 +413,210 @@ async function initiateB2C(userId, amount, userType, accountDetails) {
   }
 }
 
+// ========== PUSH NOTIFICATIONS ==========
+app.post('/api/send-push', async (req, res) => {
+  try {
+    const { tokens, title, body, data } = req.body;
+    
+    if (!tokens || !Array.isArray(tokens) || tokens.length === 0) {
+      return res.status(400).json({ success: false, error: 'No tokens provided' });
+    }
+    if (!title || !body) {
+      return res.status(400).json({ success: false, error: 'Title and body required' });
+    }
+
+    const batches = [];
+    for (let i = 0; i < tokens.length; i += 500) {
+      batches.push(tokens.slice(i, i + 500));
+    }
+
+    let totalSuccess = 0;
+    let totalFailure = 0;
+
+    for (const batch of batches) {
+      const message = {
+        notification: { title, body },
+        data: data || {},
+        tokens: batch,
+      };
+
+      const response = await admin.messaging().sendEachForMulticast(message);
+      totalSuccess += response.successCount;
+      totalFailure += response.failureCount;
+
+      if (response.failureCount > 0) {
+        response.responses.forEach((resp, idx) => {
+          if (!resp.success) {
+            console.error(`Failed to send to token ${batch[idx]?.substring(0, 20)}...: ${resp.error?.message}`);
+          }
+        });
+      }
+    }
+
+    console.log(`Push sent: ${totalSuccess} success, ${totalFailure} failure`);
+    
+    res.json({
+      success: true,
+      successCount: totalSuccess,
+      failureCount: totalFailure,
+    });
+  } catch (error) {
+    console.error('Push error:', error);
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// ========== PROXIMITY / VICINITY NOTIFICATIONS ==========
+// When rider is near pickup or dropoff, push to customer
+app.post('/api/rider-proximity', async (req, res) => {
+  try {
+    const { orderId, riderId, riderName, riderLat, riderLng, type, orderType } = req.body;
+    // type: 'approaching_pickup' | 'arrived_pickup' | 'approaching_dropoff' | 'arrived_dropoff'
+    // orderType: 'delivery' | 'ride' | 'parcel'
+
+    if (!orderId || !riderId) {
+      return res.status(400).json({ success: false, error: 'Missing orderId or riderId' });
+    }
+
+    // Determine which collection to look up
+    const collectionMap = {
+      'delivery': 'orders_shared',
+      'ride': 'rides',
+      'parcel': 'parcels',
+    };
+    const collection = collectionMap[orderType] || 'orders_shared';
+
+    // Get the order to find the customer
+    const orderDoc = await admin.firestore().collection(collection).doc(orderId).get();
+    if (!orderDoc.exists) {
+      return res.status(404).json({ success: false, error: 'Order not found' });
+    }
+
+    const orderData = orderDoc.data();
+    const customerId = orderData.userId || orderData.customerId;
+    
+    if (!customerId) {
+      return res.status(404).json({ success: false, error: 'Customer not found' });
+    }
+
+    // Get customer's FCM token
+    const fcmDoc = await admin.firestore().collection('fcm_tokens').doc(customerId).get();
+    if (!fcmDoc.exists) {
+      return res.status(404).json({ success: false, error: 'Customer FCM token not found' });
+    }
+
+    const token = fcmDoc.data().token;
+    if (!token) {
+      return res.status(404).json({ success: false, error: 'Token is empty' });
+    }
+
+    // Build notification based on proximity type
+    let title = '';
+    let body = '';
+    const riderFirstName = (riderName || 'Rider').split(' ')[0];
+
+    switch (type) {
+      case 'approaching_pickup':
+        title = '🛵 Rider is nearby!';
+        body = `${riderFirstName} is approaching the pickup location. Be ready!`;
+        break;
+      case 'arrived_pickup':
+        title = '📍 Rider has arrived!';
+        body = `${riderFirstName} has arrived at the pickup point.`;
+        break;
+      case 'approaching_dropoff':
+        title = '📦 Almost there!';
+        body = `${riderFirstName} is about ${orderType === 'ride' ? 'to reach your destination' : 'to deliver your order'}.`;
+        break;
+      case 'arrived_dropoff':
+        title = orderType === 'ride' ? '🏁 You have arrived!' : '📬 Delivery arrived!';
+        body = orderType === 'ride' ? 'Thank you for riding with GoGrab!' : `${riderFirstName} has arrived with your ${orderType === 'parcel' ? 'parcel' : 'order'}!`;
+        break;
+      case 'rider_accepted':
+        title = '✅ Rider accepted!';
+        body = `${riderFirstName} has accepted your ${orderType === 'ride' ? 'ride' : orderType === 'parcel' ? 'parcel' : 'delivery'} and is on the way.`;
+        break;
+      case 'rider_en_route':
+        title = '🛵 Rider on the way';
+        body = `${riderFirstName} is heading to pick up your ${orderType === 'ride' ? 'ride' : orderType === 'parcel' ? 'parcel' : 'order'}.`;
+        break;
+      default:
+        title = '📢 Update';
+        body = `${riderFirstName} has an update for your ${orderType}.`;
+    }
+
+    const message = {
+      notification: { title, body },
+      data: {
+        type: 'proximity',
+        orderId: orderId,
+        orderType: orderType || 'delivery',
+        proximityType: type || 'update',
+        riderName: riderName || '',
+        riderId: riderId || '',
+        click_action: 'FLUTTER_NOTIFICATION_CLICK',
+      },
+      token: token,
+    };
+
+    const response = await admin.messaging().send(message);
+    console.log(`Proximity push sent to ${customerId}: ${title} - ${response}`);
+
+    // Also save to a notifications collection for history
+    await admin.firestore().collection('proximity_notifications').add({
+      orderId,
+      customerId,
+      riderId,
+      riderName: riderName || '',
+      type: type || 'update',
+      orderType: orderType || 'delivery',
+      title,
+      body,
+      sentAt: admin.firestore.FieldValue.serverTimestamp(),
+    });
+
+    res.json({ success: true, messageId: response });
+  } catch (error) {
+    console.error('Proximity push error:', error);
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// ========== DIRECT PUSH TO SINGLE USER ==========
+app.post('/api/send-push-to-user', async (req, res) => {
+  try {
+    const { userId, title, body, data } = req.body;
+
+    if (!userId || !title || !body) {
+      return res.status(400).json({ success: false, error: 'Missing userId, title, or body' });
+    }
+
+    const fcmDoc = await admin.firestore().collection('fcm_tokens').doc(userId).get();
+    if (!fcmDoc.exists || !fcmDoc.data().token) {
+      return res.status(404).json({ success: false, error: 'User FCM token not found' });
+    }
+
+    const message = {
+      notification: { title, body },
+      data: data || {},
+      token: fcmDoc.data().token,
+    };
+
+    const response = await admin.messaging().send(message);
+    console.log(`Push sent to ${userId}: ${title}`);
+
+    res.json({ success: true, messageId: response });
+  } catch (error) {
+    console.error('Direct push error:', error);
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
 // ========== ORDER STATUS LISTENER ==========
 function startFCMListener() {
   console.log('Starting FCM order status listener...');
+
+  // Listen for order status changes and push to customer
   admin.firestore().collection('orders_shared').onSnapshot(snapshot => {
     snapshot.docChanges().forEach(async change => {
       if (change.type === 'modified') {
@@ -437,8 +624,202 @@ function startFCMListener() {
         const previous = change.doc._previousData;
         const newStatus = order.status;
         const oldStatus = previous?.status;
-        if (newStatus !== oldStatus) {
-          console.log(`Order ${change.doc.id} changed from ${oldStatus} to ${newStatus}`);
+        
+        if (newStatus !== oldStatus && newStatus) {
+          console.log(`Order ${change.doc.id}: ${oldStatus} → ${newStatus}`);
+          
+          const customerId = order.userId;
+          if (!customerId) return;
+
+          const fcmDoc = await admin.firestore().collection('fcm_tokens').doc(customerId).get();
+          if (!fcmDoc.exists || !fcmDoc.data().token) return;
+
+          const riderName = order.riderName || 'Rider';
+          let title = '';
+          let body = '';
+
+          switch (newStatus) {
+            case 'accepted':
+              title = '✅ Order Accepted';
+              body = `Your order #${change.doc.id.substring(0, 6)} has been accepted.`;
+              break;
+            case 'preparing':
+              title = '🍳 Preparing';
+              body = 'The vendor is preparing your order.';
+              break;
+            case 'readyForPickup':
+            case 'ready_for_pickup':
+              title = '📦 Ready for Pickup';
+              body = 'Your order is ready and waiting for a rider.';
+              break;
+            case 'riderAssigned':
+            case 'rider_assigned':
+              title = '🛵 Rider Assigned';
+              body = `${riderName} has been assigned to deliver your order.`;
+              break;
+            case 'pickedUp':
+            case 'picked_up':
+              title = '📦 Picked Up';
+              body = `${riderName} has picked up your order and is on the way.`;
+              break;
+            case 'delivering':
+              title = '🚚 On the Way';
+              body = `${riderName} is delivering your order now.`;
+              break;
+            case 'delivered':
+              title = '📬 Delivered!';
+              body = 'Your order has been delivered. Enjoy!';
+              break;
+            default:
+              return; // Don't send for other statuses
+          }
+
+          const message = {
+            notification: { title, body },
+            data: {
+              type: 'delivery',
+              orderId: change.doc.id,
+              status: newStatus,
+              click_action: 'FLUTTER_NOTIFICATION_CLICK',
+            },
+            token: fcmDoc.data().token,
+          };
+
+          try {
+            await admin.messaging().send(message);
+            console.log(`Status push sent to ${customerId}: ${newStatus}`);
+          } catch (e) {
+            console.error(`Failed to send status push: ${e.message}`);
+          }
+        }
+      }
+    });
+  });
+
+  // Listen for ride status changes
+  admin.firestore().collection('rides').onSnapshot(snapshot => {
+    snapshot.docChanges().forEach(async change => {
+      if (change.type === 'modified') {
+        const ride = change.doc.data();
+        const previous = change.doc._previousData;
+        const newStatus = ride.status;
+        const oldStatus = previous?.status;
+
+        if (newStatus !== oldStatus && newStatus) {
+          const customerId = ride.userId;
+          if (!customerId) return;
+
+          const fcmDoc = await admin.firestore().collection('fcm_tokens').doc(customerId).get();
+          if (!fcmDoc.exists || !fcmDoc.data().token) return;
+
+          const driverName = ride.driverName || ride.riderName || 'Driver';
+          let title = '';
+          let body = '';
+
+          switch (newStatus) {
+            case 'accepted':
+            case 'driver_assigned':
+              title = '🚗 Driver Found!';
+              body = `${driverName} has accepted your ride.`;
+              break;
+            case 'arrived':
+              title = '📍 Driver Arrived';
+              body = `${driverName} has arrived at your pickup location.`;
+              break;
+            case 'started':
+              title = '🚘 Ride Started';
+              body = `Your ride with ${driverName} has started.`;
+              break;
+            case 'completed':
+              title = '🏁 Ride Complete';
+              body = 'Thank you for riding with GoGrab!';
+              break;
+            default:
+              return;
+          }
+
+          const message = {
+            notification: { title, body },
+            data: {
+              type: 'ride',
+              orderId: change.doc.id,
+              status: newStatus,
+              click_action: 'FLUTTER_NOTIFICATION_CLICK',
+            },
+            token: fcmDoc.data().token,
+          };
+
+          try {
+            await admin.messaging().send(message);
+            console.log(`Ride push sent to ${customerId}: ${newStatus}`);
+          } catch (e) {
+            console.error(`Failed to send ride push: ${e.message}`);
+          }
+        }
+      }
+    });
+  });
+
+  // Listen for parcel status changes
+  admin.firestore().collection('parcels').onSnapshot(snapshot => {
+    snapshot.docChanges().forEach(async change => {
+      if (change.type === 'modified') {
+        const parcel = change.doc.data();
+        const previous = change.doc._previousData;
+        const newStatus = parcel.status;
+        const oldStatus = previous?.status;
+
+        if (newStatus !== oldStatus && newStatus) {
+          const customerId = parcel.userId;
+          if (!customerId) return;
+
+          const fcmDoc = await admin.firestore().collection('fcm_tokens').doc(customerId).get();
+          if (!fcmDoc.exists || !fcmDoc.data().token) return;
+
+          const riderName = parcel.riderName || 'Rider';
+          let title = '';
+          let body = '';
+
+          switch (newStatus) {
+            case 'accepted':
+            case 'rider_assigned':
+              title = '📦 Rider Assigned';
+              body = `${riderName} will handle your parcel delivery.`;
+              break;
+            case 'picked_up':
+              title = '📬 Picked Up';
+              body = `${riderName} has picked up your parcel.`;
+              break;
+            case 'delivering':
+            case 'in_transit':
+              title = '📦 In Transit';
+              body = `Your parcel is on the way with ${riderName}.`;
+              break;
+            case 'delivered':
+              title = '🎉 Parcel Delivered';
+              body = 'Your parcel has been delivered successfully!';
+              break;
+            default:
+              return;
+          }
+
+          const message = {
+            notification: { title, body },
+            data: {
+              type: 'parcel',
+              orderId: change.doc.id,
+              status: newStatus,
+              click_action: 'FLUTTER_NOTIFICATION_CLICK',
+            },
+            token: fcmDoc.data().token,
+          };
+
+          try {
+            await admin.messaging().send(message);
+            console.log(`Parcel push sent to ${customerId}: ${newStatus}`);
+          } catch (e) {
+            console.error(`Failed to send parcel push: ${e.message}`);
+          }
         }
       }
     });
