@@ -165,7 +165,7 @@ app.post('/mpesa/callback', async (req, res) => {
         'booking': 'bookings',
         'topup': 'none',
       };
-      const collection = collectionMap[serviceType] || 'orders';
+      const primaryCollection = collectionMap[serviceType] || 'orders';
 
       if (orderId) {
         try {
@@ -175,18 +175,23 @@ app.post('/mpesa/callback', async (req, res) => {
             updatedAt: admin.firestore.FieldValue.serverTimestamp(),
           };
 
+          // For orders and deliveries, copy items and update BOTH collections
           if (serviceType === 'order' || serviceType === 'delivery') {
             const sourceDoc = await admin.firestore().collection('orders').doc(orderId).get();
             if (sourceDoc.exists && sourceDoc.data().items) {
               updateData.items = sourceDoc.data().items;
-              console.log(`✅ Copied ${sourceDoc.data().items.length} items to ${collection}/${orderId}`);
+              console.log(`✅ Copied ${sourceDoc.data().items.length} items`);
             }
+            // Update both orders and orders_shared
+            await admin.firestore().collection('orders').doc(orderId).set(updateData, { merge: true });
+            await admin.firestore().collection('orders_shared').doc(orderId).set(updateData, { merge: true });
+            console.log(`✅ Both orders & orders_shared ${orderId} marked paid`);
+          } else {
+            await admin.firestore().collection(primaryCollection).doc(orderId).set(updateData, { merge: true });
+            console.log(`✅ ${primaryCollection} ${orderId} marked paid`);
           }
-
-          await admin.firestore().collection(collection).doc(orderId).set(updateData, { merge: true });
-          console.log(`✅ ${collection} ${orderId} marked as paid`);
         } catch (err) {
-          console.error(`Failed to update ${collection}/${orderId}:`, err);
+          console.error(`Failed to update document(s) for ${orderId}:`, err);
         }
       }
 
@@ -467,18 +472,14 @@ app.post('/api/send-push', async (req, res) => {
 });
 
 // ========== PROXIMITY / VICINITY NOTIFICATIONS ==========
-// When rider is near pickup or dropoff, push to customer
 app.post('/api/rider-proximity', async (req, res) => {
   try {
     const { orderId, riderId, riderName, riderLat, riderLng, type, orderType } = req.body;
-    // type: 'approaching_pickup' | 'arrived_pickup' | 'approaching_dropoff' | 'arrived_dropoff'
-    // orderType: 'delivery' | 'ride' | 'parcel'
 
     if (!orderId || !riderId) {
       return res.status(400).json({ success: false, error: 'Missing orderId or riderId' });
     }
 
-    // Determine which collection to look up
     const collectionMap = {
       'delivery': 'orders_shared',
       'ride': 'rides',
@@ -486,7 +487,6 @@ app.post('/api/rider-proximity', async (req, res) => {
     };
     const collection = collectionMap[orderType] || 'orders_shared';
 
-    // Get the order to find the customer
     const orderDoc = await admin.firestore().collection(collection).doc(orderId).get();
     if (!orderDoc.exists) {
       return res.status(404).json({ success: false, error: 'Order not found' });
@@ -499,7 +499,6 @@ app.post('/api/rider-proximity', async (req, res) => {
       return res.status(404).json({ success: false, error: 'Customer not found' });
     }
 
-    // Get customer's FCM token
     const fcmDoc = await admin.firestore().collection('fcm_tokens').doc(customerId).get();
     if (!fcmDoc.exists) {
       return res.status(404).json({ success: false, error: 'Customer FCM token not found' });
@@ -510,7 +509,6 @@ app.post('/api/rider-proximity', async (req, res) => {
       return res.status(404).json({ success: false, error: 'Token is empty' });
     }
 
-    // Build notification based on proximity type
     let title = '';
     let body = '';
     const riderFirstName = (riderName || 'Rider').split(' ')[0];
@@ -562,7 +560,6 @@ app.post('/api/rider-proximity', async (req, res) => {
     const response = await admin.messaging().send(message);
     console.log(`Proximity push sent to ${customerId}: ${title} - ${response}`);
 
-    // Also save to a notifications collection for history
     await admin.firestore().collection('proximity_notifications').add({
       orderId,
       customerId,
@@ -616,7 +613,6 @@ app.post('/api/send-push-to-user', async (req, res) => {
 function startFCMListener() {
   console.log('Starting FCM order status listener...');
 
-  // Listen for order status changes and push to customer
   admin.firestore().collection('orders_shared').onSnapshot(snapshot => {
     snapshot.docChanges().forEach(async change => {
       if (change.type === 'modified') {
@@ -671,7 +667,7 @@ function startFCMListener() {
               body = 'Your order has been delivered. Enjoy!';
               break;
             default:
-              return; // Don't send for other statuses
+              return;
           }
 
           const message = {
@@ -696,7 +692,6 @@ function startFCMListener() {
     });
   });
 
-  // Listen for ride status changes
   admin.firestore().collection('rides').onSnapshot(snapshot => {
     snapshot.docChanges().forEach(async change => {
       if (change.type === 'modified') {
@@ -760,7 +755,6 @@ function startFCMListener() {
     });
   });
 
-  // Listen for parcel status changes
   admin.firestore().collection('parcels').onSnapshot(snapshot => {
     snapshot.docChanges().forEach(async change => {
       if (change.type === 'modified') {
