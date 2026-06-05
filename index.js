@@ -625,73 +625,135 @@ function startFCMListener() {
           console.log(`Order ${change.doc.id}: ${oldStatus} → ${newStatus}`);
           
           const customerId = order.userId;
-          if (!customerId) return;
+          const vendorId = order.vendorId;
 
-          const fcmDoc = await admin.firestore().collection('fcm_tokens').doc(customerId).get();
-          if (!fcmDoc.exists || !fcmDoc.data().token) return;
+          // ── Push to CUSTOMER ──
+          if (customerId) {
+            const fcmDoc = await admin.firestore().collection('fcm_tokens').doc(customerId).get();
+            if (fcmDoc.exists && fcmDoc.data().token) {
+              const riderName = order.riderName || 'Rider';
+              let title = '';
+              let body = '';
 
-          const riderName = order.riderName || 'Rider';
-          let title = '';
-          let body = '';
+              switch (newStatus) {
+                case 'accepted':
+                  title = '✅ Order Accepted';
+                  body = `Your order #${change.doc.id.substring(0, 6)} has been accepted.`;
+                  break;
+                case 'preparing':
+                  title = '🍳 Preparing';
+                  body = 'The vendor is preparing your order.';
+                  break;
+                case 'readyForPickup':
+                case 'ready_for_pickup':
+                  title = '📦 Ready for Pickup';
+                  body = 'Your order is ready and waiting for a rider.';
+                  break;
+                case 'riderAssigned':
+                case 'rider_assigned':
+                  title = '🛵 Rider Assigned';
+                  body = `${riderName} has been assigned to deliver your order.`;
+                  break;
+                case 'pickedUp':
+                case 'picked_up':
+                  title = '📦 Picked Up';
+                  body = `${riderName} has picked up your order and is on the way.`;
+                  break;
+                case 'delivering':
+                  title = '🚚 On the Way';
+                  body = `${riderName} is delivering your order now.`;
+                  break;
+                case 'delivered':
+                  title = '📬 Delivered!';
+                  body = 'Your order has been delivered. Enjoy!';
+                  break;
+                default:
+                  return; // don't send for other statuses
+              }
 
-          switch (newStatus) {
-            case 'accepted':
-              title = '✅ Order Accepted';
-              body = `Your order #${change.doc.id.substring(0, 6)} has been accepted.`;
-              break;
-            case 'preparing':
-              title = '🍳 Preparing';
-              body = 'The vendor is preparing your order.';
-              break;
-            case 'readyForPickup':
-            case 'ready_for_pickup':
-              title = '📦 Ready for Pickup';
-              body = 'Your order is ready and waiting for a rider.';
-              break;
-            case 'riderAssigned':
-            case 'rider_assigned':
-              title = '🛵 Rider Assigned';
-              body = `${riderName} has been assigned to deliver your order.`;
-              break;
-            case 'pickedUp':
-            case 'picked_up':
-              title = '📦 Picked Up';
-              body = `${riderName} has picked up your order and is on the way.`;
-              break;
-            case 'delivering':
-              title = '🚚 On the Way';
-              body = `${riderName} is delivering your order now.`;
-              break;
-            case 'delivered':
-              title = '📬 Delivered!';
-              body = 'Your order has been delivered. Enjoy!';
-              break;
-            default:
-              return;
+              const message = {
+                notification: { title, body },
+                data: {
+                  type: 'delivery',
+                  orderId: change.doc.id,
+                  status: newStatus,
+                  click_action: 'FLUTTER_NOTIFICATION_CLICK',
+                },
+                token: fcmDoc.data().token,
+              };
+
+              try {
+                await admin.messaging().send(message);
+                console.log(`Customer push sent to ${customerId}: ${newStatus}`);
+              } catch (e) {
+                console.error(`Customer push fail: ${e.message}`);
+              }
+            }
           }
 
-          const message = {
-            notification: { title, body },
-            data: {
-              type: 'delivery',
-              orderId: change.doc.id,
-              status: newStatus,
-              click_action: 'FLUTTER_NOTIFICATION_CLICK',
-            },
-            token: fcmDoc.data().token,
-          };
+          // ── Push to VENDOR (for relevant statuses) ──
+          if (vendorId && ['accepted', 'preparing', 'readyForPickup', 'ready_for_pickup', 'picked_up', 'delivering', 'delivered'].includes(newStatus)) {
+            const vendorFcm = await admin.firestore().collection('fcm_tokens').doc(vendorId).get();
+            if (vendorFcm.exists && vendorFcm.data().token) {
+              let vendorTitle = '';
+              let vendorBody = '';
+              const riderName = order.riderName || 'Rider';
 
-          try {
-            await admin.messaging().send(message);
-            console.log(`Status push sent to ${customerId}: ${newStatus}`);
-          } catch (e) {
-            console.error(`Failed to send status push: ${e.message}`);
+              switch (newStatus) {
+                case 'accepted':
+                  vendorTitle = '🛎️ Order Accepted';
+                  vendorBody = `Order #${change.doc.id.substring(0, 6)} has been accepted.`;
+                  break;
+                case 'preparing':
+                  vendorTitle = '🍳 Preparing';
+                  vendorBody = 'You are now preparing the order.';
+                  break;
+                case 'readyForPickup':
+                case 'ready_for_pickup':
+                  vendorTitle = '📦 Ready for Pickup';
+                  vendorBody = 'Order is ready and waiting for a rider.';
+                  break;
+                case 'picked_up':
+                  vendorTitle = '🛵 Picked Up';
+                  vendorBody = `Rider ${riderName} has picked up the order.`;
+                  break;
+                case 'delivering':
+                  vendorTitle = '🚚 On the Way';
+                  vendorBody = `Rider ${riderName} is delivering the order.`;
+                  break;
+                case 'delivered':
+                  vendorTitle = '🏁 Order Delivered';
+                  vendorBody = `Order #${change.doc.id.substring(0, 6)} has been delivered.`;
+                  break;
+                default:
+                  return;
+              }
+
+              const vendorMsg = {
+                notification: { title: vendorTitle, body: vendorBody },
+                data: {
+                  type: 'delivery',
+                  orderId: change.doc.id,
+                  status: newStatus,
+                  click_action: 'FLUTTER_NOTIFICATION_CLICK',
+                },
+                token: vendorFcm.data().token,
+              };
+
+              try {
+                await admin.messaging().send(vendorMsg);
+                console.log(`Vendor push sent to ${vendorId}: ${newStatus}`);
+              } catch (e) {
+                console.error(`Vendor push fail: ${e.message}`);
+              }
+            }
           }
         }
       }
     });
   });
 
+  // Ride listener (unchanged)
   admin.firestore().collection('rides').onSnapshot(snapshot => {
     snapshot.docChanges().forEach(async change => {
       if (change.type === 'modified') {
@@ -755,6 +817,7 @@ function startFCMListener() {
     });
   });
 
+  // Parcel listener (unchanged)
   admin.firestore().collection('parcels').onSnapshot(snapshot => {
     snapshot.docChanges().forEach(async change => {
       if (change.type === 'modified') {
