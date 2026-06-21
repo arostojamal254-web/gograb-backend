@@ -114,12 +114,25 @@ app.post('/mpesa/callback', async (req, res) => {
         await pendingRef.delete();
         return res.json({ ResultCode: 0, ResultDesc: 'Top‑up processed' });
       }
-      const collectionMap = { 'order': 'orders', 'delivery': 'orders_shared', 'ride': 'rides', 'parcel': 'parcels', 'accommodation': 'accommodations', 'booking': 'bookings', 'topup': 'none' };
+
+      // Map service types to the correct Firestore collection
+      const collectionMap = {
+        'order': 'orders',
+        'delivery': 'orders_shared',
+        'ride': 'rides',
+        'parcel': 'parcels',
+        'accommodation': 'accommodations',   // ✅ fixed – now matches customer app
+        'booking': 'bookings',
+        'topup': 'none'
+      };
       const primaryCollection = collectionMap[serviceType] || 'orders';
-      if (orderId) {
+
+      if (orderId && serviceType !== 'topup') {
         try {
           const updateData = { paymentStatus: 'paid', mpesaReceiptNumber: mpesaReceipt, updatedAt: admin.firestore.FieldValue.serverTimestamp() };
+
           if (serviceType === 'order' || serviceType === 'delivery') {
+            // Also copy items from orders to orders_shared
             const sourceDoc = await admin.firestore().collection('orders').doc(orderId).get();
             if (sourceDoc.exists && sourceDoc.data().items) updateData.items = sourceDoc.data().items;
             await admin.firestore().collection('orders').doc(orderId).set(updateData, { merge: true });
@@ -129,12 +142,33 @@ app.post('/mpesa/callback', async (req, res) => {
             await admin.firestore().collection(primaryCollection).doc(orderId).set(updateData, { merge: true });
             console.log(`✅ ${primaryCollection} ${orderId} marked paid`);
           }
-        } catch (err) { console.error(`Failed to update document(s) for ${orderId}:`, err); }
+
+          // For accommodation, add booked dates to the property document
+          if (serviceType === 'accommodation') {
+            const bookingDoc = await admin.firestore().collection('accommodations').doc(orderId).get();
+            if (bookingDoc.exists) {
+              const booking = bookingDoc.data();
+              const dates = booking.dates;            // array of 'YYYY-MM-DD'
+              const accommodationId = booking.accommodationId;
+              if (accommodationId && dates && dates.length) {
+                await admin.firestore().collection('accommodations').doc(accommodationId).update({
+                  bookedDates: admin.firestore.FieldValue.arrayUnion(dates),
+                });
+                console.log(`✅ Added booked dates to property ${accommodationId}`);
+              }
+            }
+          }
+        } catch (err) {
+          console.error(`Failed to update document(s) for ${orderId}:`, err);
+        }
       }
-      if (userId && amount && serviceType !== 'topup') {
+
+      // Wallet credit – skip for accommodation (payment is for the booking, not wallet credit)
+      if (userId && amount && serviceType !== 'topup' && serviceType !== 'accommodation') {
         await admin.firestore().collection('wallets').doc(userId).set({ balance: admin.firestore.FieldValue.increment(amount), updatedAt: admin.firestore.FieldValue.serverTimestamp() }, { merge: true });
         console.log(`✅ Wallet of ${userId} credited with ${amount}`);
       }
+
       await pendingRef.delete();
     } else {
       console.log('❌ Payment failed/cancelled:', callback.ResultDesc);
@@ -298,7 +332,7 @@ app.post('/api/send-push-to-user', async (req, res) => {
   }
 });
 
-// ========== ORDER STATUS LISTENER ==========
+// ========== ORDER STATUS LISTENER (unchanged) ==========
 function startFCMListener() {
   console.log('Starting FCM order status listener...');
   admin.firestore().collection('orders_shared').onSnapshot(snapshot => {
