@@ -115,13 +115,13 @@ app.post('/mpesa/callback', async (req, res) => {
         return res.json({ ResultCode: 0, ResultDesc: 'Top‑up processed' });
       }
 
-      // Map service types to the correct Firestore collection
+      // ✅ Correct collection mapping (accommodation → bookings)
       const collectionMap = {
         'order': 'orders',
         'delivery': 'orders_shared',
         'ride': 'rides',
         'parcel': 'parcels',
-        'accommodation': 'accommodations',   // ✅ fixed – now matches customer app
+        'accommodation': 'bookings',     // <-- fixed
         'booking': 'bookings',
         'topup': 'none'
       };
@@ -132,20 +132,18 @@ app.post('/mpesa/callback', async (req, res) => {
           const updateData = { paymentStatus: 'paid', mpesaReceiptNumber: mpesaReceipt, updatedAt: admin.firestore.FieldValue.serverTimestamp() };
 
           if (serviceType === 'order' || serviceType === 'delivery') {
-            // Also copy items from orders to orders_shared
             const sourceDoc = await admin.firestore().collection('orders').doc(orderId).get();
             if (sourceDoc.exists && sourceDoc.data().items) updateData.items = sourceDoc.data().items;
             await admin.firestore().collection('orders').doc(orderId).set(updateData, { merge: true });
             await admin.firestore().collection('orders_shared').doc(orderId).set(updateData, { merge: true });
             console.log(`✅ Both orders & orders_shared ${orderId} marked paid`);
-          } else {
-            await admin.firestore().collection(primaryCollection).doc(orderId).set(updateData, { merge: true });
-            console.log(`✅ ${primaryCollection} ${orderId} marked paid`);
-          }
+          } else if (serviceType === 'accommodation') {
+            // Update the booking document (in 'bookings' collection)
+            await admin.firestore().collection('bookings').doc(orderId).set(updateData, { merge: true });
+            console.log(`✅ Booking ${orderId} marked paid`);
 
-          // For accommodation, add booked dates to the property document
-          if (serviceType === 'accommodation') {
-            const bookingDoc = await admin.firestore().collection('accommodations').doc(orderId).get();
+            // Also add booked dates to the property
+            const bookingDoc = await admin.firestore().collection('bookings').doc(orderId).get();
             if (bookingDoc.exists) {
               const booking = bookingDoc.data();
               const dates = booking.dates;            // array of 'YYYY-MM-DD'
@@ -157,6 +155,9 @@ app.post('/mpesa/callback', async (req, res) => {
                 console.log(`✅ Added booked dates to property ${accommodationId}`);
               }
             }
+          } else {
+            await admin.firestore().collection(primaryCollection).doc(orderId).set(updateData, { merge: true });
+            console.log(`✅ ${primaryCollection} ${orderId} marked paid`);
           }
         } catch (err) {
           console.error(`Failed to update document(s) for ${orderId}:`, err);
@@ -181,7 +182,7 @@ app.post('/mpesa/callback', async (req, res) => {
   }
 });
 
-// ========== WITHDRAWAL endpoints ==========
+// ========== WITHDRAWAL endpoints (unchanged) ==========
 app.post('/api/withdraw', async (req, res) => {
   try {
     const { userId, amount, userType, accountDetails } = req.body;
