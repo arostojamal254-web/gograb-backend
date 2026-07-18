@@ -123,6 +123,7 @@ app.post('/mpesa/callback', async (req, res) => {
         'parcel': 'parcels',
         'accommodation': 'bookings',     // <-- fixed
         'booking': 'bookings',
+        'service': 'service_bookings',    // <-- added
         'topup': 'none'
       };
       const primaryCollection = collectionMap[serviceType] || 'orders';
@@ -138,15 +139,13 @@ app.post('/mpesa/callback', async (req, res) => {
             await admin.firestore().collection('orders_shared').doc(orderId).set(updateData, { merge: true });
             console.log(`✅ Both orders & orders_shared ${orderId} marked paid`);
           } else if (serviceType === 'accommodation') {
-            // Update the booking document (in 'bookings' collection)
             await admin.firestore().collection('bookings').doc(orderId).set(updateData, { merge: true });
             console.log(`✅ Booking ${orderId} marked paid`);
 
-            // Also add booked dates to the property
             const bookingDoc = await admin.firestore().collection('bookings').doc(orderId).get();
             if (bookingDoc.exists) {
               const booking = bookingDoc.data();
-              const dates = booking.dates;            // array of 'YYYY-MM-DD'
+              const dates = booking.dates;
               const accommodationId = booking.accommodationId;
               if (accommodationId && dates && dates.length) {
                 await admin.firestore().collection('accommodations').doc(accommodationId).update({
@@ -156,6 +155,7 @@ app.post('/mpesa/callback', async (req, res) => {
               }
             }
           } else {
+            // 'service' or others
             await admin.firestore().collection(primaryCollection).doc(orderId).set(updateData, { merge: true });
             console.log(`✅ ${primaryCollection} ${orderId} marked paid`);
           }
@@ -164,8 +164,8 @@ app.post('/mpesa/callback', async (req, res) => {
         }
       }
 
-      // Wallet credit – skip for accommodation (payment is for the booking, not wallet credit)
-      if (userId && amount && serviceType !== 'topup' && serviceType !== 'accommodation') {
+      // Wallet credit – skip for accommodation and service (payment is for the booking, not wallet credit)
+      if (userId && amount && serviceType !== 'topup' && serviceType !== 'accommodation' && serviceType !== 'service') {
         await admin.firestore().collection('wallets').doc(userId).set({ balance: admin.firestore.FieldValue.increment(amount), updatedAt: admin.firestore.FieldValue.serverTimestamp() }, { merge: true });
         console.log(`✅ Wallet of ${userId} credited with ${amount}`);
       }
@@ -179,6 +179,52 @@ app.post('/mpesa/callback', async (req, res) => {
   } catch (error) {
     console.error('Callback error:', error);
     res.json({ ResultCode: 1, ResultDesc: 'Error' });
+  }
+});
+
+// ========== UNIVERSAL REFUND ENDPOINT ==========
+app.post('/api/refund', async (req, res) => {
+  try {
+    const { orderId, amount, userId, type } = req.body;
+    if (!orderId || !amount || !userId) {
+      return res.status(400).json({ success: false, error: 'Missing orderId, amount, or userId' });
+    }
+
+    // 1. Mark the document as cancelled in the appropriate collection
+    const collections = ['orders', 'orders_shared', 'service_bookings', 'bookings'];
+    let found = false;
+    for (const col of collections) {
+      const doc = await admin.firestore().collection(col).doc(orderId).get();
+      if (doc.exists) {
+        await doc.ref.update({
+          status: 'cancelled',
+          updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+        });
+        found = true;
+        console.log(`✅ Cancelled ${col}/${orderId}`);
+        break;
+      }
+    }
+    if (!found) {
+      // If not found in any of those, try to delete the pending document from pending_mpesa
+      const pendingDoc = await admin.firestore().collection('pending_mpesa').doc(orderId).get();
+      if (pendingDoc.exists) {
+        await pendingDoc.ref.delete();
+        console.log(`✅ Deleted pending_mpesa/${orderId}`);
+      }
+    }
+
+    // 2. Refund the wallet
+    await admin.firestore().collection('wallets').doc(userId).set({
+      balance: admin.firestore.FieldValue.increment(Number(amount)),
+      updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+    }, { merge: true });
+
+    console.log(`✅ Wallet of ${userId} refunded with ${amount}`);
+    res.json({ success: true, message: 'Order cancelled and wallet refunded' });
+  } catch (error) {
+    console.error('Refund error:', error);
+    res.status(500).json({ success: false, error: error.message });
   }
 });
 
@@ -268,7 +314,7 @@ async function initiateB2C(userId, amount, userType, accountDetails) {
   }
 }
 
-// ========== PUSH NOTIFICATIONS & PROXIMITY ==========
+// ========== PUSH NOTIFICATIONS & PROXIMITY (unchanged) ==========
 app.post('/api/send-push', async (req, res) => {
   try {
     const { tokens, title, body, data } = req.body;
