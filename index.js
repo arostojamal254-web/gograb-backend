@@ -121,9 +121,9 @@ app.post('/mpesa/callback', async (req, res) => {
         'delivery': 'orders_shared',
         'ride': 'rides',
         'parcel': 'parcels',
-        'accommodation': 'bookings',     // <-- fixed
+        'accommodation': 'bookings',
         'booking': 'bookings',
-        'service': 'service_bookings',    // <-- added
+        'service': 'service_bookings',
         'topup': 'none'
       };
       const primaryCollection = collectionMap[serviceType] || 'orders';
@@ -155,7 +155,7 @@ app.post('/mpesa/callback', async (req, res) => {
               }
             }
           } else {
-            // 'service' or others
+            // 'service', 'ride', 'parcel', etc.
             await admin.firestore().collection(primaryCollection).doc(orderId).set(updateData, { merge: true });
             console.log(`✅ ${primaryCollection} ${orderId} marked paid`);
           }
@@ -164,7 +164,8 @@ app.post('/mpesa/callback', async (req, res) => {
         }
       }
 
-      // Wallet credit – skip for accommodation and service (payment is for the booking, not wallet credit)
+      // Wallet credit – skip for accommodation, service, rides, parcels? 
+      // Actually rides & parcels should credit wallet because the user paid for them.
       if (userId && amount && serviceType !== 'topup' && serviceType !== 'accommodation' && serviceType !== 'service') {
         await admin.firestore().collection('wallets').doc(userId).set({ balance: admin.firestore.FieldValue.increment(amount), updatedAt: admin.firestore.FieldValue.serverTimestamp() }, { merge: true });
         console.log(`✅ Wallet of ${userId} credited with ${amount}`);
@@ -182,7 +183,7 @@ app.post('/mpesa/callback', async (req, res) => {
   }
 });
 
-// ========== UNIVERSAL REFUND ENDPOINT ==========
+// ========== UNIVERSAL REFUND ENDPOINT (UPDATED) ==========
 app.post('/api/refund', async (req, res) => {
   try {
     const { orderId, amount, userId, type } = req.body;
@@ -191,7 +192,7 @@ app.post('/api/refund', async (req, res) => {
     }
 
     // 1. Mark the document as cancelled in the appropriate collection
-    const collections = ['orders', 'orders_shared', 'service_bookings', 'bookings'];
+    const collections = ['orders', 'orders_shared', 'service_bookings', 'bookings', 'rides', 'parcels']; // ✅ added rides & parcels
     let found = false;
     for (const col of collections) {
       const doc = await admin.firestore().collection(col).doc(orderId).get();
@@ -221,7 +222,7 @@ app.post('/api/refund', async (req, res) => {
     }, { merge: true });
 
     console.log(`✅ Wallet of ${userId} refunded with ${amount}`);
-    res.json({ success: true, message: 'Order cancelled and wallet refunded' });
+    res.json({ success: true, message: 'Order/Ride/Parcel cancelled and wallet refunded' });
   } catch (error) {
     console.error('Refund error:', error);
     res.status(500).json({ success: false, error: error.message });
@@ -314,7 +315,7 @@ async function initiateB2C(userId, amount, userType, accountDetails) {
   }
 }
 
-// ========== PUSH NOTIFICATIONS & PROXIMITY (unchanged) ==========
+// ========== PUSH NOTIFICATIONS & PROXIMITY ==========
 app.post('/api/send-push', async (req, res) => {
   try {
     const { tokens, title, body, data } = req.body;
@@ -379,9 +380,11 @@ app.post('/api/send-push-to-user', async (req, res) => {
   }
 });
 
-// ========== ORDER STATUS LISTENER (unchanged) ==========
+// ========== ORDER STATUS LISTENER (UPDATED with cancellation for rides & parcels) ==========
 function startFCMListener() {
   console.log('Starting FCM order status listener...');
+
+  // -------- Orders & deliveries (orders_shared) --------
   admin.firestore().collection('orders_shared').onSnapshot(snapshot => {
     snapshot.docChanges().forEach(async change => {
       if (change.type === 'modified') {
@@ -406,13 +409,14 @@ function startFCMListener() {
                 case 'pickedUp': case 'picked_up': title = '📦 Picked Up'; body = `${riderName} has picked up your order and is on the way.`; break;
                 case 'delivering': title = '🚚 On the Way'; body = `${riderName} is delivering your order now.`; break;
                 case 'delivered': title = '📬 Delivered!'; body = 'Your order has been delivered. Enjoy!'; break;
+                case 'cancelled': title = '❌ Order Cancelled'; body = `Your order #${change.doc.id.substring(0, 6)} has been cancelled.`; break;
                 default: return;
               }
               const message = { notification: { title, body }, data: { type: 'delivery', orderId: change.doc.id, status: newStatus, click_action: 'FLUTTER_NOTIFICATION_CLICK' }, token: fcmDoc.data().token };
               try { await admin.messaging().send(message); console.log(`Customer push sent to ${customerId}: ${newStatus}`); } catch (e) { console.error(`Customer push fail: ${e.message}`); }
             }
           }
-          if (vendorId && ['accepted', 'preparing', 'readyForPickup', 'ready_for_pickup', 'picked_up', 'delivering', 'delivered'].includes(newStatus)) {
+          if (vendorId && ['accepted', 'preparing', 'readyForPickup', 'ready_for_pickup', 'picked_up', 'delivering', 'delivered', 'cancelled'].includes(newStatus)) {
             const vendorFcm = await admin.firestore().collection('fcm_tokens').doc(vendorId).get();
             if (vendorFcm.exists && vendorFcm.data().token) {
               let vendorTitle = '', vendorBody = '';
@@ -424,6 +428,7 @@ function startFCMListener() {
                 case 'picked_up': vendorTitle = '🛵 Picked Up'; vendorBody = `Rider ${riderName} has picked up the order.`; break;
                 case 'delivering': vendorTitle = '🚚 On the Way'; vendorBody = `Rider ${riderName} is delivering the order.`; break;
                 case 'delivered': vendorTitle = '🏁 Order Delivered'; vendorBody = `Order #${change.doc.id.substring(0, 6)} has been delivered.`; break;
+                case 'cancelled': vendorTitle = '❌ Order Cancelled'; vendorBody = `Order #${change.doc.id.substring(0, 6)} has been cancelled.`; break;
                 default: return;
               }
               const vendorMsg = { notification: { title: vendorTitle, body: vendorBody }, data: { type: 'delivery', orderId: change.doc.id, status: newStatus, click_action: 'FLUTTER_NOTIFICATION_CLICK' }, token: vendorFcm.data().token };
@@ -440,6 +445,7 @@ function startFCMListener() {
               else if (newStatus === 'picked_up') { title = '📦 Pickup Confirmed'; body = 'You have picked up the order. Proceed to delivery.'; }
               else if (newStatus === 'delivering') { title = '🚚 On the Way'; body = 'Start your delivery now.'; }
               else if (newStatus === 'delivered') { title = '🏁 Delivery Completed'; body = 'Order delivered successfully.'; }
+              else if (newStatus === 'cancelled') { title = '❌ Delivery Cancelled'; body = `Order #${change.doc.id.substring(0, 6)} has been cancelled.`; }
               if (title) {
                 const message = { notification: { title, body }, data: { type: 'delivery', orderId: change.doc.id, status: newStatus, click_action: 'FLUTTER_NOTIFICATION_CLICK' }, token: riderFcm.data().token };
                 try { await admin.messaging().send(message); console.log(`Rider push sent to ${newRiderId}: ${title}`); } catch (e) { console.error(`Rider push fail: ${e.message}`); }
@@ -450,6 +456,8 @@ function startFCMListener() {
       }
     });
   });
+
+  // -------- Rides --------
   admin.firestore().collection('rides').onSnapshot(snapshot => {
     snapshot.docChanges().forEach(async change => {
       if (change.type === 'modified') {
@@ -469,6 +477,7 @@ function startFCMListener() {
                 case 'arrived': title = '📍 Driver Arrived'; body = `${driverName} has arrived at your pickup location.`; break;
                 case 'started': title = '🚘 Ride Started'; body = `Your ride with ${driverName} has started.`; break;
                 case 'completed': title = '🏁 Ride Complete'; body = 'Thank you for riding with GoGrab!'; break;
+                case 'cancelled': title = '❌ Ride Cancelled'; body = `Your ride has been cancelled.`; break;
                 default: return;
               }
               const message = { notification: { title, body }, data: { type: 'ride', orderId: change.doc.id, status: newStatus, click_action: 'FLUTTER_NOTIFICATION_CLICK' }, token: fcmDoc.data().token };
@@ -489,6 +498,8 @@ function startFCMListener() {
       }
     });
   });
+
+  // -------- Parcels --------
   admin.firestore().collection('parcels').onSnapshot(snapshot => {
     snapshot.docChanges().forEach(async change => {
       if (change.type === 'modified') {
@@ -508,6 +519,7 @@ function startFCMListener() {
                 case 'picked_up': title = '📬 Picked Up'; body = `${riderName} has picked up your parcel.`; break;
                 case 'delivering': case 'in_transit': title = '📦 In Transit'; body = `Your parcel is on the way with ${riderName}.`; break;
                 case 'delivered': title = '🎉 Parcel Delivered'; body = 'Your parcel has been delivered successfully!'; break;
+                case 'cancelled': title = '❌ Parcel Cancelled'; body = `Your parcel delivery has been cancelled.`; break;
                 default: return;
               }
               const message = { notification: { title, body }, data: { type: 'parcel', orderId: change.doc.id, status: newStatus, click_action: 'FLUTTER_NOTIFICATION_CLICK' }, token: fcmDoc.data().token };
